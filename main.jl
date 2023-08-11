@@ -15,6 +15,8 @@ using DataFrames
 using JLD2
 
 # Doing statistics and models
+using LinearAlgebra 
+using ProgressMeter
 using Random
 using Statistics
 using StatsBase
@@ -26,7 +28,11 @@ using StatsPlots
 # Analyzing ecological networks
 using EcologicalNetworks 
 
+## Load custom functions
+include(joinpath("code", "functions", "MaxSim.jl"))
 
 ## Load scripts
 include(joinpath("code", "01_clean_data.jl"))
-
+include(joinpath("code", "02_simulate_networks.jl"))
+include(joinpath("code", "03_compute_measures.jl"))
+include(joinpath("code", "04_make_figures.jl"))
