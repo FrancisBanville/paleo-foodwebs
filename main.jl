@@ -18,6 +18,7 @@ using JLD2
 using LinearAlgebra 
 using ProgressMeter
 using Random
+using SparseArrays
 using Statistics
 using StatsBase
 
@@ -29,7 +30,10 @@ using StatsPlots
 using EcologicalNetworks 
 
 ## Load custom functions
+include(joinpath("code", "functions", "clustering_coefficient.jl"))
+include(joinpath("code", "functions", "food_chains.jl"))
 include(joinpath("code", "functions", "MaxSim.jl"))
+include(joinpath("code", "functions", "relative_degree.jl"))
 
 ## Load scripts
 include(joinpath("code", "01_clean_data.jl"))
