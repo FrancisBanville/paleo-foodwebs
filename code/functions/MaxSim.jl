@@ -6,20 +6,23 @@ Returns the average of all species’ largest similarity index
 function MaxSim(N::UnipartiteNetwork)
       # additive Jaccard similarity between all species pairs
       AJS_N = AJS(N) 
+      
+      # convert to vectors to facilitate computations
+      n = length(AJS_N)
+      sim = [AJS_N[i][2] for i in 1:n] 
+      sp1 = [collect(AJS_N[i][1])[1] for i in 1:n]
+      sp2 = [collect(AJS_N[i][1])[2] for i in 1:n]
+    
       # find the maximum similarity for every species
-      length_AJS_N = length(AJS_N)
-      max_AJS = []
-            for i in 1:richness(N) 
-                  spi = []
-                  for j in 1:length_AJS_N
-                        if in(AJS_N[j][1])(species(N)[i])
-                              push!(spi, AJS_N[j][2])
-                        end
-                  end
-                  if length(spi) > 0
-                        push!(max_AJS, maximum(spi)[1])
-                  end
-            end
-      # return average similarity index 
-      return mean(max_AJS) 
+      sp = species(N)
+      MxSim_sp = zeros(Float64, length(sp))
+      for (i, sp) in enumerate(species(N))
+            MxSim_sp[i] = maximum(vcat(sim[sp1 .== sp], sim[sp2 .== sp]), init=0)
+      end
+      
+      # return average similarity index (of all species except those without similarity values)
+      return mean(MxSim_sp[Not(MxSim_sp .== 0)])
 end
+
+
+
