@@ -84,7 +84,7 @@ plot4 = plot_density("Can", "Proportion of cannibal species", (-0.005,1))
 plot5 = plot_density("Herb", "Proportion of herbivore species", (0,1))
 plot6 = plot_density("Omn", "Proportion of omnivore species", (0,1))
 plot7 = plot_density("Loop", "Proportion of species in loops", (-0.005,1))
-plot8 = plot_density("ChLen", "Mean food chain length", (0,5))
+plot8 = plot_density("ChLen", "Average food chain length", (0,5))
 plot9 = plot_density("ChSD", "Standard deviation of food chain length", (0,3))
 plot10 = plot_density("ChNum", "Log number of food chains", (0,3.5))
 plot11 = plot_density("TL", "Average trophic level", (0,6))
@@ -146,7 +146,7 @@ plot(plot1, plot2, plot3, plot4,
     title = ["Top" "Bas" "Int" "Can" "Herb"  "Omn" "Loop" "ChLen" "ChSD" "ChNum" "TL" "MxSim" "VulSD" "GenSD" "LinkSD" "Path" "Clust" ""],
     titleloc=:right, 
     titlefont=fonts,
-    layout = (5, 4), 
+    layout = (4, 5), 
     size=(800*x, 500*x))
 
 savefig(joinpath("figures","density_measures.png"))
