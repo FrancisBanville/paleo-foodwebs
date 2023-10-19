@@ -1,45 +1,98 @@
-#### Clean dataset of ecological interactions 
+#### Clean datasets of ecological interactions 
 
-# read raw dataset 
-int_df = DataFrame(CSV.File(joinpath("data", "raw", "interactions_Fezouata.csv")))
+### read raw datasets
+fezouata_df = DataFrame(CSV.File(joinpath("data", "raw", "interactions_Fezouata.csv")))
 
-# rename variables 
-rename!(int_df, 1 => :pred, 2 => :prey)
+burgess_df = DataFrame(CSV.File(joinpath("data", "raw", "interactions_Burgess_Dunne2008.csv")))
 
-# remove empty rows since they do not represent interactions
-dropmissing!(int_df)
+burgess_trophicsp_df = DataFrame(CSV.File(joinpath("data", "raw", "interactions_Burgess_trophicspecies_Dunne2008.csv")))
 
-# convert uppercase letters to lowercase
-int_df = lowercase.(int_df)
+chengjiang_df = DataFrame(CSV.File(joinpath("data", "raw", "interactions_Chengjiang_Dunne2008.csv")))
 
-# remove symbols that artificially creates new species when inconsistent 
-int_df = replace.(int_df, "?" => "")
-int_df = replace.(int_df, "'" => "")
-int_df = replace.(int_df, "\"" => "")
-
-# remove leading and trailing white spaces
-int_df = strip.(int_df) 
+chengjiang_trophicsp_df = DataFrame(CSV.File(joinpath("data", "raw", "interactions_Chengjiang_trophicspecies_Dunne2008.csv")))
 
 
-#### Make network
+### clean datasets 
 
-# make list of all unique species
-# note: there are still inconsistencies in species names that need to be tackled
-sp = unique(vcat(int_df.pred, int_df.prey))
+function clean_data(df::DataFrame)
+    
+    # rename variables 
+    rename!(df, 1 => :pred, 2 => :prey)
 
-# count number of species 
-S = length(sp)
+    # remove empty rows since they do not represent interactions
+    dropmissing!(df)
 
-# make adjacency matrix
-mat = zeros(Bool, S, S)
+    if eltype(df[:,1]) !== Int64
+        
+        # convert uppercase letters to lowercase
+        df = lowercase.(df)
 
-for i in 1:S 
-    for j in 1:S
-        mat[i, j] = sum(int_df.pred .== sp[i] .&& int_df.prey .== sp[j])
+        # remove symbols that artificially creates new species when inconsistent 
+        df = replace.(df, "?" => "")
+        df = replace.(df, "'" => "")
+        df = replace.(df, "\"" => "")
+
+        # remove leading and trailing white spaces
+        df = strip.(df) 
     end
+    
+    # remove duplicate rows
+    df = unique(df)
+
+    return(df)
 end
 
-# create and save network with species names 
-N = UnipartiteNetwork(mat, sp)
+fezouata_df_clean = clean_data(fezouata_df)
+burgess_df_clean = clean_data(burgess_df)
+burgess_trophicsp_df_clean = clean_data(burgess_trophicsp_df)
+chengjiang_df_clean = clean_data(chengjiang_df)
+chengjiang_trophicsp_df_clean = clean_data(chengjiang_trophicsp_df)
 
-save(joinpath("data", "clean", "network_Fezouata.jld2"), "N", N)
+### convert datasets to networks
+
+function make_network(df::DataFrame)
+
+    # make list of all unique species
+    # note: there are still inconsistencies in species names that need to be tackled
+    sp = unique(vcat(df.pred, df.prey))
+
+    # count number of species 
+    S = length(sp)
+
+    # make adjacency matrix
+    mat = zeros(Bool, S, S)
+
+    for i in 1:S 
+        for j in 1:S
+            mat[i, j] = sum(df.pred .== sp[i] .&& df.prey .== sp[j])
+        end
+    end
+
+    # change trophic species name for consistency 
+    if eltype(sp) == Int64
+        sp = string.(sp)
+        sp = "s" .* sp
+    end 
+
+    # create network with species names 
+    N = simplify(UnipartiteNetwork(mat, sp))
+    
+    return(N)
+end
+
+# create and save networks with species names 
+
+N_fezouata = make_network(fezouata_df_clean)
+N_burgess = make_network(burgess_df_clean)
+N_burgess_trophicsp = make_network(burgess_trophicsp_df_clean)
+N_chengjiang = make_network(chengjiang_df_clean)
+N_chengjiang_trophicsp = make_network(chengjiang_trophicsp_df_clean)
+
+save(joinpath("data", "clean", "network_Fezouata.jld2"), "N", N_fezouata)
+save(joinpath("data", "clean", "network_burgess.jld2"), "N", N_burgess)
+save(joinpath("data", "clean", "network_burgess_trophicsp.jld2"), "N", N_burgess_trophicsp)
+save(joinpath("data", "clean", "network_chengjiang.jld2"), "N", N_chengjiang)
+save(joinpath("data", "clean", "network_chengjiang_trophicsp.jld2"), "N", N_chengjiang_trophicsp)
+
+
+
