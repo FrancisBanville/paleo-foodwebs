@@ -12,6 +12,8 @@ Pkg.instantiate()
 # Manipulating variables, data frames and files
 import CSV 
 using DataFrames 
+using GroupSlices
+using InvertedIndices
 using JLD2
 
 # Doing statistics and models
@@ -37,6 +39,7 @@ include(joinpath("code", "functions", "relative_degree.jl"))
 
 ## Load scripts
 include(joinpath("code", "01_clean_data.jl"))
-include(joinpath("code", "02_simulate_networks.jl"))
-include(joinpath("code", "03_compute_measures.jl"))
-include(joinpath("code", "04_make_figures.jl"))
+include(joinpath("code", "02_convert_trophic_species.jl"))
+include(joinpath("code", "03_simulate_networks.jl"))
+include(joinpath("code", "04_compute_measures.jl"))
+include(joinpath("code", "05_make_figures.jl"))
