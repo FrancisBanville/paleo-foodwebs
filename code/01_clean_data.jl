@@ -1,18 +1,9 @@
-#### Clean datasets of ecological interactions 
+#### Clean dataset of ecological interactions 
 
-### read raw datasets
-fezouata_df = DataFrame(CSV.File(joinpath("data", "raw", "interactions_Fezouata.csv")))
+### read raw dataset
+anticosti_df = DataFrame(CSV.File(joinpath("data", "raw", "interactions_Anticosti.csv")))
 
-burgess_df = DataFrame(CSV.File(joinpath("data", "raw", "interactions_Burgess_Dunne2008.csv")))
-
-burgess_trophicsp_df = DataFrame(CSV.File(joinpath("data", "raw", "interactions_Burgess_trophicspecies_Dunne2008.csv")))
-
-chengjiang_df = DataFrame(CSV.File(joinpath("data", "raw", "interactions_Chengjiang_Dunne2008.csv")))
-
-chengjiang_trophicsp_df = DataFrame(CSV.File(joinpath("data", "raw", "interactions_Chengjiang_trophicspecies_Dunne2008.csv")))
-
-
-### clean datasets 
+### clean dataset
 
 function clean_data(df::DataFrame)
     
@@ -42,11 +33,7 @@ function clean_data(df::DataFrame)
     return(df)
 end
 
-fezouata_df_clean = clean_data(fezouata_df)
-burgess_df_clean = clean_data(burgess_df)
-burgess_trophicsp_df_clean = clean_data(burgess_trophicsp_df)
-chengjiang_df_clean = clean_data(chengjiang_df)
-chengjiang_trophicsp_df_clean = clean_data(chengjiang_trophicsp_df)
+anticosti_df_clean = clean_data(anticosti_df)
 
 ### convert datasets to networks
 
@@ -82,17 +69,6 @@ end
 
 # create and save networks with species names 
 
-N_fezouata = make_network(fezouata_df_clean)
-N_burgess = make_network(burgess_df_clean)
-N_burgess_trophicsp = make_network(burgess_trophicsp_df_clean)
-N_chengjiang = make_network(chengjiang_df_clean)
-N_chengjiang_trophicsp = make_network(chengjiang_trophicsp_df_clean)
+N_anticosti = make_network(anticosti_df_clean)
 
-save(joinpath("data", "clean", "network_Fezouata.jld2"), "N", N_fezouata)
-save(joinpath("data", "clean", "network_burgess.jld2"), "N", N_burgess)
-save(joinpath("data", "clean", "network_burgess_trophicsp.jld2"), "N", N_burgess_trophicsp)
-save(joinpath("data", "clean", "network_chengjiang.jld2"), "N", N_chengjiang)
-save(joinpath("data", "clean", "network_chengjiang_trophicsp.jld2"), "N", N_chengjiang_trophicsp)
-
-
-
+save(joinpath("data", "clean", "network_anticosti.jld2"), "N", N_anticosti)

@@ -18,7 +18,7 @@ measures[measures.ChNum .== -Inf, :ChNum] .= 0
 
 
 # function for density plots 
-network = "burgess trophicsp"
+
 function plot_density(network::String,
                     measure::String, 
                     xlab::String, 
@@ -156,25 +156,8 @@ function plot_density_all(network::String)
         size=(800*x, 500*x))
 end
 
-plot_density_all("fezouata")
-savefig(joinpath("figures","fezouata_density_measures.png"))
+plot_density_all("anticosti")
+savefig(joinpath("figures","anticosti_density_measures.png"))
 
-plot_density_all("fezouata trophicsp")
-savefig(joinpath("figures","fezouata_trophicsp_density_measures.png"))
-
-
-plot_density_all("burgess")
-savefig(joinpath("figures","burgess_density_measures.png"))
-
-plot_density_all("burgess trophicsp")
-savefig(joinpath("figures","burgess_trophicsp_density_measures.png"))
-
-
-plot_density_all("chengjiang")
-savefig(joinpath("figures","chengjiang_density_measures.png"))
-
-plot_density_all("chengjiang trophicsp")
-savefig(joinpath("figures","chengjiang_trophicsp_density_measures.png"))
-
-
-
+plot_density_all("anticosti trophicsp")
+savefig(joinpath("figures","anticosti_trophicsp_density_measures.png"))

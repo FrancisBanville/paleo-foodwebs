@@ -1,85 +1,37 @@
 ## Compute measures of empirical and predicted networks
 
 # load empirical networks
-N_fezouata = load(joinpath("data", "clean", "network_Fezouata.jld2"))["N"]
-N_fezouata_trophicsp = load(joinpath("data", "clean", "network_Fezouata_trophicsp.jld2"))["N"]
-
-N_burgess = load(joinpath("data", "clean", "network_burgess.jld2"))["N"]
-N_burgess_trophicsp = load(joinpath("data", "clean", "network_burgess_trophicsp.jld2"))["N"]
-
-N_chengjiang = load(joinpath("data", "clean", "network_chengjiang.jld2"))["N"]
-N_chengjiang_trophicsp = load(joinpath("data", "clean", "network_chengjiang_trophicsp.jld2"))["N"]
+N_anticosti = load(joinpath("data", "clean", "network_anticosti.jld2"))["N"]
+N_anticosti_trophicsp = load(joinpath("data", "clean", "network_anticosti_trophicsp.jld2"))["N"]
 
 # load predicted networks 
-Ns_fezouata_sim = load(joinpath("data", "sim", "networks_fezouata_sim.jld2"))["Ns"]
-Ns_fezouata_trophicsp_sim = load(joinpath("data", "sim", "networks_fezouata_trophicsp_sim.jld2"))["Ns"]
-
-Ns_burgess_sim = load(joinpath("data", "sim", "networks_burgess_sim.jld2"))["Ns"]
-Ns_burgess_trophicsp_sim = load(joinpath("data", "sim", "networks_burgess_trophicsp_sim.jld2"))["Ns"]
-
-Ns_chengjiang_sim = load(joinpath("data", "sim", "networks_chengjiang_sim.jld2"))["Ns"]
-Ns_chengjiang_trophicsp_sim = load(joinpath("data", "sim", "networks_chengjiang_trophicsp_sim.jld2"))["Ns"]
+Ns_anticosti_sim = load(joinpath("data", "sim", "networks_anticosti_sim.jld2"))["Ns"]
+Ns_anticosti_trophicsp_sim = load(joinpath("data", "sim", "networks_anticosti_trophicsp_sim.jld2"))["Ns"]
 
 # group networks to facilitate calculations
-Ns = vcat(N_fezouata, 
-        N_fezouata_trophicsp, 
-        N_burgess, 
-        N_burgess_trophicsp,
-        N_chengjiang,
-        N_chengjiang_trophicsp,
-        Ns_fezouata_sim.Ns_niche,
-        Ns_fezouata_sim.Ns_cascade,
-        Ns_fezouata_sim.Ns_nested_hierarchy,
-        Ns_fezouata_trophicsp_sim.Ns_niche,
-        Ns_fezouata_trophicsp_sim.Ns_cascade,
-        Ns_fezouata_trophicsp_sim.Ns_nested_hierarchy,
-        Ns_burgess_sim.Ns_niche,
-        Ns_burgess_sim.Ns_cascade,
-        Ns_burgess_sim.Ns_nested_hierarchy,
-        Ns_burgess_trophicsp_sim.Ns_niche,
-        Ns_burgess_trophicsp_sim.Ns_cascade,
-        Ns_burgess_trophicsp_sim.Ns_nested_hierarchy,
-        Ns_chengjiang_sim.Ns_niche,
-        Ns_chengjiang_sim.Ns_cascade,
-        Ns_chengjiang_sim.Ns_nested_hierarchy,
-        Ns_chengjiang_trophicsp_sim.Ns_niche,
-        Ns_chengjiang_trophicsp_sim.Ns_cascade,
-        Ns_chengjiang_trophicsp_sim.Ns_nested_hierarchy)
+Ns = vcat(N_anticosti, 
+        N_anticosti_trophicsp, 
+        Ns_anticosti_sim.Ns_niche,
+        Ns_anticosti_sim.Ns_cascade,
+        Ns_anticosti_sim.Ns_nested_hierarchy,
+        Ns_anticosti_trophicsp_sim.Ns_niche,
+        Ns_anticosti_trophicsp_sim.Ns_cascade,
+        Ns_anticosti_trophicsp_sim.Ns_nested_hierarchy)
 
 # simplify networks by removing isolated species
 Ns = simplify.(Ns)
 
 # make dataframe for all networks and measures
 
-n = length(Ns_fezouata_sim.Ns_niche)
+n = length(Ns_anticosti_sim.Ns_niche)
 
-networks = vcat("fezouata",
-                "fezouata trophicsp",
-                "burgess",
-                "burgess trophicsp",
-                "chengjiang",
-                "chengjiang trophicsp",
-                fill("fezouata", 3 * n), 
-                fill("fezouata trophicsp", 3 * n), 
-                fill("burgess", 3 * n),
-                fill("burgess trophicsp", 3 * n),
-                fill("chengjiang", 3 * n), 
-                fill("chengjiang trophicsp", 3 * n))
+networks = vcat("anticosti",
+                "anticosti trophicsp",
+                fill("anticosti", 3 * n), 
+                fill("anticosti trophicsp", 3 * n))
 
 
-types = vcat(fill("empirical", 6), 
-                fill("niche model", n), 
-                fill("cascade model", n), 
-                fill("nested hierarchy model", n), 
-                fill("niche model", n), 
-                fill("cascade model", n), 
-                fill("nested hierarchy model", n), 
-                fill("niche model", n), 
-                fill("cascade model", n), 
-                fill("nested hierarchy model", n), 
-                fill("niche model", n), 
-                fill("cascade model", n), 
-                fill("nested hierarchy model", n),
+types = vcat(fill("empirical", 2), 
                 fill("niche model", n), 
                 fill("cascade model", n), 
                 fill("nested hierarchy model", n),
