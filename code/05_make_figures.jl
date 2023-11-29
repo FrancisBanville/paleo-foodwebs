@@ -167,21 +167,21 @@ end
 plot_density_all("fezouata")
 savefig(joinpath("figures", "eco_models", "fezouata_density_measures.png"))
 
-plot_density_all("fezouata trophicsp")
+plot_density_all("fezouata trophic species")
 savefig(joinpath("figures", "eco_models", "fezouata_trophicsp_density_measures.png"))
 
 
 plot_density_all("burgess")
 savefig(joinpath("figures", "eco_models", "burgess_density_measures.png"))
 
-plot_density_all("burgess trophicsp")
+plot_density_all("burgess trophic species")
 savefig(joinpath("figures", "eco_models", "burgess_trophicsp_density_measures.png"))
 
 
 plot_density_all("chengjiang")
 savefig(joinpath("figures", "eco_models", "chengjiang_density_measures.png"))
 
-plot_density_all("chengjiang trophicsp")
+plot_density_all("chengjiang trophic species")
 savefig(joinpath("figures", "eco_models", "chengjiang_trophicsp_density_measures.png"))
 
 
@@ -215,6 +215,11 @@ end
 measures_errors[isnan.(measures_errors.Can),:Can] .= Inf
 measures_errors[isnan.(measures_errors.Loop),:Loop] .= Inf
 
+# colors 
+pal = [RGB(230/255,159/255,0/255),
+    RGB(86/255,190/255,233/255),
+    RGB(204/255,121/255,167/255)]
+
 # function for a single measure and a set of networks 
 function plot_density_errors(networks::Vector,
                                 measure::String)
@@ -243,6 +248,7 @@ function plot_density_errors(networks::Vector,
         if !isinf(measures_errors[measures_errors.network .== networks[N], measure][1])
         
             density!(measures_errors[measures_errors.network .== networks[N], measure], 
+            color=pal[N],
             label="",
             fill=(0, .5),
             linewidth=2)
@@ -288,11 +294,7 @@ function plot_density_errors_all(networks::Vector)
     plot17 = plot_density_errors(networks, "Clust")
 
     # legend plot
-    plot_legend = density(measures_errors[:, "Top"], 
-        label=networks[1],
-        legend=:top,
-        fill=(0, .5),
-        linewidth=2, 
+    plot_legend = density(
         xlims=(1000, 1001),
         ylims=(1000, 1001),
         grid=false,
@@ -308,8 +310,9 @@ function plot_density_errors_all(networks::Vector)
         legendfontpointsize=8,
         legendfontfamily="Times")
 
-    for N in 2:length(networks)
-        density!(measures_errors[:, "Top"], 
+    for N in 1:length(networks)
+        density!(measures_errors[:, "Top"],
+            color=pal[N],
             label=networks[N],
             fill=(0, .5),
             linewidth=2)
@@ -338,7 +341,7 @@ plot_density_errors_all(sp_networks)
 savefig(joinpath("figures", "niche_errors", "species_networks_errors.png"))
 
 # density plots of model errors for trophic species networks
-trophicsp_networks = ["fezouata trophicsp", "burgess trophicsp", "chengjiang trophicsp"]
+trophicsp_networks = ["fezouata trophic species", "burgess trophic species", "chengjiang trophic species"]
 
 plot_density_errors_all(trophicsp_networks)
 savefig(joinpath("figures", "niche_errors", "trophic_species_networks_errors.png"))

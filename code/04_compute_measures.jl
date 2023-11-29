@@ -54,17 +54,17 @@ Ns = simplify.(Ns)
 n = length(Ns_fezouata_sim.Ns_niche)
 
 networks = vcat("fezouata",
-                "fezouata trophicsp",
+                "fezouata trophic species",
                 "burgess",
-                "burgess trophicsp",
+                "burgess trophic species",
                 "chengjiang",
-                "chengjiang trophicsp",
+                "chengjiang trophic species",
                 fill("fezouata", 3 * n), 
-                fill("fezouata trophicsp", 3 * n), 
+                fill("fezouata trophic species", 3 * n), 
                 fill("burgess", 3 * n),
-                fill("burgess trophicsp", 3 * n),
+                fill("burgess trophic species", 3 * n),
                 fill("chengjiang", 3 * n), 
-                fill("chengjiang trophicsp", 3 * n))
+                fill("chengjiang trophic species", 3 * n))
 
 
 types = vcat(fill("empirical", 6), 
