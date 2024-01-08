@@ -75,8 +75,8 @@ for(i in 1:length(unique(means$Metric))){
 dunne.plt <- wrap_plots(plotlist[1:18])+
   plot_layout(ncol = 6, guides = "collect")
 
-ggsave(filename = "dunne_repro.png", plot = dunne.plt, width = 15, 
-       height = 8, units = "in", dpi = 600)
+# ggsave(filename = "dunne_repro.png", plot = dunne.plt, width = 15, 
+#        height = 8, units = "in", dpi = 600)
 
 # Clean full network result ----------------
 real.data$site = c("Fezouata", "Burgess", "Chengjiang")
@@ -157,6 +157,10 @@ ChLen.figs <- figs(frames = list(uncertain = uncertain,
 ChSD.figs <- figs(frames = list(uncertain = uncertain, random = random),
                   metric = "ChSD", site = unique(uncertain$assemblage))
 
+ChNum.figs <- figs(frames = list(uncertain = uncertain, 
+                                 random = random),
+                  metric = "ChNum", site = unique(uncertain$assemblage))
+
 TL.figs <- figs(frames = list(uncertain = uncertain, random = random), 
                 metric = "TL", site = unique(uncertain$assemblage))
 
@@ -201,7 +205,39 @@ fig.grid <- function(figlist){
   return(big_ass_plot)
 }
 
-fig.grid(Top.figs)
 fig.grid(Bas.figs)
+# ggsave(filename = "bas_dists.png", width = 8, height = 6,
+#        units = "in")
+
+fig.grid(ChLen.figs)
+# ggsave(filename = "ChLen_dists.png", width = 8, height = 6,
+#        units = "in")
+
+fig.grid(ChNum.figs)
+# ggsave(filename = "ChNum_dists.png", width = 8, height = 6,
+#        units = "in")
+
+fig.grid(GenSD.figs)
+# ggsave(filename = "GenSD_dists.png", width = 8, height = 6,
+#        units = "in")
+
+fig.grid(Herb.figs)
+# ggsave(filename = "Herb_dists.png", width = 8, height = 6,
+#        units = "in")
+
 fig.grid(Int.figs)
+# ggsave(filename = "Int_dists.png", width = 8, height = 6,
+#        units = "in")
+
+fig.grid(Omn.figs)
+# ggsave(filename = "Omn_dists.png", width = 8, height = 6,
+#        units = "in")
+
+fig.grid(TL.figs)
+# ggsave(filename = "TL_dists.png", width = 8, height = 6,
+#        units = "in")
+
+fig.grid(Top.figs)
+# ggsave(filename = "Top_dists.png", width = 8, height = 6,
+#        units = "in")
 
