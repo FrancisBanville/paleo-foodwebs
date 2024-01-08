@@ -51,7 +51,8 @@ random.means <- random %>%
   mutate(type = "random") %>%
   mutate(perc = as.numeric(perc))
 
-means <- rbind(uncertain.means, random.means)
+means <- rbind(uncertain.means, random.means) %>%
+  filter(!Metric %in% c("Can", "Loop"))
 
 plotlist <- list()
 for(i in 1:length(unique(means$Metric))){
@@ -72,17 +73,18 @@ for(i in 1:length(unique(means$Metric))){
     theme(panel.grid = element_blank(), axis.title.x = element_blank())
 }
 
-dunne.plt <- wrap_plots(plotlist[1:18])+
-  plot_layout(ncol = 6, guides = "collect")
+dunne.plt <- wrap_plots(plotlist[1:16])+
+  plot_layout(ncol = 4, guides = "collect")
 
-# ggsave(filename = "dunne_repro.png", plot = dunne.plt, width = 15, 
+# ggsave(filename = "dunne_repro.png", plot = dunne.plt, width = 10,
 #        height = 8, units = "in", dpi = 600)
 
 # Clean full network result ----------------
 real.data$site = c("Fezouata", "Burgess", "Chengjiang")
 
 real_data <- real.data %>%
-  pivot_longer(cols = -c("site"), names_to = "metric")
+  pivot_longer(cols = -c("site"), names_to = "metric") %>%
+  filter(!metric %in% c("Can", "Loop"))
 
 # Make figures --------------------------
 # Issue in this function:
@@ -126,8 +128,6 @@ figs <- function(frames, metric, site){
   return(plotlist)
 }
 
-unique(uncertain$Metric)
-
 Top.figs <- figs(frames = list(uncertain = uncertain, random = random), 
                  metric = "Top", site = unique(uncertain$assemblage))
 
@@ -137,17 +137,11 @@ Bas.figs <- figs(frames = list(uncertain = uncertain, random = random),
 Int.figs <- figs(frames = list(uncertain = uncertain, random = random), 
                  metric = "Int", site = unique(uncertain$assemblage))
 
-Can.figs <- figs(frames = list(uncertain = uncertain, random = random), 
-                 metric = "Can", site = unique(uncertain$assemblage))
-
 Herb.figs <- figs(frames = list(uncertain = uncertain, random = random),
                   metric = "Herb", site = unique(uncertain$assemblage))
 
 Omn.figs <- figs(frames = list(uncertain = uncertain, random = random), 
                  metric = "Omn", site = unique(uncertain$assemblage))
-
-Loop.figs <- figs(frames = list(uncertain = uncertain, random = random),
-                  metric = "Loop", site = unique(uncertain$assemblage))
 
 ChLen.figs <- figs(frames = list(uncertain = uncertain, 
                                  random = random), 
