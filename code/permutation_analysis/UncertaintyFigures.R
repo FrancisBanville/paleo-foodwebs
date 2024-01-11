@@ -89,7 +89,6 @@ real_data <- real.data %>%
   filter(!metric %in% c("Can", "Loop"))
 
 # Make figures --------------------------
-# Issue in this function:
 figs <- function(frames, metric, site){
   framelist <- list()
   
@@ -323,7 +322,117 @@ omn.dunne <- replicate_dunne(datas = list(uncertain.roles,
 #        height = 8, units = "in", dpi = 600)
 
 # Distributions: basal ------------------
+# Filter basal removals
+uncertain.basal <- uncertain.roles %>%
+  filter(roles == "Basal")
+
+random.basal <- random.roles %>%
+  filter(roles == "Basal")
+
+# Make figures and save
+Bas.figs.roles <- figs(frames = list(uncertain = uncertain.basal, 
+                               random = random.basal), 
+                 metric = "Bas", site = unique(uncertain$assemblage))
+
+fig.grid(Bas.figs.roles)
+# ggsave(filename = "bas_dists_basroles.png", width = 8, height = 6,
+#        units = "in", dpi = 600)
+
+Herb.figs.roles <- figs(frames = list(uncertain = uncertain.basal, 
+                                     random = random.basal), 
+                       metric = "Herb", 
+                       site = unique(uncertain$assemblage))
+
+fig.grid(Herb.figs.roles)
+# ggsave(filename = "herb_dists_basroles.png", width = 8, height = 6,
+#        units = "in", dpi = 600)
+
+ChNum.figs.roles <- figs(frames = list(uncertain = uncertain.basal, 
+                                     random = random.basal), 
+                       metric = "ChNum", 
+                       site = unique(uncertain$assemblage))
+
+fig.grid(ChNum.figs.roles)
+# ggsave(filename = "ChNum_dists_basroles.png", width = 8, height = 6,
+#        units = "in", dpi = 600)
+
+Omn.figs.roles <- figs(frames = list(uncertain = uncertain.basal, 
+                                       random = random.basal), 
+                         metric = "Omn", 
+                         site = unique(uncertain$assemblage))
+
+fig.grid(Omn.figs.roles)
+# ggsave(filename = "Omn_dists_basroles.png", width = 8, height = 6,
+#        units = "in", dpi = 600)
 
 # Distributions: Herbivores ----------------------
+# Filter herbivore removals
+uncertain.herb <- uncertain.roles %>%
+  filter(roles == "Herb")
+
+random.herb <- random.roles %>%
+  filter(roles == "Herb")
+
+# Create & save figs
+bas.figs.roles <- figs(frames = list(uncertain = uncertain.herb, 
+                                     random = random.herb), 
+                       metric = "Bas", 
+                       site = unique(uncertain$assemblage))
+
+fig.grid(bas.figs.roles)
+# ggsave(filename = "bas_dists_herbroles.png", width = 8, height = 6,
+#        units = "in", dpi = 600)
+
+herb.figs.roles <- figs(frames = list(uncertain = uncertain.herb, 
+                                     random = random.herb), 
+                       metric = "Herb", 
+                       site = unique(uncertain$assemblage))
+
+fig.grid(herb.figs.roles)
+# ggsave(filename = "herb_dists_herbroles.png", width = 8, height = 6,
+#        units = "in", dpi = 600)
+
+ChNum.figs.roles <- figs(frames = list(uncertain = uncertain.herb, 
+                                     random = random.herb), 
+                       metric = "ChNum", 
+                       site = unique(uncertain$assemblage))
+
+fig.grid(ChNum.figs.roles)
+# ggsave(filename = "ChNum_dists_herbroles.png", width = 8, 
+#        height = 6, units = "in", dpi = 600)
+
+Int.figs.roles <- figs(frames = list(uncertain = uncertain.herb, 
+                                     random = random.herb), 
+                       metric = "Int", 
+                       site = unique(uncertain$assemblage))
+
+fig.grid(Int.figs.roles)
+# ggsave(filename = "int_dists_herbroles.png", width = 8, height = 6,
+#        units = "in", dpi = 600)
 
 # Distributions: Omnivores -----------------------
+# Filter omnivore removals
+uncertain.omn <- uncertain.roles %>%
+  filter(roles == "Omn")
+
+random.omn <- random.roles %>%
+  filter(roles == "Omn")
+
+# Create & save plots
+herb.figs.roles <- figs(frames = list(uncertain = uncertain.omn, 
+                                      random = random.omn), 
+                        metric = "Herb", 
+                        site = unique(uncertain$assemblage))
+
+fig.grid(herb.figs.roles)
+# ggsave(filename = "herb_dists_omnroles.png", width = 8, height = 6,
+#        units = "in", dpi = 600)
+
+omn.figs.roles <- figs(frames = list(uncertain = uncertain.omn, 
+                                      random = random.omn), 
+                        metric = "Omn", 
+                        site = unique(uncertain$assemblage))
+
+fig.grid(omn.figs.roles)
+# ggsave(filename = "omn_dists_omnroles.png", width = 8, height = 6,
+#        units = "in", dpi = 600)
