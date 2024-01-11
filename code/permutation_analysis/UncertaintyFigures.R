@@ -18,6 +18,8 @@ setwd("c:/users/beasl/documents/paleo-foodwebs/code/permutation_analysis")
 uncertain.data <- read.csv("uncertain.csv")
 random.data <- read.csv("random.csv")
 real.data <- read.csv("real.csv")
+unc.roles.raw <- read.csv("uncertain_roles.csv")
+rand.roles.raw <- read.csv("random_roles.csv")
 
 # Function to manipulate data frames ----------------
 cleanup <- function(frame){
@@ -235,3 +237,93 @@ fig.grid(Top.figs)
 # ggsave(filename = "Top_dists.png", width = 8, height = 6,
 #        units = "in")
 
+# Manipulate trophic data frames ----------------
+cleanup_roles <- function(frame){
+  frame$rep <- rep(1:100, 27)
+  
+  assemblage <- c("Fezouata", "Burgess", "Chengjiang")
+  roles <- c("Basal", "Herb", "Omn")
+  perc <- c("0.1", "0.2", "0.5")
+  
+  frame$assemblage <- rep(assemblage, each = 900)
+  frame$perc <- rep(perc, each = 300, length_out = 2700)
+  frame$roles <- rep(roles, each = 100, length_out = 2700)
+  
+  frame <- pivot_longer(frame, cols = -c("rep", "assemblage", "perc",
+                                         "roles"),
+                        names_to = "Metric")
+  
+  return(frame)
+}
+
+uncertain.roles <- cleanup_roles(frame = unc.roles.raw)
+random.roles <- cleanup_roles(frame = rand.roles.raw)
+
+# Dunne fig trophic roles --------------
+replicate_dunne <- function(datas, role){
+  uncertain.means <- datas[[1]] %>%
+    filter(roles == role) %>% 
+    group_by(assemblage, perc, Metric) %>%
+    summarise(avg = mean(value)) %>%
+    mutate(type = "uncertain") %>%
+    mutate(perc = as.numeric(perc))
+  
+  random.means <- datas[[2]] %>%
+    filter(roles == role) %>%
+    group_by(assemblage, perc, Metric) %>%
+    summarise(avg = mean(value)) %>%
+    mutate(type = "random") %>%
+    mutate(perc = as.numeric(perc))
+  
+  means <- rbind(uncertain.means, random.means) %>%
+    filter(!Metric %in% c("Can", "Loop"))
+  
+  plotlist <- list()
+  for(i in 1:length(unique(means$Metric))){
+    means.sub <- filter(means, Metric == unique(means$Metric)[i])
+    
+    plotlist[[i]] <- ggplot(data = means.sub, 
+                            aes(x = perc, y = avg, fill = type,
+                                shape = assemblage, color = type))+
+      geom_point(size = 3, color = "black")+
+      geom_point(aes(color = type),size = 2)+
+      geom_line(color = "black")+
+      scale_shape_manual(values = 21:23, name = "Assemblage")+
+      scale_fill_manual(values = c("black", "white"), name = "Type")+
+      scale_color_manual(values = c("black", "white"), name = "Type")+
+      labs(x = "Proportion Linkages Removed", 
+           y = unique(means$Metric)[i])+
+      theme_bw()+
+      theme(panel.grid = element_blank(), 
+            axis.title.x = element_blank())
+  }
+  
+  dunne.plt <- wrap_plots(plotlist[1:16])+
+    plot_layout(ncol = 4, guides = "collect")
+  
+  return(dunne.plt)
+}
+
+basal.dunne <- replicate_dunne(datas = list(uncertain.roles, 
+                                            random.roles),
+                role = "Basal")
+# ggsave(filename = "dunne_basal.jpeg", plot = basal.dunne, width = 10,
+#        height = 8, units = "in", dpi = 600)
+
+herb.dunne <- replicate_dunne(datas = list(uncertain.roles, 
+                                            random.roles),
+                               role = "Herb")
+# ggsave(filename = "dunne_herb.jpeg", plot = herb.dunne, width = 10,
+#        height = 8, units = "in", dpi = 600)
+
+omn.dunne <- replicate_dunne(datas = list(uncertain.roles, 
+                                           random.roles),
+                              role = "Omn")
+# ggsave(filename = "dunne_omn.jpeg", plot = omn.dunne, width = 10,
+#        height = 8, units = "in", dpi = 600)
+
+# Distributions: basal ------------------
+
+# Distributions: Herbivores ----------------------
+
+# Distributions: Omnivores -----------------------
