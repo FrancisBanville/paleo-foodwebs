@@ -75,8 +75,8 @@ for(i in 1:length(unique(means$Metric))){
     theme(panel.grid = element_blank(), axis.title.x = element_blank())
 }
 
-dunne.plt <- wrap_plots(plotlist[1:16])+
-  plot_layout(ncol = 4, guides = "collect")
+dunne.plt <- wrap_plots(plotlist[1:17])+
+  plot_layout(ncol = 5, guides = "collect")
 
 # ggsave(filename = "dunne_repro.png", plot = dunne.plt, width = 10,
 #        height = 8, units = "in", dpi = 600)
@@ -182,6 +182,9 @@ LinkSD.figs <- figs(frames = list(uncertain = uncertain,
 Path.figs <- figs(frames = list(uncertain = uncertain, random = random),
                   metric = "Path", site = unique(uncertain$assemblage))
 
+Clust.figs <- figs(frames = list(uncertain = uncertain, random = random),
+                  metric = "Clust", site = unique(uncertain$assemblage))
+
 # Make 'em pretty ---------------
 fig.grid <- function(figlist){
   row_label_1 <- wrap_elements(panel = textGrob('Fezouata', rot=90))
@@ -234,6 +237,10 @@ fig.grid(TL.figs)
 
 fig.grid(Top.figs)
 # ggsave(filename = "Top_dists.png", width = 8, height = 6,
+#        units = "in")
+
+fig.grid(Clust.figs)
+# ggsave(filename = "Clust_dists.png", width = 8, height = 6,
 #        units = "in")
 
 # Manipulate trophic data frames ----------------
