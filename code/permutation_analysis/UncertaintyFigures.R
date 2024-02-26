@@ -13,8 +13,10 @@ library(patchwork)
 library(grid)
 
 # Load data -----------------------------
+# Change working directory as needed
 setwd("c:/users/beasl/documents/paleo-foodwebs/code/permutation_analysis")
 
+# Read in data as needed
 uncertain.data <- read.csv("uncertain.csv")
 random.data <- read.csv("random.csv")
 real.data <- read.csv("real.csv")
@@ -22,11 +24,12 @@ unc.roles.raw <- read.csv("uncertain_roles.csv")
 rand.roles.raw <- read.csv("random_roles.csv")
 
 # Function to manipulate data frames ----------------
-cleanup <- function(frame){
+# Write it:
+assemblage <- c("Fezouata", "Burgess", "Chengjiang")
+perc <- c("0.1", "0.2", "0.5")
+
+cleanup <- function(frame, assemblages, percentages){
   frame$rep <- rep(1:100, 9)
-  
-  assemblage <- c("Fezouata", "Burgess", "Chengjiang")
-  perc <- c("0.1", "0.2", "0.5")
   
   frame$assemblage <- rep(assemblage, each = 300)
   frame$perc <- rep(perc, each = 100, length_out = 900)
@@ -37,8 +40,11 @@ cleanup <- function(frame){
   return(frame)
 }
 
-uncertain <- cleanup(frame = uncertain.data)
-random <- cleanup(frame = random.data)
+# Run it:
+uncertain <- cleanup(frame = uncertain.data, assemblages=assemblage,
+                     percentages = perc)
+random <- cleanup(frame = random.data, assemblages = assemblage,
+                  percentages = perc)
 
 # Replicate Dunne figs -----------------------
 uncertain.means <- uncertain %>%
