@@ -345,3 +345,53 @@ trophicsp_networks = ["fezouata trophic species", "burgess trophic species", "ch
 
 plot_density_errors_all(trophicsp_networks)
 savefig(joinpath("figures", "niche_errors", "trophic_species_networks_errors.png"))
+
+
+
+## calculate model errors like Dunne et al. (2008)
+
+# create dataset for model errors
+measures_errors_Dunne = measures[1:length(unique(measures.network)), Not(:type)]
+measures_errors_Dunne[:,2:end] .= 0.0
+
+# calculate model errors for all networks and measures 
+for (i, N) in enumerate(unique(measures.network))
+    
+    for m in 3:(size(measures,2))
+    
+        # get empirical measure of network N and measure m
+        measure_emp = measures[measures.network .== N .&& measures.type .== "empirical", m][1]
+
+        # get niche model predictions for network N and measure m
+        measures_niche = measures[measures.network .== N .&& measures.type .== "niche model", m]
+
+        # calculate the median prediction value 
+        measure_niche_median = median(measures_niche)
+        
+        # calculate the upper and lower bounds of the 95% quantile interval
+        measure_niche_upper = quantile(measures_niche, 0.975)
+        measure_niche_lower = quantile(measures_niche, 0.025)
+        
+        # calculate model error for network N and measure m
+        if measure_emp > measure_niche_median
+            measure_error = (measure_niche_median - measure_emp) / (measure_niche_median - measure_niche_upper)
+        else 
+            measure_error = (measure_niche_median - measure_emp) / (measure_niche_median - measure_niche_lower)
+        end
+        # add measure to dataframe
+        measures_errors_Dunne[i, m-1] = measure_error
+    end
+end
+
+# export to csv file 
+CSV.write(joinpath("results", "measures_errors_Dunne.csv"), measures_errors_Dunne)
+
+# format as Markdown table
+using Latexify
+table = latexify(measures_errors_Dunne, env=:mdtable, fmt="%.3f", latex=false, escape_underscores=true)
+
+# export to Markdown file
+table_path = joinpath("results", "measures_errors_Dunne.md")
+open(table_path, "w") do io
+    print(io, table)
+end
