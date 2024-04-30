@@ -192,6 +192,7 @@ insertcols!(measures, :ChNum => ChNum)
 
 
 
+
 # calculate the mean trophic level of all species 
 @info "Calculating measure 11/17 (TL)"
 
@@ -265,6 +266,94 @@ Clust = clustering_coefficient.(Ns)
 insertcols!(measures, :Clust => Clust)
 
 
+# remove NaNs and missing values
+measures[isnan.(measures.ChLen),:ChLen] .= 0
+measures[isnan.(measures.ChSD),:ChSD] .= 0
+
+# remove infinite values that were obtained after taking the log of 0 
+measures[measures.ChNum .== -Inf, :ChNum] .= 0
 
 # export table
 CSV.write(joinpath("results", "measures.csv"), measures)
+
+
+
+## Calculate model error 
+
+# create empty dataset for predictive errors
+measures_errors = DataFrame()
+    
+# calculate predictive errors of niche model for all networks and measures 
+for N in unique(measures.network) 
+    
+    # get empirical measures of network N
+    measures_emp = measures[measures.network .== N .&& measures.type .== "empirical", 3:end]
+
+    # get niche model predictions for network N
+    measures_niche = measures[measures.network .== N .&& measures.type .== "niche model", 3:end]
+
+    # calculate predictive errors for network N
+    measures_errors_N = (measures_niche .- measures_emp) ./ measures_emp
+    
+    # add network name column 
+    measures_errors_N.network = fill(N, size(measures_errors_N, 1))
+
+    # add to general dataframe
+    measures_errors = [measures_errors; measures_errors_N]
+end
+
+# remove NaNs and missing values
+measures_errors[isnan.(measures_errors.Can),:Can] .= Inf
+measures_errors[isnan.(measures_errors.Loop),:Loop] .= Inf
+
+# export table
+CSV.write(joinpath("results", "measures_errors.csv"), measures_errors)
+
+
+## calculate model errors like Dunne et al. (2008)
+
+# create dataset for model errors
+measures_errors_Dunne = measures[1:length(unique(measures.network)), Not(:type)]
+measures_errors_Dunne[:,2:end] .= 0.0
+
+# calculate model errors for all networks and measures 
+for (i, N) in enumerate(unique(measures.network))
+    
+        for m in 3:(size(measures,2))
+        
+            # get empirical measure of network N and measure m
+            measure_emp = measures[measures.network .== N .&& measures.type .== "empirical", m][1]
+    
+            # get niche model predictions for network N and measure m
+            measures_niche = measures[measures.network .== N .&& measures.type .== "niche model", m]
+    
+            # calculate the median prediction value 
+            measure_niche_median = median(measures_niche)
+            
+            # calculate the upper and lower bounds of the 95% quantile interval
+            measure_niche_upper = quantile(measures_niche, 0.975)
+            measure_niche_lower = quantile(measures_niche, 0.025)
+            
+            # calculate model error for network N and measure m
+            if measure_emp > measure_niche_median
+                measure_error = (measure_niche_median - measure_emp) / (measure_niche_median - measure_niche_upper)
+            else 
+                measure_error = (measure_niche_median - measure_emp) / (measure_niche_median - measure_niche_lower)
+            end
+            # add measure to dataframe
+            measures_errors_Dunne[i, m-1] = measure_error
+        end
+    end
+    
+# export to csv file 
+CSV.write(joinpath("results", "measures_errors_Dunne.csv"), measures_errors_Dunne)
+    
+# format as Markdown table
+using Latexify
+table = latexify(measures_errors_Dunne, env=:mdtable, fmt="%.3f", latex=false, escape_underscores=true)
+    
+# export to Markdown file
+table_path = joinpath("results", "measures_errors_Dunne.md")
+open(table_path, "w") do io
+        print(io, table)
+end
