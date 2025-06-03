@@ -84,8 +84,8 @@ for(i in 1:length(unique(means$Metric))){
 dunne.plt <- wrap_plots(plotlist[1:17])+
   plot_layout(ncol = 5, guides = "collect")
 
-# ggsave(filename = "dunne_repro.png", plot = dunne.plt, width = 10,
-#        height = 8, units = "in", dpi = 600)
+# ggsave(filename = "dunne_repro.png", plot = dunne.plt, 
+#        width = 10, height = 8, units = "in", dpi = 600)
 
 # Clean full network result ----------------
 real.data$site = c("Fezouata", "Burgess", "Chengjiang")
