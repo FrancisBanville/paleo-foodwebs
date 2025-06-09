@@ -345,7 +345,7 @@ random.basal <- random.roles %>%
 # Make figures and save
 Bas.figs.roles <- figs(frames = list(uncertain = uncertain.basal, 
                                random = random.basal), 
-                 metric = "Bas", site = unique(uncertain$assemblage))
+                 metric = "Bas", site = unique(uncertain.basal$assemblage))
 
 fig.grid(Bas.figs.roles)
 # ggsave(filename = "bas_dists_basroles.png", width = 8, height = 6,
@@ -354,7 +354,7 @@ fig.grid(Bas.figs.roles)
 Herb.figs.roles <- figs(frames = list(uncertain = uncertain.basal, 
                                      random = random.basal), 
                        metric = "Herb", 
-                       site = unique(uncertain$assemblage))
+                       site = unique(uncertain.basal$assemblage))
 
 fig.grid(Herb.figs.roles)
 # ggsave(filename = "herb_dists_basroles.png", width = 8, height = 6,
@@ -363,7 +363,7 @@ fig.grid(Herb.figs.roles)
 ChNum.figs.roles <- figs(frames = list(uncertain = uncertain.basal, 
                                      random = random.basal), 
                        metric = "ChNum", 
-                       site = unique(uncertain$assemblage))
+                       site = unique(uncertain.basal$assemblage))
 
 fig.grid(ChNum.figs.roles)
 # ggsave(filename = "ChNum_dists_basroles.png", width = 8, height = 6,
@@ -372,7 +372,7 @@ fig.grid(ChNum.figs.roles)
 Omn.figs.roles <- figs(frames = list(uncertain = uncertain.basal, 
                                        random = random.basal), 
                          metric = "Omn", 
-                         site = unique(uncertain$assemblage))
+                         site = unique(uncertain.basal$assemblage))
 
 fig.grid(Omn.figs.roles)
 # ggsave(filename = "Omn_dists_basroles.png", width = 8, height = 6,
@@ -390,7 +390,7 @@ random.herb <- random.roles %>%
 bas.figs.roles <- figs(frames = list(uncertain = uncertain.herb, 
                                      random = random.herb), 
                        metric = "Bas", 
-                       site = unique(uncertain$assemblage))
+                       site = unique(uncertain.herb$assemblage))
 
 fig.grid(bas.figs.roles)
 # ggsave(filename = "bas_dists_herbroles.png", width = 8, height = 6,
@@ -399,7 +399,7 @@ fig.grid(bas.figs.roles)
 herb.figs.roles <- figs(frames = list(uncertain = uncertain.herb, 
                                      random = random.herb), 
                        metric = "Herb", 
-                       site = unique(uncertain$assemblage))
+                       site = unique(uncertain.herb$assemblage))
 
 fig.grid(herb.figs.roles)
 # ggsave(filename = "herb_dists_herbroles.png", width = 8, height = 6,
@@ -408,16 +408,16 @@ fig.grid(herb.figs.roles)
 ChNum.figs.roles <- figs(frames = list(uncertain = uncertain.herb, 
                                      random = random.herb), 
                        metric = "ChNum", 
-                       site = unique(uncertain$assemblage))
+                       site = unique(uncertain.herb$assemblage))
 
 fig.grid(ChNum.figs.roles)
-# ggsave(filename = "ChNum_dists_herbroles.png", width = 8, 
+# ggsave(filename = "ChNum_dists_herbroles.png", width = 8,
 #        height = 6, units = "in", dpi = 600)
 
 Int.figs.roles <- figs(frames = list(uncertain = uncertain.herb, 
                                      random = random.herb), 
                        metric = "Int", 
-                       site = unique(uncertain$assemblage))
+                       site = unique(uncertain.herb$assemblage))
 
 fig.grid(Int.figs.roles)
 # ggsave(filename = "int_dists_herbroles.png", width = 8, height = 6,
@@ -435,7 +435,7 @@ random.omn <- random.roles %>%
 herb.figs.roles <- figs(frames = list(uncertain = uncertain.omn, 
                                       random = random.omn), 
                         metric = "Herb", 
-                        site = unique(uncertain$assemblage))
+                        site = unique(uncertain.omn$assemblage))
 
 fig.grid(herb.figs.roles)
 # ggsave(filename = "herb_dists_omnroles.png", width = 8, height = 6,
@@ -444,7 +444,7 @@ fig.grid(herb.figs.roles)
 omn.figs.roles <- figs(frames = list(uncertain = uncertain.omn, 
                                       random = random.omn), 
                         metric = "Omn", 
-                        site = unique(uncertain$assemblage))
+                        site = unique(uncertain.omn$assemblage))
 
 fig.grid(omn.figs.roles)
 # ggsave(filename = "omn_dists_omnroles.png", width = 8, height = 6,
