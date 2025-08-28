@@ -4,10 +4,21 @@
 theme(:mute)
 default(; frame=:box)
 Plots.scalefontsizes(1.3)
-fonts=font("Times",8)
+fonts=font("Computer Modern",16)
+
+dataset_colors = Dict(
+    "Ordovician" => :RED,
+    "Silurian" => :GREEN,
+)
 
 # read dataset of network measures
-measures = DataFrame(CSV.File(joinpath("results", "measures.csv")))
+measuresORD = DataFrame(CSV.File(joinpath("results", "measures_ORD.csv")))
+measuresSIL = DataFrame(CSV.File(joinpath("results", "measures_SIL.csv")))
+
+measuresORD[!, :dataset] .= "Ordovician"
+measuresSIL[!, :dataset] .= "Silurian"
+
+measures = vcat(measuresORD, measuresSIL) 
 
 # remove NaNs and missing values
 measures[isnan.(measures.ChLen),:ChLen] .= 0
@@ -16,6 +27,9 @@ measures[isnan.(measures.ChSD),:ChSD] .= 0
 # remove infinite values that were obtained after taking the log of 0 
 measures[measures.ChNum .== -Inf, :ChNum] .= 0
 
+#remove bug value
+measures[measures.TL .< 0, :TL] .= 0
+measures[measures.TL .> 50, :TL] .= 0
 
 # function for density plots 
 
@@ -24,59 +38,59 @@ function plot_density(network::String,
                     xlab::String, 
                     xlim::Tuple)
     
-    # subset dataset according to the type of network (empirical and predicted using the three models)
+    # subset dataset according to the type of network 
     measures_network = filter(x -> x.network == network, measures)
     
     measures_empirical = filter(x -> x.type == "empirical", measures_network)
     measures_niche = filter(x -> x.type == "niche model", measures_network)
-    measures_cascade = filter(x -> x.type == "cascade model", measures_network)
-    measures_nested_hierarchy = filter(x -> x.type == "nested hierarchy model", measures_network)
     
     # density plot of niche model measures
-    density(measures_niche[:, measure], 
-                label="",
-                fill=(0, .5),
-                linewidth=2, 
-                framestyle=:box, 
-                grid=false,
-                minorgrid=false,
-                dpi=1000, 
-                size=(800,500), 
-                margin=5Plots.mm, 
-                guidefont=fonts, 
-                xtickfont=fonts, 
-                ytickfont=fonts,
-                foreground_color_legend=nothing, 
-                background_color_legend=:white, 
-                legendfont=fonts,
-                legendfontpointsize=8,
-                legendfontfamily="Times")
-
-    # density plot of cascade model measures
-    density!(measures_cascade[:, measure], 
-            label="",
-            fill=(0, .5),
-            linewidth=2)
-
-    # density plot of nested hierarchy model measures
-    density!(measures_nested_hierarchy[:, measure], 
-            label="",
-            fill=(0, .5),
-            linewidth=2)
-
-    # vertical line for empirical measure
-    plot!(measures_empirical[:, measure], 
-        seriestype = :vline, 
-        label="",
+     plt = plot(; 
         linewidth=2,
-        linestyle=:dash,
-        color=:red)
-    
-    # x and y labs
-    xaxis!(xlabel=xlab, 
-        xlims=xlim)
-    yaxis!(ylabel="Density", 
-        ylims=(0, Inf))
+        framestyle=:box,
+        grid=false,
+        minorgrid=false,
+        dpi=1000, 
+        size=(800,500), 
+        margin=5Plots.mm,
+        guidefont=fonts,
+        xtickfont=fonts,
+        ytickfont=fonts,
+        foreground_color_legend=nothing,
+        background_color_legend=:white,
+        legendfont=fonts,
+        legendfontpointsize=14,
+        legendfontfamily="Computer Modern",
+        xlabel=xlab,
+        xlims=xlim,
+        ylabel="Density",
+        ylims=(0, Inf)
+    )
+
+    # plot niche model densities for each dataset
+    for dataset in ["Ordovician", "Silurian"]
+        subset = filter(x -> x.dataset == dataset, measures_niche)
+        density!(plt, subset[:, measure]; 
+            label = "", 
+            color = dataset_colors[dataset],
+            fill = (0,0.3),
+            linewidth=2
+        )
+    end
+
+       # add vertical lines for empirical measures
+    for dataset in ["Ordovician", "Silurian"]
+        subset_emp = filter(x -> x.dataset == dataset, measures_empirical)
+        plot!(plt, subset_emp[:, measure];
+            seriestype = :vline,
+            label = "",
+            color = dataset_colors[dataset],
+            linestyle = :dash,
+            linewidth=2
+        )
+    end
+
+    return plt
 end
 
 # make plots
@@ -88,16 +102,12 @@ function plot_density_all(network::String)
     
      measures_empirical = filter(x -> x.type == "empirical", measures_network)
      measures_niche = filter(x -> x.type == "niche model", measures_network)
-     measures_cascade = filter(x -> x.type == "cascade model", measures_network)
-     measures_nested_hierarchy = filter(x -> x.type == "nested hierarchy model", measures_network)
         
     plot1 = plot_density(network,"Top", "Proportion of top predators", (-0.005,1))
     plot2 = plot_density(network, "Bas", "Proportion of basal species", (-0.005,1))
     plot3 = plot_density(network, "Int", "Proportion of intermediate species", (-0.005,1))
-    plot4 = plot_density(network, "Can", "Proportion of cannibal species", (-0.005,1))
     plot5 = plot_density(network, "Herb", "Proportion of herbivore species", (-0.005,1))
     plot6 = plot_density(network, "Omn", "Proportion of omnivore species", (-0.005,1))
-    plot7 = plot_density(network, "Loop", "Proportion of species in loops", (-0.005,1))
     plot8 = plot_density(network, "ChLen", "Average food chain length", (0,5))
     plot9 = plot_density(network, "ChSD", "Standard deviation of food chain length", (0,3))
     plot10 = plot_density(network, "ChNum", "Log number of food chains", (0,3.5))
@@ -127,18 +137,8 @@ function plot_density_all(network::String)
         foreground_color_legend=nothing, 
         background_color_legend=:white, 
         legendfont=fonts,
-        legendfontpointsize=8,
-        legendfontfamily="Times")
-
-    density!(measures_cascade[:, "Top"], 
-        label="Cascade model",
-        fill=(0, .5),
-        linewidth=2)
-
-    density!(measures_nested_hierarchy[:, "Top"], 
-        label="Nested hierarchy model",
-        fill=(0, .5),
-        linewidth=2)
+        legendfontpointsize=14,
+        legendfontfamily="Computer Modern")
 
     plot!(measures_empirical[:, "Top"], 
         seriestype = :vline, 
@@ -152,16 +152,16 @@ function plot_density_all(network::String)
     # size factor
     x = 2
 
-    plot(plot1, plot2, plot3, plot4, 
-        plot5, plot6, plot7, plot8, 
+    plot(plot1, plot2, plot3, 
+        plot5, plot6, plot8, 
         plot9, plot10, plot11, plot12, 
         plot13, plot14, plot15, plot16,
         plot17, plot_legend,
         title = ["Top" "Bas" "Int" "Can" "Herb"  "Omn" "Loop" "ChLen" "ChSD" "ChNum" "TL" "MxSim" "VulSD" "GenSD" "LinkSD" "Path" "Clust" ""],
         titleloc=:right, 
         titlefont=fonts,
-        layout = (4, 5), 
-        size=(800*x, 500*x))
+        layout = (6, 3), 
+        size=(1000*x, 1000*x))
 end
 
 plot_density_all("anticosti")
@@ -176,7 +176,6 @@ savefig(joinpath("figures","anticosti_trophicsp_density_measures.png"))
 
 # create empty dataset for predictive errors
 measures_errors = DataFrame()
-
     
 # calculate predictive errors of niche model for all networks and measures 
 for N in unique(measures.network) 
@@ -202,12 +201,19 @@ measures_errors[isnan.(measures_errors.Can),:Can] .= Inf
 measures_errors[isnan.(measures_errors.Loop),:Loop] .= Inf
 
 # export table
-CSV.write(joinpath("results", "measures_errors.csv"), measures_errors)
+measures_errorsORD = CSV.read("results/ORDmeasures_errors.csv", DataFrame)
+measures_errorsSIL = CSV.read("results/SILmeasures_errors.csv", DataFrame)
+
+measures_errorsORD[!, :dataset] .= "Ordovician"
+measures_errorsSIL[!, :dataset] .= "Silurian"
+
+measures_errors = vcat(measures_errorsORD, measures_errorsSIL) 
 
 # colors 
-pal = [RGB(204/255,121/255,167/245),
-    RGB(204/255,121/255,167/245),
-    RGB(230/255,159/255,0/255)]
+dataset_colors = Dict(
+    "Ordovician" => :maroon1,
+    "Silurian" => :cyan4,
+)
 
 # function for a single measure and a set of networks 
 function plot_density_errors(networks::Vector,
@@ -227,22 +233,24 @@ function plot_density_errors(networks::Vector,
             foreground_color_legend=nothing, 
             background_color_legend=:white, 
             legendfont=fonts,
-            legendfontpointsize=8,
-            legendfontfamily="Times")
+            legendfontpointsize=14,
+            legendfontfamily="Computer Modern")      
         
     # density plots of network errors for the all networks
+ for dataset in unique(measures_errors.dataset)
     for N in 1:length(networks)
-        
-        # do not plot if relative error is infinite (empirical measure = 0)
-        if !isinf(measures_errors[measures_errors.network .== networks[N], measure][1])
-        
-            density!(measures_errors[measures_errors.network .== networks[N], measure], 
-            color=pal[N],
-            label="",
-            fill=(0, .5),
-            linewidth=2)
+        subdf = measures_errors[(measures_errors.network .== networks[N]) .& 
+                                (measures_errors.dataset .== dataset), :]
+        if !isempty(subdf) && !isinf(subdf[1, measure])
+            density!(subdf[:, measure],
+                     color = dataset_colors[dataset],
+                     label = "",
+                     fill=(0, .3),
+                     linewidth=2)
         end
     end
+end
+
 
     # vertical line at x = 0
     plot!([0], 
@@ -267,10 +275,8 @@ function plot_density_errors_all(networks::Vector)
     plot1 = plot_density_errors(networks,"Top")
     plot2 = plot_density_errors(networks, "Bas")
     plot3 = plot_density_errors(networks, "Int")
-    plot4 = plot_density_errors(networks, "Can")
     plot5 = plot_density_errors(networks, "Herb")
     plot6 = plot_density_errors(networks, "Omn")
-    plot7 = plot_density_errors(networks, "Loop")
     plot8 = plot_density_errors(networks, "ChLen")
     plot9 = plot_density_errors(networks, "ChSD")
     plot10 = plot_density_errors(networks, "ChNum")
@@ -296,8 +302,8 @@ function plot_density_errors_all(networks::Vector)
         foreground_color_legend=nothing, 
         background_color_legend=:white, 
         legendfont=fonts,
-        legendfontpointsize=8,
-        legendfontfamily="Times")
+        legendfontpointsize=14,
+        legendfontfamily="Computer Modern")
 
     for N in 1:length(networks)
         density!(measures_errors[:, "Top"],
@@ -310,16 +316,16 @@ function plot_density_errors_all(networks::Vector)
     # size factor
     x = 2
 
-    plot(plot1, plot2, plot3, plot4, 
-        plot5, plot6, plot7, plot8, 
+    plot(plot1, plot2, plot3, 
+        plot5, plot6, plot8, 
         plot9, plot10, plot11, plot12, 
         plot13, plot14, plot15, plot16,
         plot17, plot_legend,
         title = ["Top" "Bas" "Int" "Can" "Herb"  "Omn" "Loop" "ChLen" "ChSD" "ChNum" "TL" "MxSim" "VulSD" "GenSD" "LinkSD" "Path" "Clust" ""],
         titleloc=:right, 
         titlefont=fonts,
-        layout = (4, 5), 
-        size=(800*x, 500*x))
+        layout = (6, 3), 
+        size=(1000*x, 1000*x))
 end
 
 
