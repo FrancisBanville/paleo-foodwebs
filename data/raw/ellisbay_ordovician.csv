@@ -1,0 +1,1216 @@
+﻿CONSUMER;RESOURCE
+bacterioplankton;
+phytoplankton;
+detritus;
+SOM;
+zooplankton;phytoplankton
+zooplankton;bacterioplankton
+Quasiaulacera occidua;bacterioplankton
+Ecclimadictyon sp.;bacterioplankton
+Labyrinthodictyon angulosum;bacterioplankton
+Quasiaulacera occidua;SOM
+Ecclimadictyon sp.;SOM
+Labyrinthodictyon angulosum;SOM
+Quasiaulacera occidua;phytoplankton
+Ecclimadictyon sp.;phytoplankton
+Labyrinthodictyon angulosum;phytoplankton
+Palaeophyllum sp.;zooplankton
+Aulopora sp.;zooplankton
+Favosites sp.;zooplankton
+Palaeofavosites sp.;zooplankton
+Acidolites sp.;zooplankton
+Halysites sp.;zooplankton
+Heliolites sp.;zooplankton
+Propora conferta;zooplankton
+Calapoecia anticostiensis;zooplankton
+Cyathophyllum sp.;zooplankton
+Palaeophyllum sp.;bacterioplankton
+Aulopora sp.;bacterioplankton
+Favosites sp.;bacterioplankton
+Palaeofavosites sp.;bacterioplankton
+Acidolites sp.;bacterioplankton
+Halysites sp.;bacterioplankton
+Heliolites sp.;bacterioplankton
+Propora conferta;bacterioplankton
+Calapoecia anticostiensis;bacterioplankton
+Cyathophyllum sp.;bacterioplankton
+Palaeophyllum sp.;SOM
+Aulopora sp.;SOM
+Favosites sp.;SOM
+Palaeofavosites sp.;SOM
+Acidolites sp.;SOM
+Halysites sp.;SOM
+Heliolites sp.;SOM
+Propora conferta;SOM
+Calapoecia anticostiensis;SOM
+Cyathophyllum sp.;SOM
+Aulopora sp.;phytoplankton
+Favosites sp.;phytoplankton
+Palaeofavosites sp.;phytoplankton
+Acidolites sp.;phytoplankton
+Halysites sp.;phytoplankton
+Heliolites sp.;phytoplankton
+Glauconome strigosa;phytoplankton
+Helopora sp.;phytoplankton
+Nematopora lineata;phytoplankton
+Dicranopora fragilis;phytoplankton
+Phaenopora sp.;phytoplankton
+Ptilodictya canadensis;phytoplankton
+Pachydictya sp.;phytoplankton
+Lichenalia utricula;phytoplankton
+Stomatopora sp.;phytoplankton
+Ceramopora sp.;phytoplankton
+Chasmatopora angulata;phytoplankton
+Cyphotrypa bulbosa;phytoplankton
+Dianulites sp.;phytoplankton
+Hallopora sp.;phytoplankton
+Aspidopora siluriana;phytoplankton
+Atactoporella spicata;phytoplankton
+Nicholsonella parvula;phytoplankton
+Corynotrypa sp.;phytoplankton
+Allonema sp.;phytoplankton
+Glauconome strigosa;SOM
+Helopora sp.;SOM
+Nematopora lineata;SOM
+Dicranopora fragilis;SOM
+Phaenopora sp.;SOM
+Ptilodictya canadensis;SOM
+Pachydictya sp.;SOM
+Lichenalia utricula;SOM
+Stomatopora sp.;SOM
+Ceramopora sp.;SOM
+Chasmatopora angulata;SOM
+Cyphotrypa bulbosa;SOM
+Dianulites sp.;SOM
+Hallopora sp.;SOM
+Aspidopora siluriana;SOM
+Atactoporella spicata;SOM
+Nicholsonella parvula;SOM
+Corynotrypa sp.;SOM
+Allonema sp.;SOM
+Cuneamya anticostiana;phytoplankton
+Vanuxemia sp.;phytoplankton
+Byssonychia anticostiana;phytoplankton
+Cleionychia superba;phytoplankton
+Pterinea sp.;phytoplankton
+Rhytimya sp.;phytoplankton
+Ctenodonta sp.;phytoplankton
+Cuneamya anticostiana;SOM
+Vanuxemia sp.;SOM
+Byssonychia anticostiana;SOM
+Cleionychia superba;SOM
+Pterinea sp.;SOM
+Rhytimya sp.;detritus
+Ctenodonta sp.;detritus
+Rectograptus abbreviatus;phytoplankton
+Normalograptus sp.;phytoplankton
+Rectograptus abbreviatus;SOM
+Normalograptus sp.;SOM
+Aechmina sp.;detritus
+Baltonotella sp.;detritus
+Dicranella sp.;detritus
+Jonesites sp.;detritus
+Cryptophyllus sp.;detritus
+Eurychilina sp.;detritus
+Anticostiella sp.;detritus
+Schmidtella sp.;detritus
+Faurella sp.;detritus
+Spinigerites sp.;detritus
+Foramenella sp.;detritus
+Tetradella sp.;detritus
+Tvaerenella sp.;detritus
+Eographiodactylus sp.;detritus
+Steusloffina cuneata;detritus
+Elliptocyprites sp.;detritus
+Krausella sp.;detritus
+Longiscula sp.;detritus
+Aviacypris sp.;detritus
+Macrocyproides sp.;detritus
+Microcheilinella sp.;detritus
+Rectella sp.;detritus
+Medianella sp.;detritus
+Leperditella sp.;detritus
+Eokloedenella sp.;detritus
+Leperditella sp.;phytoplankton
+Eokloedenella sp.;phytoplankton
+Dicranella sp.;bacterioplankton
+Spinigerites sp.;bacterioplankton
+Aviacypris sp.;bacterioplankton
+Macrocyproides sp.;bacterioplankton
+Microcheilinella sp.;bacterioplankton
+Rectella sp.;bacterioplankton
+Medianella sp.;bacterioplankton
+Leperditella sp.;bacterioplankton
+Eokloedenella sp.;bacterioplankton
+Furcitella nodosa;phytoplankton
+Mjoesina ceres;phytoplankton
+Coolinia sp.;phytoplankton
+Archeochonetes sp.;phytoplankton
+Strophomena sp.;phytoplankton
+Megamyonia nitens;phytoplankton
+Eostrophonella semiovalis;phytoplankton
+Hindella sp.;phytoplankton
+Eospirigerina sp.;phytoplankton
+Becscia sp.;phytoplankton
+Dalmanella sp.;phytoplankton
+Leptaena sp.;phytoplankton
+Onniella tricapitata;phytoplankton
+Hirnantia sagittifera;phytoplankton
+Oanduporella ruida;phytoplankton
+Barbarorthis laurentina;phytoplankton
+Hesperorthis sp.;phytoplankton
+Ptychopleurella lamellosa;phytoplankton
+Hebertella maria;phytoplankton
+Plaesiomys sp.;phytoplankton
+Retrorsirostra carleyi;phytoplankton
+Gnamptorhynchos globatum;phytoplankton
+Siljanostrophia camerata;phytoplankton
+Vinlandostrophia regularis;phytoplankton
+Mendacella sp.;phytoplankton
+Parastrophinella sp.;phytoplankton
+Gnamptorhynchos sp.;phytoplankton
+Orthorhynchyllion prinstanum;phytoplankton
+Hypsiptycha anticostiensis;phytoplankton
+Rhynchotrema sp.;phytoplankton
+Rostricellula transversa;phytoplankton
+Furcitella nodosa;SOM
+Mjoesina ceres;SOM
+Coolinia sp.;SOM
+Archeochonetes sp.;SOM
+Strophomena sp.;SOM
+Megamyonia nitens;SOM
+Eostrophonella semiovalis;SOM
+Hindella sp.;SOM
+Eospirigerina sp.;SOM
+Becscia sp.;SOM
+Dalmanella sp.;SOM
+Leptaena sp.;SOM
+Onniella tricapitata;SOM
+Hirnantia sagittifera;SOM
+Oanduporella ruida;SOM
+Barbarorthis laurentina;SOM
+Hesperorthis sp.;SOM
+Ptychopleurella lamellosa;SOM
+Hebertella maria;SOM
+Plaesiomys sp.;SOM
+Retrorsirostra carleyi;SOM
+Gnamptorhynchos globatum;SOM
+Siljanostrophia camerata;SOM
+Vinlandostrophia regularis;SOM
+Mendacella sp.;SOM
+Parastrophinella sp.;SOM
+Gnamptorhynchos sp.;SOM
+Orthorhynchyllion prinstanum;SOM
+Hypsiptycha anticostiensis;SOM
+Rhynchotrema sp.;SOM
+Rostricellula transversa;SOM
+Dimerocrinites elegans;phytoplankton
+Ursucrinus stellatus;phytoplankton
+Astakocrinus teren;phytoplankton
+Xenocrinus rubus;phytoplankton
+Calceocrinus gamachicus;phytoplankton
+Charactocrinus billingsi;phytoplankton
+Euspirocrinus gagnoni;phytoplankton
+Dendrocrinus sp.;phytoplankton
+Anisocrinus prinstaensis;phytoplankton
+Protaxocrinus sp.;phytoplankton
+Dimerocrinites elegans;SOM
+Ursucrinus stellatus;SOM
+Astakocrinus teren;SOM
+Xenocrinus rubus;SOM
+Calceocrinus gamachicus;SOM
+Charactocrinus billingsi;SOM
+Euspirocrinus gagnoni;SOM
+Dendrocrinus sp.;SOM
+Anisocrinus prinstaensis;SOM
+Protaxocrinus sp.;SOM
+Bucania ellisensis;detritus
+Phragmolites sp.;detritus
+Salpingostoma sp.;detritus
+Tetranota obsoleta;detritus
+Sinuites bilobatus;detritus
+Alaskadiscus giganteus;detritus
+Holopea sp.;phytoplankton
+Holopea sp.;SOM
+Lytospira nitida;detritus
+Cyclonema sp.;detritus
+Hormotoma sp.;detritus
+Loxonema rugosum;detritus
+Cyrtospira notata;Aechmina sp.
+Cyrtospira notata;Baltonotella sp.
+Cyrtospira notata;Dicranella sp.
+Cyrtospira notata;Jonesites sp.
+Cyrtospira notata;Cryptophyllus sp.
+Cyrtospira notata;Eurychilina sp.
+Cyrtospira notata;Anticostiella sp.
+Cyrtospira notata;Schmidtella sp.
+Cyrtospira notata;Faurella sp.
+Cyrtospira notata;Spinigerites sp.
+Cyrtospira notata;Foramenella sp.
+Cyrtospira notata;Tetradella sp.
+Cyrtospira notata;Tvaerenella sp.
+Cyrtospira notata;Eographiodactylus sp.
+Cyrtospira notata;Steusloffina cuneata
+Cyrtospira notata;Elliptocyprites sp.
+Cyrtospira notata;Krausella sp.
+Cyrtospira notata;Longiscula sp.
+Cyrtospira notata;Aviacypris sp.
+Cyrtospira notata;Macrocyproides sp.
+Cyrtospira notata;Microcheilinella sp.
+Cyrtospira notata;Rectella sp.
+Cyrtospira notata;Medianella sp.
+Cyrtospira notata;Leperditella sp.
+Cyrtospira notata;Eokloedenella sp.
+Subulites sp.;Aechmina sp.
+Subulites sp.;Baltonotella sp.
+Subulites sp.;Dicranella sp.
+Subulites sp.;Jonesites sp.
+Subulites sp.;Cryptophyllus sp.
+Subulites sp.;Eurychilina sp.
+Subulites sp.;Anticostiella sp.
+Subulites sp.;Schmidtella sp.
+Subulites sp.;Faurella sp.
+Subulites sp.;Spinigerites sp.
+Subulites sp.;Foramenella sp.
+Subulites sp.;Tetradella sp.
+Subulites sp.;Tvaerenella sp.
+Subulites sp.;Eographiodactylus sp.
+Subulites sp.;Steusloffina cuneata
+Subulites sp.;Elliptocyprites sp.
+Subulites sp.;Krausella sp.
+Subulites sp.;Longiscula sp.
+Subulites sp.;Aviacypris sp.
+Subulites sp.;Macrocyproides sp.
+Subulites sp.;Microcheilinella sp.
+Subulites sp.;Rectella sp.
+Subulites sp.;Medianella sp.
+Subulites sp.;Leperditella sp.
+Subulites sp.;Eokloedenella sp.
+Brachytomaria papillosa;Aechmina sp.
+Brachytomaria papillosa;Baltonotella sp.
+Brachytomaria papillosa;Dicranella sp.
+Brachytomaria papillosa;Jonesites sp.
+Brachytomaria papillosa;Cryptophyllus sp.
+Brachytomaria papillosa;Eurychilina sp.
+Brachytomaria papillosa;Anticostiella sp.
+Brachytomaria papillosa;Schmidtella sp.
+Brachytomaria papillosa;Faurella sp.
+Brachytomaria papillosa;Spinigerites sp.
+Brachytomaria papillosa;Foramenella sp.
+Brachytomaria papillosa;Tetradella sp.
+Brachytomaria papillosa;Tvaerenella sp.
+Brachytomaria papillosa;Eographiodactylus sp.
+Brachytomaria papillosa;Steusloffina cuneata
+Brachytomaria papillosa;Elliptocyprites sp.
+Brachytomaria papillosa;Krausella sp.
+Brachytomaria papillosa;Longiscula sp.
+Brachytomaria papillosa;Aviacypris sp.
+Brachytomaria papillosa;Macrocyproides sp.
+Brachytomaria papillosa;Microcheilinella sp.
+Brachytomaria papillosa;Rectella sp.
+Brachytomaria papillosa;Medianella sp.
+Brachytomaria papillosa;Leperditella sp.
+Brachytomaria papillosa;Eokloedenella sp.
+Cyrtospira notata;Glauconome strigosa
+Cyrtospira notata;Helopora sp.
+Cyrtospira notata;Nematopora lineata
+Cyrtospira notata;Dicranopora fragilis
+Cyrtospira notata;Phaenopora sp.
+Cyrtospira notata;Ptilodictya canadensis
+Cyrtospira notata;Pachydictya sp.
+Cyrtospira notata;Lichenalia utricula
+Cyrtospira notata;Stomatopora sp.
+Cyrtospira notata;Ceramopora sp.
+Cyrtospira notata;Chasmatopora angulata
+Cyrtospira notata;Cyphotrypa bulbosa
+Cyrtospira notata;Dianulites sp.
+Cyrtospira notata;Hallopora sp.
+Cyrtospira notata;Aspidopora siluriana
+Cyrtospira notata;Atactoporella spicata
+Cyrtospira notata;Nicholsonella parvula
+Cyrtospira notata;Corynotrypa sp.
+Cyrtospira notata;Allonema sp.
+Subulites sp.;Glauconome strigosa
+Subulites sp.;Helopora sp.
+Subulites sp.;Nematopora lineata
+Subulites sp.;Dicranopora fragilis
+Subulites sp.;Phaenopora sp.
+Subulites sp.;Ptilodictya canadensis
+Subulites sp.;Pachydictya sp.
+Subulites sp.;Lichenalia utricula
+Subulites sp.;Stomatopora sp.
+Subulites sp.;Ceramopora sp.
+Subulites sp.;Chasmatopora angulata
+Subulites sp.;Cyphotrypa bulbosa
+Subulites sp.;Dianulites sp.
+Subulites sp.;Hallopora sp.
+Subulites sp.;Aspidopora siluriana
+Subulites sp.;Atactoporella spicata
+Subulites sp.;Nicholsonella parvula
+Subulites sp.;Corynotrypa sp.
+Subulites sp.;Allonema sp.
+Subulites sp.;Rectograptus abbreviatus
+Subulites sp.;Normalograptus sp.
+Subulites sp.;Quasiaulacera occidua
+Subulites sp.;Ecclimadictyon sp.
+Atraktoprion sp.;detritus
+Atraktoprion sp.;zooplankton
+Hadoprion cervicornis;zooplankton
+Kalloprion sp.;zooplankton
+Kalloprion sp.;detritus
+Mochtyella sp.;zooplankton
+Pistoprion transitans;zooplankton
+Pistoprion transitans;detritus
+Vistulella kozlowskii;zooplankton
+Kettnerites sp.;zooplankton
+Kettnerites sp.;detritus
+Oenonites sp.;zooplankton
+Pteropelta gladiata;zooplankton
+Ramphoprion ineptus;detritus
+Ramphoprion ineptus;zooplankton
+Tetraprion pozaryskae;detritus
+Tetraprion pozaryskae;zooplankton
+Xanioprion sp.;detritus
+Xanioprion sp.;zooplankton
+Lunoprionella sp.;detritus
+Lunoprionella sp.;zooplankton
+Hadoprion cervicornis;Aechmina sp.
+Hadoprion cervicornis;Baltonotella sp.
+Hadoprion cervicornis;Dicranella sp.
+Hadoprion cervicornis;Jonesites sp.
+Hadoprion cervicornis;Cryptophyllus sp.
+Hadoprion cervicornis;Eurychilina sp.
+Hadoprion cervicornis;Anticostiella sp.
+Hadoprion cervicornis;Schmidtella sp.
+Hadoprion cervicornis;Faurella sp.
+Hadoprion cervicornis;Spinigerites sp.
+Hadoprion cervicornis;Foramenella sp.
+Hadoprion cervicornis;Tetradella sp.
+Hadoprion cervicornis;Tvaerenella sp.
+Hadoprion cervicornis;Eographiodactylus sp.
+Hadoprion cervicornis;Steusloffina cuneata
+Hadoprion cervicornis;Elliptocyprites sp.
+Hadoprion cervicornis;Krausella sp.
+Hadoprion cervicornis;Longiscula sp.
+Hadoprion cervicornis;Aviacypris sp.
+Hadoprion cervicornis;Macrocyproides sp.
+Hadoprion cervicornis;Microcheilinella sp.
+Hadoprion cervicornis;Rectella sp.
+Hadoprion cervicornis;Medianella sp.
+Hadoprion cervicornis;Leperditella sp.
+Hadoprion cervicornis;Eokloedenella sp.
+Mochtyella sp.;Aechmina sp.
+Mochtyella sp.;Baltonotella sp.
+Mochtyella sp.;Dicranella sp.
+Mochtyella sp.;Jonesites sp.
+Mochtyella sp.;Cryptophyllus sp.
+Mochtyella sp.;Eurychilina sp.
+Mochtyella sp.;Anticostiella sp.
+Mochtyella sp.;Schmidtella sp.
+Mochtyella sp.;Faurella sp.
+Mochtyella sp.;Spinigerites sp.
+Mochtyella sp.;Foramenella sp.
+Mochtyella sp.;Tetradella sp.
+Mochtyella sp.;Tvaerenella sp.
+Mochtyella sp.;Eographiodactylus sp.
+Mochtyella sp.;Steusloffina cuneata
+Mochtyella sp.;Elliptocyprites sp.
+Mochtyella sp.;Krausella sp.
+Mochtyella sp.;Longiscula sp.
+Mochtyella sp.;Aviacypris sp.
+Mochtyella sp.;Macrocyproides sp.
+Mochtyella sp.;Microcheilinella sp.
+Mochtyella sp.;Rectella sp.
+Mochtyella sp.;Medianella sp.
+Mochtyella sp.;Leperditella sp.
+Mochtyella sp.;Eokloedenella sp.
+Oenonites sp.;Glauconome strigosa
+Oenonites sp.;Helopora sp.
+Oenonites sp.;Nematopora lineata
+Oenonites sp.;Dicranopora fragilis
+Oenonites sp.;Phaenopora sp.
+Oenonites sp.;Ptilodictya canadensis
+Oenonites sp.;Pachydictya sp.
+Oenonites sp.;Lichenalia utricula
+Oenonites sp.;Stomatopora sp.
+Oenonites sp.;Ceramopora sp.
+Oenonites sp.;Chasmatopora angulata
+Oenonites sp.;Cyphotrypa bulbosa
+Oenonites sp.;Dianulites sp.
+Oenonites sp.;Hallopora sp.
+Oenonites sp.;Aspidopora siluriana
+Oenonites sp.;Atactoporella spicata
+Oenonites sp.;Nicholsonella parvula
+Oenonites sp.;Corynotrypa sp.
+Oenonites sp.;Allonema sp.
+Pteropelta gladiata;Glauconome strigosa
+Pteropelta gladiata;Helopora sp.
+Pteropelta gladiata;Nematopora lineata
+Pteropelta gladiata;Dicranopora fragilis
+Pteropelta gladiata;Phaenopora sp.
+Pteropelta gladiata;Ptilodictya canadensis
+Pteropelta gladiata;Pachydictya sp.
+Pteropelta gladiata;Lichenalia utricula
+Pteropelta gladiata;Stomatopora sp.
+Pteropelta gladiata;Ceramopora sp.
+Pteropelta gladiata;Chasmatopora angulata
+Pteropelta gladiata;Cyphotrypa bulbosa
+Pteropelta gladiata;Dianulites sp.
+Pteropelta gladiata;Hallopora sp.
+Pteropelta gladiata;Aspidopora siluriana
+Pteropelta gladiata;Atactoporella spicata
+Pteropelta gladiata;Nicholsonella parvula
+Pteropelta gladiata;Corynotrypa sp.
+Pteropelta gladiata;Allonema sp.
+Aphelognathus grandis;zooplankton
+Drepanoistodus suberectus;zooplankton
+Gamachignathus ensifer;zooplankton
+Amorphognathus sp.;zooplankton
+Walliserodus curvatus;zooplankton
+Panderodus sp.;zooplankton
+Oulodus sp.;zooplankton
+Belodina sp.;zooplankton
+Ozarkodina sp.;zooplankton
+Decoriconus sp.;zooplankton
+Phragmodus sp.;zooplankton
+Pseudooneotodus beckmanni;zooplankton
+Panderodus sp.;Aechmina sp.
+Panderodus sp.;Baltonotella sp.
+Panderodus sp.;Dicranella sp.
+Panderodus sp.;Jonesites sp.
+Panderodus sp.;Cryptophyllus sp.
+Panderodus sp.;Eurychilina sp.
+Panderodus sp.;Anticostiella sp.
+Panderodus sp.;Schmidtella sp.
+Panderodus sp.;Faurella sp.
+Panderodus sp.;Spinigerites sp.
+Panderodus sp.;Foramenella sp.
+Panderodus sp.;Tetradella sp.
+Panderodus sp.;Tvaerenella sp.
+Panderodus sp.;Eographiodactylus sp.
+Panderodus sp.;Steusloffina cuneata
+Panderodus sp.;Elliptocyprites sp.
+Panderodus sp.;Krausella sp.
+Panderodus sp.;Longiscula sp.
+Panderodus sp.;Aviacypris sp.
+Panderodus sp.;Macrocyproides sp.
+Panderodus sp.;Microcheilinella sp.
+Panderodus sp.;Rectella sp.
+Panderodus sp.;Medianella sp.
+Panderodus sp.;Leperditella sp.
+Panderodus sp.;Eokloedenella sp.
+Ozarkodina sp.;Aechmina sp.
+Ozarkodina sp.;Baltonotella sp.
+Ozarkodina sp.;Dicranella sp.
+Ozarkodina sp.;Jonesites sp.
+Ozarkodina sp.;Cryptophyllus sp.
+Ozarkodina sp.;Eurychilina sp.
+Ozarkodina sp.;Anticostiella sp.
+Ozarkodina sp.;Schmidtella sp.
+Ozarkodina sp.;Faurella sp.
+Ozarkodina sp.;Spinigerites sp.
+Ozarkodina sp.;Foramenella sp.
+Ozarkodina sp.;Tetradella sp.
+Ozarkodina sp.;Tvaerenella sp.
+Ozarkodina sp.;Eographiodactylus sp.
+Ozarkodina sp.;Steusloffina cuneata
+Ozarkodina sp.;Elliptocyprites sp.
+Ozarkodina sp.;Krausella sp.
+Ozarkodina sp.;Longiscula sp.
+Ozarkodina sp.;Aviacypris sp.
+Ozarkodina sp.;Macrocyproides sp.
+Ozarkodina sp.;Microcheilinella sp.
+Ozarkodina sp.;Rectella sp.
+Ozarkodina sp.;Medianella sp.
+Ozarkodina sp.;Leperditella sp.
+Ozarkodina sp.;Eokloedenella sp.
+Panderodus sp.;Kettnerites sp.
+Panderodus sp.;Oenonites sp.
+Panderodus sp.;Xanioprion sp.
+Panderodus sp.;Lunoprionella sp.
+Aphelognathus grandis;Kettnerites sp.
+Aphelognathus grandis;Oenonites sp.
+Aphelognathus grandis;Xanioprion sp.
+Aphelognathus grandis;Lunoprionella sp.
+Gamachignathus ensifer;Kettnerites sp.
+Gamachignathus ensifer;Oenonites sp.
+Gamachignathus ensifer;Xanioprion sp.
+Gamachignathus ensifer;Lunoprionella sp.
+Amorphognathus sp.;Kettnerites sp.
+Amorphognathus sp.;Oenonites sp.
+Amorphognathus sp.;Xanioprion sp.
+Amorphognathus sp.;Lunoprionella sp.
+Ozarkodina sp.;Kettnerites sp.
+Ozarkodina sp.;Oenonites sp.
+Ozarkodina sp.;Xanioprion sp.
+Ozarkodina sp.;Lunoprionella sp.
+Cornulites sp.;phytoplankton
+Cornulites sp.;detritus
+Isotelus sp.;detritus
+Isotelus sp.;Aphelognathus grandis
+Isotelus sp.;Drepanoistodus suberectus
+Isotelus sp.;Gamachignathus ensifer
+Isotelus sp.;Amorphognathus sp.
+Isotelus sp.;Walliserodus curvatus
+Isotelus sp.;Panderodus sp.
+Isotelus sp.;Oulodus sp.
+Isotelus sp.;Belodina sp.
+Isotelus sp.;Ozarkodina sp.
+Isotelus sp.;Decoriconus sp.
+Isotelus sp.;Phragmodus sp.
+Isotelus sp.;Pseudooneotodus beckmanni
+Isotelus sp.;Atraktoprion sp.
+Isotelus sp.;Hadoprion cervicornis
+Isotelus sp.;Kalloprion sp.
+Isotelus sp.;Mochtyella sp.
+Isotelus sp.;Pistoprion transitans
+Isotelus sp.;Vistulella kozlowskii
+Isotelus sp.;Kettnerites sp.
+Isotelus sp.;Oenonites sp.
+Isotelus sp.;Pteropelta gladiata
+Isotelus sp.;Ramphoprion ineptus
+Isotelus sp.;Tetraprion pozaryskae
+Isotelus sp.;Aechmina sp.
+Isotelus sp.;Baltonotella sp.
+Isotelus sp.;Dicranella sp.
+Isotelus sp.;Jonesites sp.
+Isotelus sp.;Cryptophyllus sp.
+Isotelus sp.;Eurychilina sp.
+Isotelus sp.;Anticostiella sp.
+Isotelus sp.;Schmidtella sp.
+Isotelus sp.;Faurella sp.
+Isotelus sp.;Spinigerites sp.
+Isotelus sp.;Foramenella sp.
+Isotelus sp.;Tetradella sp.
+Isotelus sp.;Tvaerenella sp.
+Isotelus sp.;Eographiodactylus sp.
+Isotelus sp.;Steusloffina cuneata
+Isotelus sp.;Elliptocyprites sp.
+Isotelus sp.;Krausella sp.
+Isotelus sp.;Longiscula sp.
+Isotelus sp.;Aviacypris sp.
+Isotelus sp.;Macrocyproides sp.
+Isotelus sp.;Microcheilinella sp.
+Isotelus sp.;Rectella sp.
+Isotelus sp.;Medianella sp.
+Isotelus sp.;Leperditella sp.
+Isotelus sp.;Eokloedenella sp.
+Toxochasmops anticostiensis;Aechmina sp.
+Toxochasmops anticostiensis;Baltonotella sp.
+Toxochasmops anticostiensis;Dicranella sp.
+Toxochasmops anticostiensis;Jonesites sp.
+Toxochasmops anticostiensis;Cryptophyllus sp.
+Toxochasmops anticostiensis;Eurychilina sp.
+Toxochasmops anticostiensis;Anticostiella sp.
+Toxochasmops anticostiensis;Schmidtella sp.
+Toxochasmops anticostiensis;Faurella sp.
+Toxochasmops anticostiensis;Spinigerites sp.
+Toxochasmops anticostiensis;Foramenella sp.
+Toxochasmops anticostiensis;Tetradella sp.
+Toxochasmops anticostiensis;Tvaerenella sp.
+Toxochasmops anticostiensis;Eographiodactylus sp.
+Toxochasmops anticostiensis;Steusloffina cuneata
+Toxochasmops anticostiensis;Elliptocyprites sp.
+Toxochasmops anticostiensis;Krausella sp.
+Toxochasmops anticostiensis;Longiscula sp.
+Toxochasmops anticostiensis;Aviacypris sp.
+Toxochasmops anticostiensis;Macrocyproides sp.
+Toxochasmops anticostiensis;Microcheilinella sp.
+Toxochasmops anticostiensis;Rectella sp.
+Toxochasmops anticostiensis;Medianella sp.
+Toxochasmops anticostiensis;Leperditella sp.
+Toxochasmops anticostiensis;Eokloedenella sp.
+Toxochasmops anticostiensis;Aphelognathus grandis
+Toxochasmops anticostiensis;Drepanoistodus suberectus
+Toxochasmops anticostiensis;Gamachignathus ensifer
+Toxochasmops anticostiensis;Amorphognathus sp.
+Toxochasmops anticostiensis;Walliserodus curvatus
+Toxochasmops anticostiensis;Panderodus sp.
+Toxochasmops anticostiensis;Oulodus sp.
+Toxochasmops anticostiensis;Belodina sp.
+Toxochasmops anticostiensis;Ozarkodina sp.
+Toxochasmops anticostiensis;Decoriconus sp.
+Toxochasmops anticostiensis;Phragmodus sp.
+Toxochasmops anticostiensis;Pseudooneotodus beckmanni
+Calymene sp.;detritus
+Calymene sp.;Aphelognathus grandis
+Calymene sp.;Drepanoistodus suberectus
+Calymene sp.;Gamachignathus ensifer
+Calymene sp.;Amorphognathus sp.
+Calymene sp.;Walliserodus curvatus
+Calymene sp.;Panderodus sp.
+Calymene sp.;Oulodus sp.
+Calymene sp.;Belodina sp.
+Calymene sp.;Ozarkodina sp.
+Calymene sp.;Decoriconus sp.
+Calymene sp.;Phragmodus sp.
+Calymene sp.;Pseudooneotodus beckmanni
+Ceraurinus icarus;Aechmina sp.
+Ceraurinus icarus;Baltonotella sp.
+Ceraurinus icarus;Dicranella sp.
+Ceraurinus icarus;Jonesites sp.
+Ceraurinus icarus;Cryptophyllus sp.
+Ceraurinus icarus;Eurychilina sp.
+Ceraurinus icarus;Anticostiella sp.
+Ceraurinus icarus;Schmidtella sp.
+Ceraurinus icarus;Faurella sp.
+Ceraurinus icarus;Spinigerites sp.
+Ceraurinus icarus;Foramenella sp.
+Ceraurinus icarus;Tetradella sp.
+Ceraurinus icarus;Tvaerenella sp.
+Ceraurinus icarus;Eographiodactylus sp.
+Ceraurinus icarus;Steusloffina cuneata
+Ceraurinus icarus;Elliptocyprites sp.
+Ceraurinus icarus;Krausella sp.
+Ceraurinus icarus;Longiscula sp.
+Ceraurinus icarus;Aviacypris sp.
+Ceraurinus icarus;Macrocyproides sp.
+Ceraurinus icarus;Microcheilinella sp.
+Ceraurinus icarus;Rectella sp.
+Ceraurinus icarus;Medianella sp.
+Ceraurinus icarus;Leperditella sp.
+Ceraurinus icarus;Eokloedenella sp.
+Ceraurinus icarus;Atraktoprion sp.
+Ceraurinus icarus;Hadoprion cervicornis
+Ceraurinus icarus;Kalloprion sp.
+Ceraurinus icarus;Mochtyella sp.
+Ceraurinus icarus;Pistoprion transitans
+Ceraurinus icarus;Vistulella kozlowskii
+Ceraurinus icarus;Kettnerites sp.
+Ceraurinus icarus;Oenonites sp.
+Ceraurinus icarus;Pteropelta gladiata
+Ceraurinus icarus;Ramphoprion ineptus
+Ceraurinus icarus;Tetraprion pozaryskae
+Ceraurinus icarus;Xanioprion sp.
+Ceraurinus icarus;Lunoprionella sp.
+Platycoryphe sp.;detritus
+Actinoceras lesperancei;Aechmina sp.
+Actinoceras lesperancei;Baltonotella sp.
+Actinoceras lesperancei;Dicranella sp.
+Actinoceras lesperancei;Jonesites sp.
+Actinoceras lesperancei;Cryptophyllus sp.
+Actinoceras lesperancei;Eurychilina sp.
+Actinoceras lesperancei;Anticostiella sp.
+Actinoceras lesperancei;Schmidtella sp.
+Actinoceras lesperancei;Faurella sp.
+Actinoceras lesperancei;Spinigerites sp.
+Actinoceras lesperancei;Foramenella sp.
+Actinoceras lesperancei;Tetradella sp.
+Actinoceras lesperancei;Tvaerenella sp.
+Actinoceras lesperancei;Eographiodactylus sp.
+Actinoceras lesperancei;Steusloffina cuneata
+Actinoceras lesperancei;Elliptocyprites sp.
+Actinoceras lesperancei;Krausella sp.
+Actinoceras lesperancei;Longiscula sp.
+Actinoceras lesperancei;Aviacypris sp.
+Actinoceras lesperancei;Macrocyproides sp.
+Actinoceras lesperancei;Microcheilinella sp.
+Actinoceras lesperancei;Rectella sp.
+Actinoceras lesperancei;Medianella sp.
+Actinoceras lesperancei;Leperditella sp.
+Actinoceras lesperancei;Eokloedenella sp.
+Billingsites elongatus;Aechmina sp.
+Billingsites elongatus;Baltonotella sp.
+Billingsites elongatus;Dicranella sp.
+Billingsites elongatus;Jonesites sp.
+Billingsites elongatus;Cryptophyllus sp.
+Billingsites elongatus;Eurychilina sp.
+Billingsites elongatus;Anticostiella sp.
+Billingsites elongatus;Schmidtella sp.
+Billingsites elongatus;Faurella sp.
+Billingsites elongatus;Spinigerites sp.
+Billingsites elongatus;Foramenella sp.
+Billingsites elongatus;Tetradella sp.
+Billingsites elongatus;Tvaerenella sp.
+Billingsites elongatus;Eographiodactylus sp.
+Billingsites elongatus;Steusloffina cuneata
+Billingsites elongatus;Elliptocyprites sp.
+Billingsites elongatus;Krausella sp.
+Billingsites elongatus;Longiscula sp.
+Billingsites elongatus;Aviacypris sp.
+Billingsites elongatus;Macrocyproides sp.
+Billingsites elongatus;Microcheilinella sp.
+Billingsites elongatus;Rectella sp.
+Billingsites elongatus;Medianella sp.
+Billingsites elongatus;Leperditella sp.
+Billingsites elongatus;Eokloedenella sp.
+Apsidoceras magnificum;Aechmina sp.
+Apsidoceras magnificum;Baltonotella sp.
+Apsidoceras magnificum;Dicranella sp.
+Apsidoceras magnificum;Jonesites sp.
+Apsidoceras magnificum;Cryptophyllus sp.
+Apsidoceras magnificum;Eurychilina sp.
+Apsidoceras magnificum;Anticostiella sp.
+Apsidoceras magnificum;Schmidtella sp.
+Apsidoceras magnificum;Faurella sp.
+Apsidoceras magnificum;Spinigerites sp.
+Apsidoceras magnificum;Foramenella sp.
+Apsidoceras magnificum;Tetradella sp.
+Apsidoceras magnificum;Tvaerenella sp.
+Apsidoceras magnificum;Eographiodactylus sp.
+Apsidoceras magnificum;Steusloffina cuneata
+Apsidoceras magnificum;Elliptocyprites sp.
+Apsidoceras magnificum;Krausella sp.
+Apsidoceras magnificum;Longiscula sp.
+Apsidoceras magnificum;Aviacypris sp.
+Apsidoceras magnificum;Macrocyproides sp.
+Apsidoceras magnificum;Microcheilinella sp.
+Apsidoceras magnificum;Rectella sp.
+Apsidoceras magnificum;Medianella sp.
+Apsidoceras magnificum;Leperditella sp.
+Apsidoceras magnificum;Eokloedenella sp.
+Discosorus sp.;Aechmina sp.
+Discosorus sp.;Baltonotella sp.
+Discosorus sp.;Dicranella sp.
+Discosorus sp.;Jonesites sp.
+Discosorus sp.;Cryptophyllus sp.
+Discosorus sp.;Eurychilina sp.
+Discosorus sp.;Anticostiella sp.
+Discosorus sp.;Schmidtella sp.
+Discosorus sp.;Faurella sp.
+Discosorus sp.;Spinigerites sp.
+Discosorus sp.;Foramenella sp.
+Discosorus sp.;Tetradella sp.
+Discosorus sp.;Tvaerenella sp.
+Discosorus sp.;Eographiodactylus sp.
+Discosorus sp.;Steusloffina cuneata
+Discosorus sp.;Elliptocyprites sp.
+Discosorus sp.;Krausella sp.
+Discosorus sp.;Longiscula sp.
+Discosorus sp.;Aviacypris sp.
+Discosorus sp.;Macrocyproides sp.
+Discosorus sp.;Microcheilinella sp.
+Discosorus sp.;Rectella sp.
+Discosorus sp.;Medianella sp.
+Discosorus sp.;Leperditella sp.
+Discosorus sp.;Eokloedenella sp.
+Polygrammoceras sp.;Aechmina sp.
+Polygrammoceras sp.;Baltonotella sp.
+Polygrammoceras sp.;Dicranella sp.
+Polygrammoceras sp.;Jonesites sp.
+Polygrammoceras sp.;Cryptophyllus sp.
+Polygrammoceras sp.;Eurychilina sp.
+Polygrammoceras sp.;Anticostiella sp.
+Polygrammoceras sp.;Schmidtella sp.
+Polygrammoceras sp.;Faurella sp.
+Polygrammoceras sp.;Spinigerites sp.
+Polygrammoceras sp.;Foramenella sp.
+Polygrammoceras sp.;Tetradella sp.
+Polygrammoceras sp.;Tvaerenella sp.
+Polygrammoceras sp.;Eographiodactylus sp.
+Polygrammoceras sp.;Steusloffina cuneata
+Polygrammoceras sp.;Elliptocyprites sp.
+Polygrammoceras sp.;Krausella sp.
+Polygrammoceras sp.;Longiscula sp.
+Polygrammoceras sp.;Aviacypris sp.
+Polygrammoceras sp.;Macrocyproides sp.
+Polygrammoceras sp.;Microcheilinella sp.
+Polygrammoceras sp.;Rectella sp.
+Polygrammoceras sp.;Medianella sp.
+Polygrammoceras sp.;Leperditella sp.
+Polygrammoceras sp.;Eokloedenella sp.
+Orthoceras sp.;Aechmina sp.
+Orthoceras sp.;Baltonotella sp.
+Orthoceras sp.;Dicranella sp.
+Orthoceras sp.;Jonesites sp.
+Orthoceras sp.;Cryptophyllus sp.
+Orthoceras sp.;Eurychilina sp.
+Orthoceras sp.;Anticostiella sp.
+Orthoceras sp.;Schmidtella sp.
+Orthoceras sp.;Faurella sp.
+Orthoceras sp.;Spinigerites sp.
+Orthoceras sp.;Foramenella sp.
+Orthoceras sp.;Tetradella sp.
+Orthoceras sp.;Tvaerenella sp.
+Orthoceras sp.;Eographiodactylus sp.
+Orthoceras sp.;Steusloffina cuneata
+Orthoceras sp.;Elliptocyprites sp.
+Orthoceras sp.;Krausella sp.
+Orthoceras sp.;Longiscula sp.
+Orthoceras sp.;Aviacypris sp.
+Orthoceras sp.;Macrocyproides sp.
+Orthoceras sp.;Microcheilinella sp.
+Orthoceras sp.;Rectella sp.
+Orthoceras sp.;Medianella sp.
+Orthoceras sp.;Leperditella sp.
+Orthoceras sp.;Eokloedenella sp.
+Orthocycloceras sp.;Aechmina sp.
+Orthocycloceras sp.;Baltonotella sp.
+Orthocycloceras sp.;Dicranella sp.
+Orthocycloceras sp.;Jonesites sp.
+Orthocycloceras sp.;Cryptophyllus sp.
+Orthocycloceras sp.;Eurychilina sp.
+Orthocycloceras sp.;Anticostiella sp.
+Orthocycloceras sp.;Schmidtella sp.
+Orthocycloceras sp.;Faurella sp.
+Orthocycloceras sp.;Spinigerites sp.
+Orthocycloceras sp.;Foramenella sp.
+Orthocycloceras sp.;Tetradella sp.
+Orthocycloceras sp.;Tvaerenella sp.
+Orthocycloceras sp.;Eographiodactylus sp.
+Orthocycloceras sp.;Steusloffina cuneata
+Orthocycloceras sp.;Elliptocyprites sp.
+Orthocycloceras sp.;Krausella sp.
+Orthocycloceras sp.;Longiscula sp.
+Orthocycloceras sp.;Aviacypris sp.
+Orthocycloceras sp.;Macrocyproides sp.
+Orthocycloceras sp.;Microcheilinella sp.
+Orthocycloceras sp.;Rectella sp.
+Orthocycloceras sp.;Medianella sp.
+Orthocycloceras sp.;Leperditella sp.
+Orthocycloceras sp.;Eokloedenella sp.
+Amphicyrtoceras sp.;Aechmina sp.
+Amphicyrtoceras sp.;Baltonotella sp.
+Amphicyrtoceras sp.;Dicranella sp.
+Amphicyrtoceras sp.;Jonesites sp.
+Amphicyrtoceras sp.;Cryptophyllus sp.
+Amphicyrtoceras sp.;Eurychilina sp.
+Amphicyrtoceras sp.;Anticostiella sp.
+Amphicyrtoceras sp.;Schmidtella sp.
+Amphicyrtoceras sp.;Faurella sp.
+Amphicyrtoceras sp.;Spinigerites sp.
+Amphicyrtoceras sp.;Foramenella sp.
+Amphicyrtoceras sp.;Tetradella sp.
+Amphicyrtoceras sp.;Tvaerenella sp.
+Amphicyrtoceras sp.;Eographiodactylus sp.
+Amphicyrtoceras sp.;Steusloffina cuneata
+Amphicyrtoceras sp.;Elliptocyprites sp.
+Amphicyrtoceras sp.;Krausella sp.
+Amphicyrtoceras sp.;Longiscula sp.
+Amphicyrtoceras sp.;Aviacypris sp.
+Amphicyrtoceras sp.;Macrocyproides sp.
+Amphicyrtoceras sp.;Microcheilinella sp.
+Amphicyrtoceras sp.;Rectella sp.
+Amphicyrtoceras sp.;Medianella sp.
+Amphicyrtoceras sp.;Leperditella sp.
+Amphicyrtoceras sp.;Eokloedenella sp.
+Actinoceras lesperancei;Isotelus sp.
+Actinoceras lesperancei;Toxochasmops anticostiensis
+Actinoceras lesperancei;Calymene sp.
+Actinoceras lesperancei;Ceraurinus icarus
+Actinoceras lesperancei;Platycoryphe sp.
+Actinoceras lesperancei;Aphelognathus grandis
+Actinoceras lesperancei;Drepanoistodus suberectus
+Actinoceras lesperancei;Gamachignathus ensifer
+Actinoceras lesperancei;Amorphognathus sp.
+Actinoceras lesperancei;Walliserodus curvatus
+Actinoceras lesperancei;Panderodus sp.
+Actinoceras lesperancei;Oulodus sp.
+Actinoceras lesperancei;Belodina sp.
+Actinoceras lesperancei;Ozarkodina sp.
+Actinoceras lesperancei;Decoriconus sp.
+Actinoceras lesperancei;Phragmodus sp.
+Actinoceras lesperancei;Pseudooneotodus beckmanni
+Actinoceras lesperancei;Atraktoprion sp.
+Actinoceras lesperancei;Hadoprion cervicornis
+Actinoceras lesperancei;Kalloprion sp.
+Actinoceras lesperancei;Mochtyella sp.
+Actinoceras lesperancei;Pistoprion transitans
+Actinoceras lesperancei;Vistulella kozlowskii
+Actinoceras lesperancei;Kettnerites sp.
+Actinoceras lesperancei;Oenonites sp.
+Actinoceras lesperancei;Pteropelta gladiata
+Actinoceras lesperancei;Ramphoprion ineptus
+Actinoceras lesperancei;Tetraprion pozaryskae
+Actinoceras lesperancei;Xanioprion sp.
+Actinoceras lesperancei;Lunoprionella sp.
+Billingsites elongatus;Aphelognathus grandis
+Billingsites elongatus;Drepanoistodus suberectus
+Billingsites elongatus;Gamachignathus ensifer
+Billingsites elongatus;Amorphognathus sp.
+Billingsites elongatus;Walliserodus curvatus
+Billingsites elongatus;Panderodus sp.
+Billingsites elongatus;Oulodus sp.
+Billingsites elongatus;Belodina sp.
+Billingsites elongatus;Ozarkodina sp.
+Billingsites elongatus;Decoriconus sp.
+Billingsites elongatus;Phragmodus sp.
+Billingsites elongatus;Pseudooneotodus beckmanni
+Billingsites elongatus;Atraktoprion sp.
+Billingsites elongatus;Hadoprion cervicornis
+Billingsites elongatus;Kalloprion sp.
+Billingsites elongatus;Mochtyella sp.
+Billingsites elongatus;Pistoprion transitans
+Billingsites elongatus;Vistulella kozlowskii
+Billingsites elongatus;Kettnerites sp.
+Billingsites elongatus;Oenonites sp.
+Billingsites elongatus;Pteropelta gladiata
+Billingsites elongatus;Ramphoprion ineptus
+Billingsites elongatus;Tetraprion pozaryskae
+Billingsites elongatus;Xanioprion sp.
+Billingsites elongatus;Lunoprionella sp.
+Apsidoceras magnificum;Isotelus sp.
+Apsidoceras magnificum;Toxochasmops anticostiensis
+Apsidoceras magnificum;Calymene sp.
+Apsidoceras magnificum;Ceraurinus icarus
+Apsidoceras magnificum;Platycoryphe sp.
+Apsidoceras magnificum;Aphelognathus grandis
+Apsidoceras magnificum;Drepanoistodus suberectus
+Apsidoceras magnificum;Gamachignathus ensifer
+Apsidoceras magnificum;Amorphognathus sp.
+Apsidoceras magnificum;Walliserodus curvatus
+Apsidoceras magnificum;Panderodus sp.
+Apsidoceras magnificum;Oulodus sp.
+Apsidoceras magnificum;Belodina sp.
+Apsidoceras magnificum;Ozarkodina sp.
+Apsidoceras magnificum;Decoriconus sp.
+Apsidoceras magnificum;Phragmodus sp.
+Apsidoceras magnificum;Pseudooneotodus beckmanni
+Discosorus sp.;Isotelus sp.
+Discosorus sp.;Toxochasmops anticostiensis
+Discosorus sp.;Calymene sp.
+Discosorus sp.;Ceraurinus icarus
+Discosorus sp.;Platycoryphe sp.
+Discosorus sp.;Aphelognathus grandis
+Discosorus sp.;Drepanoistodus suberectus
+Discosorus sp.;Gamachignathus ensifer
+Discosorus sp.;Amorphognathus sp.
+Discosorus sp.;Walliserodus curvatus
+Discosorus sp.;Panderodus sp.
+Discosorus sp.;Oulodus sp.
+Discosorus sp.;Belodina sp.
+Discosorus sp.;Ozarkodina sp.
+Discosorus sp.;Decoriconus sp.
+Discosorus sp.;Phragmodus sp.
+Discosorus sp.;Pseudooneotodus beckmanni
+Discosorus sp.;Atraktoprion sp.
+Discosorus sp.;Hadoprion cervicornis
+Discosorus sp.;Kalloprion sp.
+Discosorus sp.;Mochtyella sp.
+Discosorus sp.;Pistoprion transitans
+Discosorus sp.;Vistulella kozlowskii
+Discosorus sp.;Kettnerites sp.
+Discosorus sp.;Oenonites sp.
+Discosorus sp.;Pteropelta gladiata
+Discosorus sp.;Ramphoprion ineptus
+Discosorus sp.;Tetraprion pozaryskae
+Discosorus sp.;Xanioprion sp.
+Discosorus sp.;Lunoprionella sp.
+Polygrammoceras sp.;Isotelus sp.
+Polygrammoceras sp.;Toxochasmops anticostiensis
+Polygrammoceras sp.;Calymene sp.
+Polygrammoceras sp.;Ceraurinus icarus
+Polygrammoceras sp.;Platycoryphe sp.
+Polygrammoceras sp.;Aphelognathus grandis
+Polygrammoceras sp.;Drepanoistodus suberectus
+Polygrammoceras sp.;Gamachignathus ensifer
+Polygrammoceras sp.;Amorphognathus sp.
+Polygrammoceras sp.;Walliserodus curvatus
+Polygrammoceras sp.;Panderodus sp.
+Polygrammoceras sp.;Oulodus sp.
+Polygrammoceras sp.;Belodina sp.
+Polygrammoceras sp.;Ozarkodina sp.
+Polygrammoceras sp.;Decoriconus sp.
+Polygrammoceras sp.;Phragmodus sp.
+Polygrammoceras sp.;Pseudooneotodus beckmanni
+Polygrammoceras sp.;Atraktoprion sp.
+Polygrammoceras sp.;Hadoprion cervicornis
+Polygrammoceras sp.;Kalloprion sp.
+Polygrammoceras sp.;Mochtyella sp.
+Polygrammoceras sp.;Pistoprion transitans
+Polygrammoceras sp.;Vistulella kozlowskii
+Polygrammoceras sp.;Kettnerites sp.
+Polygrammoceras sp.;Oenonites sp.
+Polygrammoceras sp.;Pteropelta gladiata
+Polygrammoceras sp.;Ramphoprion ineptus
+Polygrammoceras sp.;Tetraprion pozaryskae
+Polygrammoceras sp.;Xanioprion sp.
+Polygrammoceras sp.;Lunoprionella sp.
+Orthoceras sp.;Isotelus sp.
+Orthoceras sp.;Toxochasmops anticostiensis
+Orthoceras sp.;Calymene sp.
+Orthoceras sp.;Ceraurinus icarus
+Orthoceras sp.;Platycoryphe sp.
+Orthoceras sp.;Aphelognathus grandis
+Orthoceras sp.;Drepanoistodus suberectus
+Orthoceras sp.;Gamachignathus ensifer
+Orthoceras sp.;Amorphognathus sp.
+Orthoceras sp.;Walliserodus curvatus
+Orthoceras sp.;Panderodus sp.
+Orthoceras sp.;Oulodus sp.
+Orthoceras sp.;Belodina sp.
+Orthoceras sp.;Ozarkodina sp.
+Orthoceras sp.;Decoriconus sp.
+Orthoceras sp.;Phragmodus sp.
+Orthoceras sp.;Pseudooneotodus beckmanni
+Orthoceras sp.;Atraktoprion sp.
+Orthoceras sp.;Hadoprion cervicornis
+Orthoceras sp.;Kalloprion sp.
+Orthoceras sp.;Mochtyella sp.
+Orthoceras sp.;Pistoprion transitans
+Orthoceras sp.;Vistulella kozlowskii
+Orthoceras sp.;Kettnerites sp.
+Orthoceras sp.;Oenonites sp.
+Orthoceras sp.;Pteropelta gladiata
+Orthoceras sp.;Ramphoprion ineptus
+Orthoceras sp.;Tetraprion pozaryskae
+Orthoceras sp.;Xanioprion sp.
+Orthoceras sp.;Lunoprionella sp.
+Orthocycloceras sp.;Isotelus sp.
+Orthocycloceras sp.;Toxochasmops anticostiensis
+Orthocycloceras sp.;Calymene sp.
+Orthocycloceras sp.;Ceraurinus icarus
+Orthocycloceras sp.;Platycoryphe sp.
+Orthocycloceras sp.;Aphelognathus grandis
+Orthocycloceras sp.;Drepanoistodus suberectus
+Orthocycloceras sp.;Gamachignathus ensifer
+Orthocycloceras sp.;Amorphognathus sp.
+Orthocycloceras sp.;Walliserodus curvatus
+Orthocycloceras sp.;Panderodus sp.
+Orthocycloceras sp.;Oulodus sp.
+Orthocycloceras sp.;Belodina sp.
+Orthocycloceras sp.;Ozarkodina sp.
+Orthocycloceras sp.;Decoriconus sp.
+Orthocycloceras sp.;Phragmodus sp.
+Orthocycloceras sp.;Pseudooneotodus beckmanni
+Orthocycloceras sp.;Atraktoprion sp.
+Orthocycloceras sp.;Hadoprion cervicornis
+Orthocycloceras sp.;Kalloprion sp.
+Orthocycloceras sp.;Mochtyella sp.
+Orthocycloceras sp.;Pistoprion transitans
+Orthocycloceras sp.;Vistulella kozlowskii
+Orthocycloceras sp.;Kettnerites sp.
+Orthocycloceras sp.;Oenonites sp.
+Orthocycloceras sp.;Pteropelta gladiata
+Orthocycloceras sp.;Ramphoprion ineptus
+Orthocycloceras sp.;Tetraprion pozaryskae
+Orthocycloceras sp.;Xanioprion sp.
+Orthocycloceras sp.;Lunoprionella sp.
+Amphicyrtoceras sp.;Isotelus sp.
+Amphicyrtoceras sp.;Toxochasmops anticostiensis
+Amphicyrtoceras sp.;Calymene sp.
+Amphicyrtoceras sp.;Ceraurinus icarus
+Amphicyrtoceras sp.;Platycoryphe sp.
+Amphicyrtoceras sp.;Aphelognathus grandis
+Amphicyrtoceras sp.;Drepanoistodus suberectus
+Amphicyrtoceras sp.;Gamachignathus ensifer
+Amphicyrtoceras sp.;Amorphognathus sp.
+Amphicyrtoceras sp.;Walliserodus curvatus
+Amphicyrtoceras sp.;Panderodus sp.
+Amphicyrtoceras sp.;Oulodus sp.
+Amphicyrtoceras sp.;Belodina sp.
+Amphicyrtoceras sp.;Ozarkodina sp.
+Amphicyrtoceras sp.;Decoriconus sp.
+Amphicyrtoceras sp.;Phragmodus sp.
+Amphicyrtoceras sp.;Pseudooneotodus beckmanni
+Amphicyrtoceras sp.;Atraktoprion sp.
+Amphicyrtoceras sp.;Hadoprion cervicornis
+Amphicyrtoceras sp.;Kalloprion sp.
+Amphicyrtoceras sp.;Mochtyella sp.
+Amphicyrtoceras sp.;Pistoprion transitans
+Amphicyrtoceras sp.;Vistulella kozlowskii
+Amphicyrtoceras sp.;Kettnerites sp.
+Amphicyrtoceras sp.;Oenonites sp.
+Amphicyrtoceras sp.;Pteropelta gladiata
+Amphicyrtoceras sp.;Ramphoprion ineptus
+Amphicyrtoceras sp.;Tetraprion pozaryskae
+Amphicyrtoceras sp.;Xanioprion sp.
+Amphicyrtoceras sp.;Lunoprionella sp.
+Actinoceras lesperancei;Cuneamya anticostiana
+Actinoceras lesperancei;Vanuxemia sp.
+Actinoceras lesperancei;Byssonychia anticostiana
+Actinoceras lesperancei;Cleionychia superba
+Actinoceras lesperancei;Pterinea sp.
+Actinoceras lesperancei;Rhytimya sp.
+Actinoceras lesperancei;Ctenodonta sp.
+Discosorus sp.;zooplankton
+Actinoceras lesperancei;Alaskadiscus giganteus
+Actinoceras lesperancei;Brachytomaria papillosa
+Actinoceras lesperancei;Bucania ellisensis
+Actinoceras lesperancei;Cyclonema sp.
+Actinoceras lesperancei;Cyrtospira notata
+Actinoceras lesperancei;Holopea sp.
+Actinoceras lesperancei;Hormotoma sp.
+Actinoceras lesperancei;Loxonema rugosum
+Actinoceras lesperancei;Lytospira nitida
+Actinoceras lesperancei;Phragmolites sp.
+Actinoceras lesperancei;Salpingostoma sp.
+Actinoceras lesperancei;Sinuites bilobatus
+Actinoceras lesperancei;Subulites sp.
+Actinoceras lesperancei;Tetranota obsoleta
+Actinoceras lesperancei;Cornulites sp.
+Apsidoceras magnificum;Alaskadiscus giganteus
+Apsidoceras magnificum;Brachytomaria papillosa
+Apsidoceras magnificum;Bucania ellisensis
+Apsidoceras magnificum;Cyclonema sp.
+Apsidoceras magnificum;Cyrtospira notata
+Apsidoceras magnificum;Holopea sp.
+Apsidoceras magnificum;Hormotoma sp.
+Apsidoceras magnificum;Loxonema rugosum
+Apsidoceras magnificum;Lytospira nitida
+Apsidoceras magnificum;Phragmolites sp.
+Apsidoceras magnificum;Salpingostoma sp.
+Apsidoceras magnificum;Sinuites bilobatus
+Apsidoceras magnificum;Subulites sp.
+Apsidoceras magnificum;Tetranota obsoleta
+Apsidoceras magnificum;Cornulites sp.
+Actinoceras lesperancei;Anisocrinus prinstaensis
+Actinoceras lesperancei;Astakocrinus teren
+Actinoceras lesperancei;Calceocrinus gamachicus
+Actinoceras lesperancei;Charactocrinus billingsi
+Actinoceras lesperancei;Dendrocrinus sp.
+Actinoceras lesperancei;Euspirocrinus gagnoni
+Actinoceras lesperancei;Protaxocrinus sp.
+Actinoceras lesperancei;Xenocrinus rubus
+Actinoceras lesperancei;Acidolites sp.
+Actinoceras lesperancei;Aulopora sp.
+Actinoceras lesperancei;Calapoecia anticostiensis
+Actinoceras lesperancei;Cyathophyllum sp.
+Actinoceras lesperancei;Favosites sp.
+Actinoceras lesperancei;Halysites sp.
+Actinoceras lesperancei;Heliolites sp.
+Actinoceras lesperancei;Palaeofavosites sp.
+Actinoceras lesperancei;Palaeophyllum sp.
+Actinoceras lesperancei;Propora conferta
+Actinoceras lesperancei;Billingsites elongatus
+Actinoceras lesperancei;Discosorus sp.
+Apsidoceras magnificum;Billingsites elongatus
+Apsidoceras magnificum;Discosorus sp.
+Apsidoceras magnificum;Cornulites sp.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

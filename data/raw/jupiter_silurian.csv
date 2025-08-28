@@ -1,0 +1,2572 @@
+﻿CONSUMER;RESOURCE
+bacterioplankton;
+phytoplankton;
+detritus;
+SOM;
+zooplankton;phytoplankton
+zooplankton;bacterioplankton
+Thurammina sp.;bacterioplankton
+Thurammina sp.;detritus
+Forolinia laminaris;bacterioplankton
+Tarphystroma tuberosum;bacterioplankton
+Ecclimadictyon sp.;bacterioplankton
+Camptodictyon penefastigiatum;bacterioplankton
+Clathrodictyon sp.;bacterioplankton
+Oslodictyon chicum;bacterioplankton
+Petridiostroma sp.;bacterioplankton
+Intexodictyon laurenticum;bacterioplankton
+Pachystroma sp.;bacterioplankton
+Forolinia laminaris;SOM
+Tarphystroma tuberosum;SOM
+Ecclimadictyon sp.;SOM
+Camptodictyon penefastigiatum;SOM
+Clathrodictyon sp.;SOM
+Oslodictyon chicum;SOM
+Petridiostroma sp.;SOM
+Intexodictyon laurenticum;SOM
+Pachystroma sp.;SOM
+Forolinia laminaris;phytoplankton
+Tarphystroma tuberosum;phytoplankton
+Ecclimadictyon sp.;phytoplankton
+Camptodictyon penefastigiatum;phytoplankton
+Clathrodictyon sp.;phytoplankton
+Oslodictyon chicum;phytoplankton
+Petridiostroma sp.;phytoplankton
+Intexodictyon laurenticum;phytoplankton
+Pachystroma sp.;phytoplankton
+Schlotheimophyllum canadense;zooplankton
+Arachnophyllum pentagonum;zooplankton
+Brachyelasma girinense;zooplankton
+Fengganophyllum richardsoni;zooplankton
+Phaulactis billingsi;zooplankton
+Kodonophyllum boltoni;zooplankton
+Cladopaliphyllum impensum;zooplankton
+Rhegmaphyllum sp.;zooplankton
+Helicelasma sp.;zooplankton
+Chaloupella pygmaea;zooplankton
+Aulopora sp.;zooplankton
+Favosites sp.;zooplankton
+Palaeofavosites sp.;zooplankton
+Halysites sp.;zooplankton
+Heliolites sp.;zooplankton
+Cyathophyllum sp.;zooplankton
+Schlotheimophyllum canadense;bacterioplankton
+Arachnophyllum pentagonum;bacterioplankton
+Brachyelasma girinense;bacterioplankton
+Fengganophyllum richardsoni;bacterioplankton
+Phaulactis billingsi;bacterioplankton
+Kodonophyllum boltoni;bacterioplankton
+Cladopaliphyllum impensum;bacterioplankton
+Rhegmaphyllum sp.;bacterioplankton
+Helicelasma sp.;bacterioplankton
+Chaloupella pygmaea;bacterioplankton
+Aulopora sp.;bacterioplankton
+Favosites sp.;bacterioplankton
+Palaeofavosites sp.;bacterioplankton
+Halysites sp.;bacterioplankton
+Heliolites sp.;bacterioplankton
+Cyathophyllum sp.;bacterioplankton
+Schlotheimophyllum canadense;SOM
+Arachnophyllum pentagonum;SOM
+Brachyelasma girinense;SOM
+Fengganophyllum richardsoni;SOM
+Phaulactis billingsi;SOM
+Kodonophyllum boltoni;SOM
+Cladopaliphyllum impensum;SOM
+Rhegmaphyllum sp.;SOM
+Helicelasma sp.;SOM
+Chaloupella pygmaea;SOM
+Aulopora sp.;SOM
+Favosites sp.;SOM
+Palaeofavosites sp.;SOM
+Halysites sp.;SOM
+Heliolites sp.;SOM
+Cyathophyllum sp.;SOM
+Aulopora sp.;phytoplankton
+Favosites sp.;phytoplankton
+Palaeofavosites sp.;phytoplankton
+Halysites sp.;phytoplankton
+Heliolites sp.;phytoplankton
+Ascodictyon siluriense;phytoplankton
+Vinella multiradiata;phytoplankton
+Helopora sp.;phytoplankton
+Phaenopora sp.;phytoplankton
+Ptilodictya canadensis;phytoplankton
+Pachydictya sp.;phytoplankton
+Diploclema sparsum;phytoplankton
+Ceramopora sp.;phytoplankton
+Chilotrypa circe;phytoplankton
+Semicoscinium prestiosum;phytoplankton
+Fenestella sp.;phytoplankton
+Thamniscus striatopora;phytoplankton
+Hallopora sp.;phytoplankton
+Lioclemella sp.;phytoplankton
+Trematopora irregularis;phytoplankton
+Corynotrypa sp.;phytoplankton
+Allonema sp.;phytoplankton
+Ascodictyon siluriense;SOM
+Vinella multiradiata;SOM
+Helopora sp.;SOM
+Phaenopora sp.;SOM
+Ptilodictya canadensis;SOM
+Pachydictya sp.;SOM
+Diploclema sparsum;SOM
+Ceramopora sp.;SOM
+Chilotrypa circe;SOM
+Semicoscinium prestiosum;SOM
+Fenestella sp.;SOM
+Thamniscus striatopora;SOM
+Hallopora sp.;SOM
+Lioclemella sp.;SOM
+Trematopora irregularis;SOM
+Corynotrypa sp.;SOM
+Allonema sp.;SOM
+Modiolopsis miser;phytoplankton
+Mytilarca nitida;phytoplankton
+Pterinea sp.;phytoplankton
+Ctenodonta sp.;phytoplankton
+Modiolopsis miser;SOM
+Mytilarca nitida;SOM
+Pterinea sp.;SOM
+Ctenodonta sp.;detritus
+Conocardium elegantulum;phytoplankton
+Conocardium elegantulum;SOM
+Aechmina sp.;detritus
+Paraechmina sp.;detritus
+Libumella sp.;detritus
+Ulrichia sp.;detritus
+Cryptophyllus sp.;detritus
+Anticostiella sp.;detritus
+Gibberella brickensis;detritus
+Herrmannina sp.;detritus
+Zygobolba sp.;detritus
+Jupiterella jupiterensis;detritus
+Apatobolbina sp.;detritus
+Cyrtocyprus inornata;detritus
+Thrallella sp.;detritus
+Bairdiocypris sp.;detritus
+Punctobeecherella punctata;detritus
+Punctomosea sp.;detritus
+Menoeidina lavoiei;detritus
+Microcheilinella sp.;detritus
+Pachydomella sp.;detritus
+Conbathella inornata;detritus
+Paraschmidtella irregularis;detritus
+Bairdiocypris sp.;bacterioplankton
+Microcheilinella sp.;bacterioplankton
+Pachydomella sp.;bacterioplankton
+Conbathella inornata;bacterioplankton
+Paraschmidtella irregularis;bacterioplankton
+Coolinia sp.;phytoplankton
+Brachyprion sp.;phytoplankton
+Hyattidina junia;phytoplankton
+Eomegastrophia philomena;phytoplankton
+Clorinda tumidula;phytoplankton
+Gotatrypa sp.;phytoplankton
+Strophoprion geniculatum;phytoplankton
+Leptaena sp.;phytoplankton
+Katastrophomena radiireticulata;phytoplankton
+Visbyella concavoconvexa;phytoplankton
+Heterorthina cybele;phytoplankton
+Glyptorthis marilara;phytoplankton
+Jupiterella eumorpha;phytoplankton
+Dalejina junonis;phytoplankton
+Dicoelosia dauphinensis;phytoplankton
+Ehlersella davidsonii;phytoplankton
+Microcardinalia divaricata;phytoplankton
+Zygatrypa mica;phytoplankton
+Lissatrypa atheroidea;phytoplankton
+Levenea sp.;phytoplankton
+Parastrophinella sp.;phytoplankton
+Pentamerus sp.;phytoplankton
+Costistricklandia sp.;phytoplankton
+Stricklandia sp.;phytoplankton
+Linguopugnoides cybelense;phytoplankton
+Phoenicitoechia martinensis;phytoplankton
+Eocoelia sp.;phytoplankton
+Platytrochalos sp.;phytoplankton
+Stegerhynchus sp.;phytoplankton
+Ancillotoechia eva;phytoplankton
+Hercotrema bulbicostatum;phytoplankton
+Leptolepyron argenteum;phytoplankton
+Coolinia sp.;SOM
+Brachyprion sp.;SOM
+Hyattidina junia;SOM
+Eomegastrophia philomena;SOM
+Clorinda tumidula;SOM
+Gotatrypa sp.;SOM
+Strophoprion geniculatum;SOM
+Leptaena sp.;SOM
+Katastrophomena radiireticulata;SOM
+Visbyella concavoconvexa;SOM
+Heterorthina cybele;SOM
+Glyptorthis marilara;SOM
+Jupiterella eumorpha;SOM
+Dalejina junonis;SOM
+Dicoelosia dauphinensis;SOM
+Ehlersella davidsonii;SOM
+Microcardinalia divaricata;SOM
+Zygatrypa mica;SOM
+Lissatrypa atheroidea;SOM
+Levenea sp.;SOM
+Parastrophinella sp.;SOM
+Pentamerus sp.;SOM
+Costistricklandia sp.;SOM
+Stricklandia sp.;SOM
+Linguopugnoides cybelense;SOM
+Phoenicitoechia martinensis;SOM
+Eocoelia sp.;SOM
+Platytrochalos sp.;SOM
+Stegerhynchus sp.;SOM
+Ancillotoechia eva;SOM
+Hercotrema bulbicostatum;SOM
+Leptolepyron argenteum;SOM
+Perforocycloides nathalieae;phytoplankton
+Rhenopyrgus viviani;phytoplankton
+Cybelecrinus sp.;phytoplankton
+Bucucrinus sp.;phytoplankton
+Fibrocrinus phragmos;phytoplankton
+Lateranicrinus saintlaurenti;phytoplankton
+Jovacrinus sp.;phytoplankton
+Chenocrinus canadaensis;phytoplankton
+Thalamocrinus daoustae;phytoplankton
+Fragucrinus bothros;phytoplankton
+Aetocrinus gracilis;phytoplankton
+Plicodendrocrinus sp.;phytoplankton
+Kastorcrinus chattertoni;phytoplankton
+Eomyelodactylus sp.;phytoplankton
+Hormocrinus quebecensis;phytoplankton
+Ladacrinus asynaptos;phytoplankton
+Protaxocrinus sp.;phytoplankton
+Eucalyptocrinites sp.;phytoplankton
+Perforocycloides nathalieae;SOM
+Rhenopyrgus viviani;SOM
+Cybelecrinus sp.;SOM
+Bucucrinus sp.;SOM
+Fibrocrinus phragmos;SOM
+Lateranicrinus saintlaurenti;SOM
+Jovacrinus sp.;SOM
+Chenocrinus canadaensis;SOM
+Thalamocrinus daoustae;SOM
+Fragucrinus bothros;SOM
+Aetocrinus gracilis;SOM
+Plicodendrocrinus sp.;SOM
+Kastorcrinus chattertoni;SOM
+Eomyelodactylus sp.;SOM
+Hormocrinus quebecensis;SOM
+Ladacrinus asynaptos;SOM
+Protaxocrinus sp.;SOM
+Eucalyptocrinites sp.;SOM
+Eucalyptocrinites sp.;bacterioplankton
+Salpingostoma sp.;detritus
+Holopea sp.;phytoplankton
+Holopea sp.;SOM
+Cyclonema sp.;detritus
+Hormotoma sp.;detritus
+Phanerotrema communis;detritus
+Spirorapha sp.;Aechmina sp.
+Spirorapha sp.;Paraechmina sp.
+Spirorapha sp.;Libumella sp.
+Spirorapha sp.;Ulrichia sp.
+Spirorapha sp.;Cryptophyllus sp.
+Spirorapha sp.;Anticostiella sp.
+Spirorapha sp.;Gibberella brickensis
+Spirorapha sp.;Herrmannina sp.
+Spirorapha sp.;Zygobolba sp.
+Spirorapha sp.;Jupiterella jupiterensis
+Spirorapha sp.;Apatobolbina sp.
+Spirorapha sp.;Cyrtocyprus inornata
+Spirorapha sp.;Thrallella sp.
+Spirorapha sp.;Bairdiocypris sp.
+Spirorapha sp.;Punctobeecherella punctata
+Spirorapha sp.;Punctomosea sp.
+Spirorapha sp.;Menoeidina lavoiei
+Spirorapha sp.;Microcheilinella sp.
+Spirorapha sp.;Pachydomella sp.
+Spirorapha sp.;Conbathella inornata
+Spirorapha sp.;Paraschmidtella irregularis
+Spirorapha sp.;Ascodictyon siluriense
+Spirorapha sp.;Vinella multiradiata
+Spirorapha sp.;Helopora sp.
+Spirorapha sp.;Phaenopora sp.
+Spirorapha sp.;Ptilodictya canadensis
+Spirorapha sp.;Pachydictya sp.
+Spirorapha sp.;Diploclema sparsum
+Spirorapha sp.;Ceramopora sp.
+Spirorapha sp.;Chilotrypa circe
+Spirorapha sp.;Semicoscinium prestiosum
+Spirorapha sp.;Fenestella sp.
+Spirorapha sp.;Thamniscus striatopora
+Spirorapha sp.;Hallopora sp.
+Spirorapha sp.;Lioclemella sp.
+Spirorapha sp.;Trematopora irregularis
+Spirorapha sp.;Corynotrypa sp.
+Spirorapha sp.;Allonema sp.
+Aulacognathus bullatus;zooplankton
+Distomodus sp.;zooplankton
+Icriodella sp.;zooplankton
+Pterospathodus sp.;zooplankton
+Walliserodus curvatus;zooplankton
+Dapsilodus obliquicostatus;zooplankton
+Panderodus sp.;zooplankton
+Oulodus sp.;zooplankton
+Ozarkodina sp.;zooplankton
+Decoriconus sp.;zooplankton
+Pseudooneotodus beckmanni;zooplankton
+Panderodus sp.;Aechmina sp.
+Panderodus sp.;Paraechmina sp.
+Panderodus sp.;Libumella sp.
+Panderodus sp.;Ulrichia sp.
+Panderodus sp.;Cryptophyllus sp.
+Panderodus sp.;Anticostiella sp.
+Panderodus sp.;Gibberella brickensis
+Panderodus sp.;Herrmannina sp.
+Panderodus sp.;Zygobolba sp.
+Panderodus sp.;Jupiterella jupiterensis
+Panderodus sp.;Apatobolbina sp.
+Panderodus sp.;Cyrtocyprus inornata
+Panderodus sp.;Thrallella sp.
+Panderodus sp.;Bairdiocypris sp.
+Panderodus sp.;Punctobeecherella punctata
+Panderodus sp.;Punctomosea sp.
+Panderodus sp.;Menoeidina lavoiei
+Panderodus sp.;Microcheilinella sp.
+Panderodus sp.;Pachydomella sp.
+Panderodus sp.;Conbathella inornata
+Panderodus sp.;Paraschmidtella irregularis
+Ozarkodina sp.;Aechmina sp.
+Ozarkodina sp.;Paraechmina sp.
+Ozarkodina sp.;Libumella sp.
+Ozarkodina sp.;Ulrichia sp.
+Ozarkodina sp.;Cryptophyllus sp.
+Ozarkodina sp.;Anticostiella sp.
+Ozarkodina sp.;Gibberella brickensis
+Ozarkodina sp.;Herrmannina sp.
+Ozarkodina sp.;Zygobolba sp.
+Ozarkodina sp.;Jupiterella jupiterensis
+Ozarkodina sp.;Apatobolbina sp.
+Ozarkodina sp.;Cyrtocyprus inornata
+Ozarkodina sp.;Thrallella sp.
+Ozarkodina sp.;Bairdiocypris sp.
+Ozarkodina sp.;Punctobeecherella punctata
+Ozarkodina sp.;Punctomosea sp.
+Ozarkodina sp.;Menoeidina lavoiei
+Ozarkodina sp.;Microcheilinella sp.
+Ozarkodina sp.;Pachydomella sp.
+Ozarkodina sp.;Conbathella inornata
+Ozarkodina sp.;Paraschmidtella irregularis
+Failleana wangi;detritus
+Failleana wangi;Aechmina sp.
+Failleana wangi;Paraechmina sp.
+Failleana wangi;Libumella sp.
+Failleana wangi;Ulrichia sp.
+Failleana wangi;Cryptophyllus sp.
+Failleana wangi;Anticostiella sp.
+Failleana wangi;Gibberella brickensis
+Failleana wangi;Herrmannina sp.
+Failleana wangi;Zygobolba sp.
+Failleana wangi;Jupiterella jupiterensis
+Failleana wangi;Apatobolbina sp.
+Failleana wangi;Cyrtocyprus inornata
+Failleana wangi;Thrallella sp.
+Failleana wangi;Bairdiocypris sp.
+Failleana wangi;Punctobeecherella punctata
+Failleana wangi;Punctomosea sp.
+Failleana wangi;Menoeidina lavoiei
+Failleana wangi;Microcheilinella sp.
+Failleana wangi;Pachydomella sp.
+Failleana wangi;Conbathella inornata
+Failleana wangi;Paraschmidtella irregularis
+Arctinurus sp.;detritus
+Arctinurus sp.;Aulacognathus bullatus
+Arctinurus sp.;Distomodus sp.
+Arctinurus sp.;Icriodella sp.
+Arctinurus sp.;Pterospathodus sp.
+Arctinurus sp.;Walliserodus curvatus
+Arctinurus sp.;Dapsilodus obliquicostatus
+Arctinurus sp.;Panderodus sp.
+Arctinurus sp.;Oulodus sp.
+Arctinurus sp.;Ozarkodina sp.
+Arctinurus sp.;Decoriconus sp.
+Arctinurus sp.;Pseudooneotodus beckmanni
+Dalaspis sp.;detritus
+Dalaspis sp.;Aechmina sp.
+Dalaspis sp.;Paraechmina sp.
+Dalaspis sp.;Libumella sp.
+Dalaspis sp.;Ulrichia sp.
+Dalaspis sp.;Cryptophyllus sp.
+Dalaspis sp.;Anticostiella sp.
+Dalaspis sp.;Gibberella brickensis
+Dalaspis sp.;Herrmannina sp.
+Dalaspis sp.;Zygobolba sp.
+Dalaspis sp.;Jupiterella jupiterensis
+Dalaspis sp.;Apatobolbina sp.
+Dalaspis sp.;Cyrtocyprus inornata
+Dalaspis sp.;Thrallella sp.
+Dalaspis sp.;Bairdiocypris sp.
+Dalaspis sp.;Punctobeecherella punctata
+Dalaspis sp.;Punctomosea sp.
+Dalaspis sp.;Menoeidina lavoiei
+Dalaspis sp.;Microcheilinella sp.
+Dalaspis sp.;Pachydomella sp.
+Dalaspis sp.;Conbathella inornata
+Dalaspis sp.;Paraschmidtella irregularis
+Exallaspis sp.;detritus
+Exallaspis sp.;Aechmina sp.
+Exallaspis sp.;Paraechmina sp.
+Exallaspis sp.;Libumella sp.
+Exallaspis sp.;Ulrichia sp.
+Exallaspis sp.;Cryptophyllus sp.
+Exallaspis sp.;Anticostiella sp.
+Exallaspis sp.;Gibberella brickensis
+Exallaspis sp.;Herrmannina sp.
+Exallaspis sp.;Zygobolba sp.
+Exallaspis sp.;Jupiterella jupiterensis
+Exallaspis sp.;Apatobolbina sp.
+Exallaspis sp.;Cyrtocyprus inornata
+Exallaspis sp.;Thrallella sp.
+Exallaspis sp.;Bairdiocypris sp.
+Exallaspis sp.;Punctobeecherella punctata
+Exallaspis sp.;Punctomosea sp.
+Exallaspis sp.;Menoeidina lavoiei
+Exallaspis sp.;Microcheilinella sp.
+Exallaspis sp.;Pachydomella sp.
+Exallaspis sp.;Conbathella inornata
+Exallaspis sp.;Paraschmidtella irregularis
+Kettneraspis sp.;detritus
+Kettneraspis sp.;Aechmina sp.
+Kettneraspis sp.;Paraechmina sp.
+Kettneraspis sp.;Libumella sp.
+Kettneraspis sp.;Ulrichia sp.
+Kettneraspis sp.;Cryptophyllus sp.
+Kettneraspis sp.;Anticostiella sp.
+Kettneraspis sp.;Gibberella brickensis
+Kettneraspis sp.;Herrmannina sp.
+Kettneraspis sp.;Zygobolba sp.
+Kettneraspis sp.;Jupiterella jupiterensis
+Kettneraspis sp.;Apatobolbina sp.
+Kettneraspis sp.;Cyrtocyprus inornata
+Kettneraspis sp.;Thrallella sp.
+Kettneraspis sp.;Bairdiocypris sp.
+Kettneraspis sp.;Punctobeecherella punctata
+Kettneraspis sp.;Punctomosea sp.
+Kettneraspis sp.;Menoeidina lavoiei
+Kettneraspis sp.;Microcheilinella sp.
+Kettneraspis sp.;Pachydomella sp.
+Kettneraspis sp.;Conbathella inornata
+Kettneraspis sp.;Paraschmidtella irregularis
+Stelckaspis sp.;detritus
+Stelckaspis sp.;Aechmina sp.
+Stelckaspis sp.;Paraechmina sp.
+Stelckaspis sp.;Libumella sp.
+Stelckaspis sp.;Ulrichia sp.
+Stelckaspis sp.;Cryptophyllus sp.
+Stelckaspis sp.;Anticostiella sp.
+Stelckaspis sp.;Gibberella brickensis
+Stelckaspis sp.;Herrmannina sp.
+Stelckaspis sp.;Zygobolba sp.
+Stelckaspis sp.;Jupiterella jupiterensis
+Stelckaspis sp.;Apatobolbina sp.
+Stelckaspis sp.;Cyrtocyprus inornata
+Stelckaspis sp.;Thrallella sp.
+Stelckaspis sp.;Bairdiocypris sp.
+Stelckaspis sp.;Punctobeecherella punctata
+Stelckaspis sp.;Punctomosea sp.
+Stelckaspis sp.;Menoeidina lavoiei
+Stelckaspis sp.;Microcheilinella sp.
+Stelckaspis sp.;Pachydomella sp.
+Stelckaspis sp.;Conbathella inornata
+Stelckaspis sp.;Paraschmidtella irregularis
+Acernaspis sp.;detritus
+Acernaspis sp.;Aechmina sp.
+Acernaspis sp.;Paraechmina sp.
+Acernaspis sp.;Libumella sp.
+Acernaspis sp.;Ulrichia sp.
+Acernaspis sp.;Cryptophyllus sp.
+Acernaspis sp.;Anticostiella sp.
+Acernaspis sp.;Gibberella brickensis
+Acernaspis sp.;Herrmannina sp.
+Acernaspis sp.;Zygobolba sp.
+Acernaspis sp.;Jupiterella jupiterensis
+Acernaspis sp.;Apatobolbina sp.
+Acernaspis sp.;Cyrtocyprus inornata
+Acernaspis sp.;Thrallella sp.
+Acernaspis sp.;Bairdiocypris sp.
+Acernaspis sp.;Punctobeecherella punctata
+Acernaspis sp.;Punctomosea sp.
+Acernaspis sp.;Menoeidina lavoiei
+Acernaspis sp.;Microcheilinella sp.
+Acernaspis sp.;Pachydomella sp.
+Acernaspis sp.;Conbathella inornata
+Acernaspis sp.;Paraschmidtella irregularis
+Dalmanites caudatus jupiterensis;Aechmina sp.
+Dalmanites caudatus jupiterensis;Paraechmina sp.
+Dalmanites caudatus jupiterensis;Libumella sp.
+Dalmanites caudatus jupiterensis;Ulrichia sp.
+Dalmanites caudatus jupiterensis;Cryptophyllus sp.
+Dalmanites caudatus jupiterensis;Anticostiella sp.
+Dalmanites caudatus jupiterensis;Gibberella brickensis
+Dalmanites caudatus jupiterensis;Herrmannina sp.
+Dalmanites caudatus jupiterensis;Zygobolba sp.
+Dalmanites caudatus jupiterensis;Jupiterella jupiterensis
+Dalmanites caudatus jupiterensis;Apatobolbina sp.
+Dalmanites caudatus jupiterensis;Cyrtocyprus inornata
+Dalmanites caudatus jupiterensis;Thrallella sp.
+Dalmanites caudatus jupiterensis;Bairdiocypris sp.
+Dalmanites caudatus jupiterensis;Punctobeecherella punctata
+Dalmanites caudatus jupiterensis;Punctomosea sp.
+Dalmanites caudatus jupiterensis;Menoeidina lavoiei
+Dalmanites caudatus jupiterensis;Microcheilinella sp.
+Dalmanites caudatus jupiterensis;Pachydomella sp.
+Dalmanites caudatus jupiterensis;Conbathella inornata
+Dalmanites caudatus jupiterensis;Paraschmidtella irregularis
+Dalmanites caudatus jupiterensis;Aulacognathus bullatus
+Dalmanites caudatus jupiterensis;Distomodus sp.
+Dalmanites caudatus jupiterensis;Icriodella sp.
+Dalmanites caudatus jupiterensis;Pterospathodus sp.
+Dalmanites caudatus jupiterensis;Walliserodus curvatus
+Dalmanites caudatus jupiterensis;Dapsilodus obliquicostatus
+Dalmanites caudatus jupiterensis;Panderodus sp.
+Dalmanites caudatus jupiterensis;Oulodus sp.
+Dalmanites caudatus jupiterensis;Ozarkodina sp.
+Dalmanites caudatus jupiterensis;Decoriconus sp.
+Dalmanites caudatus jupiterensis;Pseudooneotodus beckmanni
+Dalmanites caudatus jupiterensis;detritus
+Bessazoon gibbae;detritus
+Bessazoon gibbae;Aechmina sp.
+Bessazoon gibbae;Paraechmina sp.
+Bessazoon gibbae;Libumella sp.
+Bessazoon gibbae;Ulrichia sp.
+Bessazoon gibbae;Cryptophyllus sp.
+Bessazoon gibbae;Anticostiella sp.
+Bessazoon gibbae;Gibberella brickensis
+Bessazoon gibbae;Herrmannina sp.
+Bessazoon gibbae;Zygobolba sp.
+Bessazoon gibbae;Jupiterella jupiterensis
+Bessazoon gibbae;Apatobolbina sp.
+Bessazoon gibbae;Cyrtocyprus inornata
+Bessazoon gibbae;Thrallella sp.
+Bessazoon gibbae;Bairdiocypris sp.
+Bessazoon gibbae;Punctobeecherella punctata
+Bessazoon gibbae;Punctomosea sp.
+Bessazoon gibbae;Menoeidina lavoiei
+Bessazoon gibbae;Microcheilinella sp.
+Bessazoon gibbae;Pachydomella sp.
+Bessazoon gibbae;Conbathella inornata
+Bessazoon gibbae;Paraschmidtella irregularis
+Daytonia jollieti;detritus
+Daytonia jollieti;Aechmina sp.
+Daytonia jollieti;Paraechmina sp.
+Daytonia jollieti;Libumella sp.
+Daytonia jollieti;Ulrichia sp.
+Daytonia jollieti;Cryptophyllus sp.
+Daytonia jollieti;Anticostiella sp.
+Daytonia jollieti;Gibberella brickensis
+Daytonia jollieti;Herrmannina sp.
+Daytonia jollieti;Zygobolba sp.
+Daytonia jollieti;Jupiterella jupiterensis
+Daytonia jollieti;Apatobolbina sp.
+Daytonia jollieti;Cyrtocyprus inornata
+Daytonia jollieti;Thrallella sp.
+Daytonia jollieti;Bairdiocypris sp.
+Daytonia jollieti;Punctobeecherella punctata
+Daytonia jollieti;Punctomosea sp.
+Daytonia jollieti;Menoeidina lavoiei
+Daytonia jollieti;Microcheilinella sp.
+Daytonia jollieti;Pachydomella sp.
+Daytonia jollieti;Conbathella inornata
+Daytonia jollieti;Paraschmidtella irregularis
+Calymene sp.;detritus
+Calymene sp.;Thurammina sp.
+Calymene sp.;Aulacognathus bullatus
+Calymene sp.;Distomodus sp.
+Calymene sp.;Icriodella sp.
+Calymene sp.;Pterospathodus sp.
+Calymene sp.;Walliserodus curvatus
+Calymene sp.;Dapsilodus obliquicostatus
+Calymene sp.;Panderodus sp.
+Calymene sp.;Oulodus sp.
+Calymene sp.;Ozarkodina sp.
+Calymene sp.;Decoriconus sp.
+Calymene sp.;Pseudooneotodus beckmanni
+Diacalymene sp.;detritus
+Diacalymene sp.;Aulacognathus bullatus
+Diacalymene sp.;Distomodus sp.
+Diacalymene sp.;Icriodella sp.
+Diacalymene sp.;Pterospathodus sp.
+Diacalymene sp.;Walliserodus curvatus
+Diacalymene sp.;Dapsilodus obliquicostatus
+Diacalymene sp.;Panderodus sp.
+Diacalymene sp.;Oulodus sp.
+Diacalymene sp.;Ozarkodina sp.
+Diacalymene sp.;Decoriconus sp.
+Diacalymene sp.;Pseudooneotodus beckmanni
+Hadromeros sp.;detritus
+Hadromeros sp.;Aechmina sp.
+Hadromeros sp.;Paraechmina sp.
+Hadromeros sp.;Libumella sp.
+Hadromeros sp.;Ulrichia sp.
+Hadromeros sp.;Cryptophyllus sp.
+Hadromeros sp.;Anticostiella sp.
+Hadromeros sp.;Gibberella brickensis
+Hadromeros sp.;Herrmannina sp.
+Hadromeros sp.;Zygobolba sp.
+Hadromeros sp.;Jupiterella jupiterensis
+Hadromeros sp.;Apatobolbina sp.
+Hadromeros sp.;Cyrtocyprus inornata
+Hadromeros sp.;Thrallella sp.
+Hadromeros sp.;Bairdiocypris sp.
+Hadromeros sp.;Punctobeecherella punctata
+Hadromeros sp.;Punctomosea sp.
+Hadromeros sp.;Menoeidina lavoiei
+Hadromeros sp.;Microcheilinella sp.
+Hadromeros sp.;Pachydomella sp.
+Hadromeros sp.;Conbathella inornata
+Hadromeros sp.;Paraschmidtella irregularis
+Radiurus adraini;detritus
+Distyrax maccormicki;detritus
+Encrinurus sp.;detritus
+Encrinurus sp.;Aechmina sp.
+Encrinurus sp.;Paraechmina sp.
+Encrinurus sp.;Libumella sp.
+Encrinurus sp.;Ulrichia sp.
+Encrinurus sp.;Cryptophyllus sp.
+Encrinurus sp.;Anticostiella sp.
+Encrinurus sp.;Gibberella brickensis
+Encrinurus sp.;Herrmannina sp.
+Encrinurus sp.;Zygobolba sp.
+Encrinurus sp.;Jupiterella jupiterensis
+Encrinurus sp.;Apatobolbina sp.
+Encrinurus sp.;Cyrtocyprus inornata
+Encrinurus sp.;Thrallella sp.
+Encrinurus sp.;Bairdiocypris sp.
+Encrinurus sp.;Punctobeecherella punctata
+Encrinurus sp.;Punctomosea sp.
+Encrinurus sp.;Menoeidina lavoiei
+Encrinurus sp.;Microcheilinella sp.
+Encrinurus sp.;Pachydomella sp.
+Encrinurus sp.;Conbathella inornata
+Encrinurus sp.;Paraschmidtella irregularis
+Nucleurus anticostiensis;detritus
+Nucleurus anticostiensis;Aechmina sp.
+Nucleurus anticostiensis;Paraechmina sp.
+Nucleurus anticostiensis;Libumella sp.
+Nucleurus anticostiensis;Ulrichia sp.
+Nucleurus anticostiensis;Cryptophyllus sp.
+Nucleurus anticostiensis;Anticostiella sp.
+Nucleurus anticostiensis;Gibberella brickensis
+Nucleurus anticostiensis;Herrmannina sp.
+Nucleurus anticostiensis;Zygobolba sp.
+Nucleurus anticostiensis;Jupiterella jupiterensis
+Nucleurus anticostiensis;Apatobolbina sp.
+Nucleurus anticostiensis;Cyrtocyprus inornata
+Nucleurus anticostiensis;Thrallella sp.
+Nucleurus anticostiensis;Bairdiocypris sp.
+Nucleurus anticostiensis;Punctobeecherella punctata
+Nucleurus anticostiensis;Punctomosea sp.
+Nucleurus anticostiensis;Menoeidina lavoiei
+Nucleurus anticostiensis;Microcheilinella sp.
+Nucleurus anticostiensis;Pachydomella sp.
+Nucleurus anticostiensis;Conbathella inornata
+Nucleurus anticostiensis;Paraschmidtella irregularis
+Decoroproetus sp.;detritus
+Warburgella pratti;detritus
+Warburgella pratti;Aechmina sp.
+Warburgella pratti;Paraechmina sp.
+Warburgella pratti;Libumella sp.
+Warburgella pratti;Ulrichia sp.
+Warburgella pratti;Cryptophyllus sp.
+Warburgella pratti;Anticostiella sp.
+Warburgella pratti;Gibberella brickensis
+Warburgella pratti;Herrmannina sp.
+Warburgella pratti;Zygobolba sp.
+Warburgella pratti;Jupiterella jupiterensis
+Warburgella pratti;Apatobolbina sp.
+Warburgella pratti;Cyrtocyprus inornata
+Warburgella pratti;Thrallella sp.
+Warburgella pratti;Bairdiocypris sp.
+Warburgella pratti;Punctobeecherella punctata
+Warburgella pratti;Punctomosea sp.
+Warburgella pratti;Menoeidina lavoiei
+Warburgella pratti;Microcheilinella sp.
+Warburgella pratti;Pachydomella sp.
+Warburgella pratti;Conbathella inornata
+Warburgella pratti;Paraschmidtella irregularis
+Warburgella pratti;Aulacognathus bullatus
+Warburgella pratti;Distomodus sp.
+Warburgella pratti;Icriodella sp.
+Warburgella pratti;Pterospathodus sp.
+Warburgella pratti;Walliserodus curvatus
+Warburgella pratti;Dapsilodus obliquicostatus
+Warburgella pratti;Panderodus sp.
+Warburgella pratti;Oulodus sp.
+Warburgella pratti;Ozarkodina sp.
+Warburgella pratti;Decoriconus sp.
+Warburgella pratti;Pseudooneotodus beckmanni
+Harpidella sp.;detritus
+Maurotarion richardsoni;detritus
+Maurotarion richardsoni;Aechmina sp.
+Maurotarion richardsoni;Paraechmina sp.
+Maurotarion richardsoni;Libumella sp.
+Maurotarion richardsoni;Ulrichia sp.
+Maurotarion richardsoni;Cryptophyllus sp.
+Maurotarion richardsoni;Anticostiella sp.
+Maurotarion richardsoni;Gibberella brickensis
+Maurotarion richardsoni;Herrmannina sp.
+Maurotarion richardsoni;Zygobolba sp.
+Maurotarion richardsoni;Jupiterella jupiterensis
+Maurotarion richardsoni;Apatobolbina sp.
+Maurotarion richardsoni;Cyrtocyprus inornata
+Maurotarion richardsoni;Thrallella sp.
+Maurotarion richardsoni;Bairdiocypris sp.
+Maurotarion richardsoni;Punctobeecherella punctata
+Maurotarion richardsoni;Punctomosea sp.
+Maurotarion richardsoni;Menoeidina lavoiei
+Maurotarion richardsoni;Microcheilinella sp.
+Maurotarion richardsoni;Pachydomella sp.
+Maurotarion richardsoni;Conbathella inornata
+Maurotarion richardsoni;Paraschmidtella irregularis
+Elrodooceras blakei;Aechmina sp.
+Elrodooceras blakei;Paraechmina sp.
+Elrodooceras blakei;Libumella sp.
+Elrodooceras blakei;Ulrichia sp.
+Elrodooceras blakei;Cryptophyllus sp.
+Elrodooceras blakei;Anticostiella sp.
+Elrodooceras blakei;Gibberella brickensis
+Elrodooceras blakei;Herrmannina sp.
+Elrodooceras blakei;Zygobolba sp.
+Elrodooceras blakei;Jupiterella jupiterensis
+Elrodooceras blakei;Apatobolbina sp.
+Elrodooceras blakei;Cyrtocyprus inornata
+Elrodooceras blakei;Thrallella sp.
+Elrodooceras blakei;Bairdiocypris sp.
+Elrodooceras blakei;Punctobeecherella punctata
+Elrodooceras blakei;Punctomosea sp.
+Elrodooceras blakei;Menoeidina lavoiei
+Elrodooceras blakei;Microcheilinella sp.
+Elrodooceras blakei;Pachydomella sp.
+Elrodooceras blakei;Conbathella inornata
+Elrodooceras blakei;Paraschmidtella irregularis
+Armenoceras sp.;Aechmina sp.
+Armenoceras sp.;Paraechmina sp.
+Armenoceras sp.;Libumella sp.
+Armenoceras sp.;Ulrichia sp.
+Armenoceras sp.;Cryptophyllus sp.
+Armenoceras sp.;Anticostiella sp.
+Armenoceras sp.;Gibberella brickensis
+Armenoceras sp.;Herrmannina sp.
+Armenoceras sp.;Zygobolba sp.
+Armenoceras sp.;Jupiterella jupiterensis
+Armenoceras sp.;Apatobolbina sp.
+Armenoceras sp.;Cyrtocyprus inornata
+Armenoceras sp.;Thrallella sp.
+Armenoceras sp.;Bairdiocypris sp.
+Armenoceras sp.;Punctobeecherella punctata
+Armenoceras sp.;Punctomosea sp.
+Armenoceras sp.;Menoeidina lavoiei
+Armenoceras sp.;Microcheilinella sp.
+Armenoceras sp.;Pachydomella sp.
+Armenoceras sp.;Conbathella inornata
+Armenoceras sp.;Paraschmidtella irregularis
+Huroniella timiskamingensis;Aechmina sp.
+Huroniella timiskamingensis;Paraechmina sp.
+Huroniella timiskamingensis;Libumella sp.
+Huroniella timiskamingensis;Ulrichia sp.
+Huroniella timiskamingensis;Cryptophyllus sp.
+Huroniella timiskamingensis;Anticostiella sp.
+Huroniella timiskamingensis;Gibberella brickensis
+Huroniella timiskamingensis;Herrmannina sp.
+Huroniella timiskamingensis;Zygobolba sp.
+Huroniella timiskamingensis;Jupiterella jupiterensis
+Huroniella timiskamingensis;Apatobolbina sp.
+Huroniella timiskamingensis;Cyrtocyprus inornata
+Huroniella timiskamingensis;Thrallella sp.
+Huroniella timiskamingensis;Bairdiocypris sp.
+Huroniella timiskamingensis;Punctobeecherella punctata
+Huroniella timiskamingensis;Punctomosea sp.
+Huroniella timiskamingensis;Menoeidina lavoiei
+Huroniella timiskamingensis;Microcheilinella sp.
+Huroniella timiskamingensis;Pachydomella sp.
+Huroniella timiskamingensis;Conbathella inornata
+Huroniella timiskamingensis;Paraschmidtella irregularis
+Discosorus sp.;Aechmina sp.
+Discosorus sp.;Paraechmina sp.
+Discosorus sp.;Libumella sp.
+Discosorus sp.;Ulrichia sp.
+Discosorus sp.;Cryptophyllus sp.
+Discosorus sp.;Anticostiella sp.
+Discosorus sp.;Gibberella brickensis
+Discosorus sp.;Herrmannina sp.
+Discosorus sp.;Zygobolba sp.
+Discosorus sp.;Jupiterella jupiterensis
+Discosorus sp.;Apatobolbina sp.
+Discosorus sp.;Cyrtocyprus inornata
+Discosorus sp.;Thrallella sp.
+Discosorus sp.;Bairdiocypris sp.
+Discosorus sp.;Punctobeecherella punctata
+Discosorus sp.;Punctomosea sp.
+Discosorus sp.;Menoeidina lavoiei
+Discosorus sp.;Microcheilinella sp.
+Discosorus sp.;Pachydomella sp.
+Discosorus sp.;Conbathella inornata
+Discosorus sp.;Paraschmidtella irregularis
+Mandaloceras sp.;Aechmina sp.
+Mandaloceras sp.;Paraechmina sp.
+Mandaloceras sp.;Libumella sp.
+Mandaloceras sp.;Ulrichia sp.
+Mandaloceras sp.;Cryptophyllus sp.
+Mandaloceras sp.;Anticostiella sp.
+Mandaloceras sp.;Gibberella brickensis
+Mandaloceras sp.;Herrmannina sp.
+Mandaloceras sp.;Zygobolba sp.
+Mandaloceras sp.;Jupiterella jupiterensis
+Mandaloceras sp.;Apatobolbina sp.
+Mandaloceras sp.;Cyrtocyprus inornata
+Mandaloceras sp.;Thrallella sp.
+Mandaloceras sp.;Bairdiocypris sp.
+Mandaloceras sp.;Punctobeecherella punctata
+Mandaloceras sp.;Punctomosea sp.
+Mandaloceras sp.;Menoeidina lavoiei
+Mandaloceras sp.;Microcheilinella sp.
+Mandaloceras sp.;Pachydomella sp.
+Mandaloceras sp.;Conbathella inornata
+Mandaloceras sp.;Paraschmidtella irregularis
+Umbeloceras sp.;Aechmina sp.
+Umbeloceras sp.;Paraechmina sp.
+Umbeloceras sp.;Libumella sp.
+Umbeloceras sp.;Ulrichia sp.
+Umbeloceras sp.;Cryptophyllus sp.
+Umbeloceras sp.;Anticostiella sp.
+Umbeloceras sp.;Gibberella brickensis
+Umbeloceras sp.;Herrmannina sp.
+Umbeloceras sp.;Zygobolba sp.
+Umbeloceras sp.;Jupiterella jupiterensis
+Umbeloceras sp.;Apatobolbina sp.
+Umbeloceras sp.;Cyrtocyprus inornata
+Umbeloceras sp.;Thrallella sp.
+Umbeloceras sp.;Bairdiocypris sp.
+Umbeloceras sp.;Punctobeecherella punctata
+Umbeloceras sp.;Punctomosea sp.
+Umbeloceras sp.;Menoeidina lavoiei
+Umbeloceras sp.;Microcheilinella sp.
+Umbeloceras sp.;Pachydomella sp.
+Umbeloceras sp.;Conbathella inornata
+Umbeloceras sp.;Paraschmidtella irregularis
+Phragmoceras sp.;Aechmina sp.
+Phragmoceras sp.;Paraechmina sp.
+Phragmoceras sp.;Libumella sp.
+Phragmoceras sp.;Ulrichia sp.
+Phragmoceras sp.;Cryptophyllus sp.
+Phragmoceras sp.;Anticostiella sp.
+Phragmoceras sp.;Gibberella brickensis
+Phragmoceras sp.;Herrmannina sp.
+Phragmoceras sp.;Zygobolba sp.
+Phragmoceras sp.;Jupiterella jupiterensis
+Phragmoceras sp.;Apatobolbina sp.
+Phragmoceras sp.;Cyrtocyprus inornata
+Phragmoceras sp.;Thrallella sp.
+Phragmoceras sp.;Bairdiocypris sp.
+Phragmoceras sp.;Punctobeecherella punctata
+Phragmoceras sp.;Punctomosea sp.
+Phragmoceras sp.;Menoeidina lavoiei
+Phragmoceras sp.;Microcheilinella sp.
+Phragmoceras sp.;Pachydomella sp.
+Phragmoceras sp.;Conbathella inornata
+Phragmoceras sp.;Paraschmidtella irregularis
+Dawsonoceras hyatti;Aechmina sp.
+Dawsonoceras hyatti;Paraechmina sp.
+Dawsonoceras hyatti;Libumella sp.
+Dawsonoceras hyatti;Ulrichia sp.
+Dawsonoceras hyatti;Cryptophyllus sp.
+Dawsonoceras hyatti;Anticostiella sp.
+Dawsonoceras hyatti;Gibberella brickensis
+Dawsonoceras hyatti;Herrmannina sp.
+Dawsonoceras hyatti;Zygobolba sp.
+Dawsonoceras hyatti;Jupiterella jupiterensis
+Dawsonoceras hyatti;Apatobolbina sp.
+Dawsonoceras hyatti;Cyrtocyprus inornata
+Dawsonoceras hyatti;Thrallella sp.
+Dawsonoceras hyatti;Bairdiocypris sp.
+Dawsonoceras hyatti;Punctobeecherella punctata
+Dawsonoceras hyatti;Punctomosea sp.
+Dawsonoceras hyatti;Menoeidina lavoiei
+Dawsonoceras hyatti;Microcheilinella sp.
+Dawsonoceras hyatti;Pachydomella sp.
+Dawsonoceras hyatti;Conbathella inornata
+Dawsonoceras hyatti;Paraschmidtella irregularis
+Kionoceras virgatum;Aechmina sp.
+Kionoceras virgatum;Paraechmina sp.
+Kionoceras virgatum;Libumella sp.
+Kionoceras virgatum;Ulrichia sp.
+Kionoceras virgatum;Cryptophyllus sp.
+Kionoceras virgatum;Anticostiella sp.
+Kionoceras virgatum;Gibberella brickensis
+Kionoceras virgatum;Herrmannina sp.
+Kionoceras virgatum;Zygobolba sp.
+Kionoceras virgatum;Jupiterella jupiterensis
+Kionoceras virgatum;Apatobolbina sp.
+Kionoceras virgatum;Cyrtocyprus inornata
+Kionoceras virgatum;Thrallella sp.
+Kionoceras virgatum;Bairdiocypris sp.
+Kionoceras virgatum;Punctobeecherella punctata
+Kionoceras virgatum;Punctomosea sp.
+Kionoceras virgatum;Menoeidina lavoiei
+Kionoceras virgatum;Microcheilinella sp.
+Kionoceras virgatum;Pachydomella sp.
+Kionoceras virgatum;Conbathella inornata
+Kionoceras virgatum;Paraschmidtella irregularis
+Polygrammoceras sp.;Aechmina sp.
+Polygrammoceras sp.;Paraechmina sp.
+Polygrammoceras sp.;Libumella sp.
+Polygrammoceras sp.;Ulrichia sp.
+Polygrammoceras sp.;Cryptophyllus sp.
+Polygrammoceras sp.;Anticostiella sp.
+Polygrammoceras sp.;Gibberella brickensis
+Polygrammoceras sp.;Herrmannina sp.
+Polygrammoceras sp.;Zygobolba sp.
+Polygrammoceras sp.;Jupiterella jupiterensis
+Polygrammoceras sp.;Apatobolbina sp.
+Polygrammoceras sp.;Cyrtocyprus inornata
+Polygrammoceras sp.;Thrallella sp.
+Polygrammoceras sp.;Bairdiocypris sp.
+Polygrammoceras sp.;Punctobeecherella punctata
+Polygrammoceras sp.;Punctomosea sp.
+Polygrammoceras sp.;Menoeidina lavoiei
+Polygrammoceras sp.;Microcheilinella sp.
+Polygrammoceras sp.;Pachydomella sp.
+Polygrammoceras sp.;Conbathella inornata
+Polygrammoceras sp.;Paraschmidtella irregularis
+Donacoceras bellense;Aechmina sp.
+Donacoceras bellense;Paraechmina sp.
+Donacoceras bellense;Libumella sp.
+Donacoceras bellense;Ulrichia sp.
+Donacoceras bellense;Cryptophyllus sp.
+Donacoceras bellense;Anticostiella sp.
+Donacoceras bellense;Gibberella brickensis
+Donacoceras bellense;Herrmannina sp.
+Donacoceras bellense;Zygobolba sp.
+Donacoceras bellense;Jupiterella jupiterensis
+Donacoceras bellense;Apatobolbina sp.
+Donacoceras bellense;Cyrtocyprus inornata
+Donacoceras bellense;Thrallella sp.
+Donacoceras bellense;Bairdiocypris sp.
+Donacoceras bellense;Punctobeecherella punctata
+Donacoceras bellense;Punctomosea sp.
+Donacoceras bellense;Menoeidina lavoiei
+Donacoceras bellense;Microcheilinella sp.
+Donacoceras bellense;Pachydomella sp.
+Donacoceras bellense;Conbathella inornata
+Donacoceras bellense;Paraschmidtella irregularis
+Orthocycloceras sp.;Aechmina sp.
+Orthocycloceras sp.;Paraechmina sp.
+Orthocycloceras sp.;Libumella sp.
+Orthocycloceras sp.;Ulrichia sp.
+Orthocycloceras sp.;Cryptophyllus sp.
+Orthocycloceras sp.;Anticostiella sp.
+Orthocycloceras sp.;Gibberella brickensis
+Orthocycloceras sp.;Herrmannina sp.
+Orthocycloceras sp.;Zygobolba sp.
+Orthocycloceras sp.;Jupiterella jupiterensis
+Orthocycloceras sp.;Apatobolbina sp.
+Orthocycloceras sp.;Cyrtocyprus inornata
+Orthocycloceras sp.;Thrallella sp.
+Orthocycloceras sp.;Bairdiocypris sp.
+Orthocycloceras sp.;Punctobeecherella punctata
+Orthocycloceras sp.;Punctomosea sp.
+Orthocycloceras sp.;Menoeidina lavoiei
+Orthocycloceras sp.;Microcheilinella sp.
+Orthocycloceras sp.;Pachydomella sp.
+Orthocycloceras sp.;Conbathella inornata
+Orthocycloceras sp.;Paraschmidtella irregularis
+Amphicyrtoceras sp.;Aechmina sp.
+Amphicyrtoceras sp.;Paraechmina sp.
+Amphicyrtoceras sp.;Libumella sp.
+Amphicyrtoceras sp.;Ulrichia sp.
+Amphicyrtoceras sp.;Cryptophyllus sp.
+Amphicyrtoceras sp.;Anticostiella sp.
+Amphicyrtoceras sp.;Gibberella brickensis
+Amphicyrtoceras sp.;Herrmannina sp.
+Amphicyrtoceras sp.;Zygobolba sp.
+Amphicyrtoceras sp.;Jupiterella jupiterensis
+Amphicyrtoceras sp.;Apatobolbina sp.
+Amphicyrtoceras sp.;Cyrtocyprus inornata
+Amphicyrtoceras sp.;Thrallella sp.
+Amphicyrtoceras sp.;Bairdiocypris sp.
+Amphicyrtoceras sp.;Punctobeecherella punctata
+Amphicyrtoceras sp.;Punctomosea sp.
+Amphicyrtoceras sp.;Menoeidina lavoiei
+Amphicyrtoceras sp.;Microcheilinella sp.
+Amphicyrtoceras sp.;Pachydomella sp.
+Amphicyrtoceras sp.;Conbathella inornata
+Amphicyrtoceras sp.;Paraschmidtella irregularis
+Eotrimeroceras jupiterense;Aechmina sp.
+Eotrimeroceras jupiterense;Paraechmina sp.
+Eotrimeroceras jupiterense;Libumella sp.
+Eotrimeroceras jupiterense;Ulrichia sp.
+Eotrimeroceras jupiterense;Cryptophyllus sp.
+Eotrimeroceras jupiterense;Anticostiella sp.
+Eotrimeroceras jupiterense;Gibberella brickensis
+Eotrimeroceras jupiterense;Herrmannina sp.
+Eotrimeroceras jupiterense;Zygobolba sp.
+Eotrimeroceras jupiterense;Jupiterella jupiterensis
+Eotrimeroceras jupiterense;Apatobolbina sp.
+Eotrimeroceras jupiterense;Cyrtocyprus inornata
+Eotrimeroceras jupiterense;Thrallella sp.
+Eotrimeroceras jupiterense;Bairdiocypris sp.
+Eotrimeroceras jupiterense;Punctobeecherella punctata
+Eotrimeroceras jupiterense;Punctomosea sp.
+Eotrimeroceras jupiterense;Menoeidina lavoiei
+Eotrimeroceras jupiterense;Microcheilinella sp.
+Eotrimeroceras jupiterense;Pachydomella sp.
+Eotrimeroceras jupiterense;Conbathella inornata
+Eotrimeroceras jupiterense;Paraschmidtella irregularis
+Eridites barnesi;Aechmina sp.
+Eridites barnesi;Paraechmina sp.
+Eridites barnesi;Libumella sp.
+Eridites barnesi;Ulrichia sp.
+Eridites barnesi;Cryptophyllus sp.
+Eridites barnesi;Anticostiella sp.
+Eridites barnesi;Gibberella brickensis
+Eridites barnesi;Herrmannina sp.
+Eridites barnesi;Zygobolba sp.
+Eridites barnesi;Jupiterella jupiterensis
+Eridites barnesi;Apatobolbina sp.
+Eridites barnesi;Cyrtocyprus inornata
+Eridites barnesi;Thrallella sp.
+Eridites barnesi;Bairdiocypris sp.
+Eridites barnesi;Punctobeecherella punctata
+Eridites barnesi;Punctomosea sp.
+Eridites barnesi;Menoeidina lavoiei
+Eridites barnesi;Microcheilinella sp.
+Eridites barnesi;Pachydomella sp.
+Eridites barnesi;Conbathella inornata
+Eridites barnesi;Paraschmidtella irregularis
+Elrodooceras blakei;Failleana wangi
+Elrodooceras blakei;Arctinurus sp.
+Elrodooceras blakei;Dalaspis sp.
+Elrodooceras blakei;Exallaspis sp.
+Elrodooceras blakei;Kettneraspis sp.
+Elrodooceras blakei;Stelckaspis sp.
+Elrodooceras blakei;Acernaspis sp.
+Elrodooceras blakei;Dalmanites caudatus jupiterensis
+Elrodooceras blakei;Bessazoon gibbae
+Elrodooceras blakei;Daytonia jollieti
+Elrodooceras blakei;Calymene sp.
+Elrodooceras blakei;Diacalymene sp.
+Elrodooceras blakei;Hadromeros sp.
+Elrodooceras blakei;Radiurus adraini
+Elrodooceras blakei;Distyrax maccormicki
+Elrodooceras blakei;Encrinurus sp.
+Elrodooceras blakei;Nucleurus anticostiensis
+Elrodooceras blakei;Decoroproetus sp.
+Elrodooceras blakei;Warburgella pratti
+Elrodooceras blakei;Harpidella sp.
+Elrodooceras blakei;Maurotarion richardsoni
+Elrodooceras blakei;Aulacognathus bullatus
+Elrodooceras blakei;Distomodus sp.
+Elrodooceras blakei;Icriodella sp.
+Elrodooceras blakei;Pterospathodus sp.
+Elrodooceras blakei;Walliserodus curvatus
+Elrodooceras blakei;Dapsilodus obliquicostatus
+Elrodooceras blakei;Panderodus sp.
+Elrodooceras blakei;Oulodus sp.
+Elrodooceras blakei;Ozarkodina sp.
+Elrodooceras blakei;Decoriconus sp.
+Elrodooceras blakei;Pseudooneotodus beckmanni
+Armenoceras sp.;Failleana wangi
+Armenoceras sp.;Arctinurus sp.
+Armenoceras sp.;Dalaspis sp.
+Armenoceras sp.;Exallaspis sp.
+Armenoceras sp.;Kettneraspis sp.
+Armenoceras sp.;Stelckaspis sp.
+Armenoceras sp.;Acernaspis sp.
+Armenoceras sp.;Dalmanites caudatus jupiterensis
+Armenoceras sp.;Bessazoon gibbae
+Armenoceras sp.;Daytonia jollieti
+Armenoceras sp.;Calymene sp.
+Armenoceras sp.;Diacalymene sp.
+Armenoceras sp.;Hadromeros sp.
+Armenoceras sp.;Radiurus adraini
+Armenoceras sp.;Distyrax maccormicki
+Armenoceras sp.;Encrinurus sp.
+Armenoceras sp.;Nucleurus anticostiensis
+Armenoceras sp.;Decoroproetus sp.
+Armenoceras sp.;Warburgella pratti
+Armenoceras sp.;Harpidella sp.
+Armenoceras sp.;Maurotarion richardsoni
+Armenoceras sp.;Aulacognathus bullatus
+Armenoceras sp.;Distomodus sp.
+Armenoceras sp.;Icriodella sp.
+Armenoceras sp.;Pterospathodus sp.
+Armenoceras sp.;Walliserodus curvatus
+Armenoceras sp.;Dapsilodus obliquicostatus
+Armenoceras sp.;Panderodus sp.
+Armenoceras sp.;Oulodus sp.
+Armenoceras sp.;Ozarkodina sp.
+Armenoceras sp.;Decoriconus sp.
+Armenoceras sp.;Pseudooneotodus beckmanni
+Huroniella timiskamingensis;Failleana wangi
+Huroniella timiskamingensis;Arctinurus sp.
+Huroniella timiskamingensis;Dalaspis sp.
+Huroniella timiskamingensis;Exallaspis sp.
+Huroniella timiskamingensis;Kettneraspis sp.
+Huroniella timiskamingensis;Stelckaspis sp.
+Huroniella timiskamingensis;Acernaspis sp.
+Huroniella timiskamingensis;Dalmanites caudatus jupiterensis
+Huroniella timiskamingensis;Bessazoon gibbae
+Huroniella timiskamingensis;Daytonia jollieti
+Huroniella timiskamingensis;Calymene sp.
+Huroniella timiskamingensis;Diacalymene sp.
+Huroniella timiskamingensis;Hadromeros sp.
+Huroniella timiskamingensis;Radiurus adraini
+Huroniella timiskamingensis;Distyrax maccormicki
+Huroniella timiskamingensis;Encrinurus sp.
+Huroniella timiskamingensis;Nucleurus anticostiensis
+Huroniella timiskamingensis;Decoroproetus sp.
+Huroniella timiskamingensis;Warburgella pratti
+Huroniella timiskamingensis;Harpidella sp.
+Huroniella timiskamingensis;Maurotarion richardsoni
+Huroniella timiskamingensis;Aulacognathus bullatus
+Huroniella timiskamingensis;Distomodus sp.
+Huroniella timiskamingensis;Icriodella sp.
+Huroniella timiskamingensis;Pterospathodus sp.
+Huroniella timiskamingensis;Walliserodus curvatus
+Huroniella timiskamingensis;Dapsilodus obliquicostatus
+Huroniella timiskamingensis;Panderodus sp.
+Huroniella timiskamingensis;Oulodus sp.
+Huroniella timiskamingensis;Ozarkodina sp.
+Huroniella timiskamingensis;Decoriconus sp.
+Huroniella timiskamingensis;Pseudooneotodus beckmanni
+Discosorus sp.;Failleana wangi
+Discosorus sp.;Arctinurus sp.
+Discosorus sp.;Dalaspis sp.
+Discosorus sp.;Exallaspis sp.
+Discosorus sp.;Kettneraspis sp.
+Discosorus sp.;Stelckaspis sp.
+Discosorus sp.;Acernaspis sp.
+Discosorus sp.;Dalmanites caudatus jupiterensis
+Discosorus sp.;Bessazoon gibbae
+Discosorus sp.;Daytonia jollieti
+Discosorus sp.;Calymene sp.
+Discosorus sp.;Diacalymene sp.
+Discosorus sp.;Hadromeros sp.
+Discosorus sp.;Radiurus adraini
+Discosorus sp.;Distyrax maccormicki
+Discosorus sp.;Encrinurus sp.
+Discosorus sp.;Nucleurus anticostiensis
+Discosorus sp.;Decoroproetus sp.
+Discosorus sp.;Warburgella pratti
+Discosorus sp.;Harpidella sp.
+Discosorus sp.;Maurotarion richardsoni
+Discosorus sp.;Aulacognathus bullatus
+Discosorus sp.;Distomodus sp.
+Discosorus sp.;Icriodella sp.
+Discosorus sp.;Pterospathodus sp.
+Discosorus sp.;Walliserodus curvatus
+Discosorus sp.;Dapsilodus obliquicostatus
+Discosorus sp.;Panderodus sp.
+Discosorus sp.;Oulodus sp.
+Discosorus sp.;Ozarkodina sp.
+Discosorus sp.;Decoriconus sp.
+Discosorus sp.;Pseudooneotodus beckmanni
+Mandaloceras sp.;Failleana wangi
+Mandaloceras sp.;Arctinurus sp.
+Mandaloceras sp.;Dalaspis sp.
+Mandaloceras sp.;Exallaspis sp.
+Mandaloceras sp.;Kettneraspis sp.
+Mandaloceras sp.;Stelckaspis sp.
+Mandaloceras sp.;Acernaspis sp.
+Mandaloceras sp.;Dalmanites caudatus jupiterensis
+Mandaloceras sp.;Bessazoon gibbae
+Mandaloceras sp.;Daytonia jollieti
+Mandaloceras sp.;Calymene sp.
+Mandaloceras sp.;Diacalymene sp.
+Mandaloceras sp.;Hadromeros sp.
+Mandaloceras sp.;Radiurus adraini
+Mandaloceras sp.;Distyrax maccormicki
+Mandaloceras sp.;Encrinurus sp.
+Mandaloceras sp.;Nucleurus anticostiensis
+Mandaloceras sp.;Decoroproetus sp.
+Mandaloceras sp.;Warburgella pratti
+Mandaloceras sp.;Harpidella sp.
+Mandaloceras sp.;Maurotarion richardsoni
+Mandaloceras sp.;Aulacognathus bullatus
+Mandaloceras sp.;Distomodus sp.
+Mandaloceras sp.;Icriodella sp.
+Mandaloceras sp.;Pterospathodus sp.
+Mandaloceras sp.;Walliserodus curvatus
+Mandaloceras sp.;Dapsilodus obliquicostatus
+Mandaloceras sp.;Panderodus sp.
+Mandaloceras sp.;Oulodus sp.
+Mandaloceras sp.;Ozarkodina sp.
+Mandaloceras sp.;Decoriconus sp.
+Mandaloceras sp.;Pseudooneotodus beckmanni
+Umbeloceras sp.;Failleana wangi
+Umbeloceras sp.;Arctinurus sp.
+Umbeloceras sp.;Dalaspis sp.
+Umbeloceras sp.;Exallaspis sp.
+Umbeloceras sp.;Kettneraspis sp.
+Umbeloceras sp.;Stelckaspis sp.
+Umbeloceras sp.;Acernaspis sp.
+Umbeloceras sp.;Dalmanites caudatus jupiterensis
+Umbeloceras sp.;Bessazoon gibbae
+Umbeloceras sp.;Daytonia jollieti
+Umbeloceras sp.;Calymene sp.
+Umbeloceras sp.;Diacalymene sp.
+Umbeloceras sp.;Hadromeros sp.
+Umbeloceras sp.;Radiurus adraini
+Umbeloceras sp.;Distyrax maccormicki
+Umbeloceras sp.;Encrinurus sp.
+Umbeloceras sp.;Nucleurus anticostiensis
+Umbeloceras sp.;Decoroproetus sp.
+Umbeloceras sp.;Warburgella pratti
+Umbeloceras sp.;Harpidella sp.
+Umbeloceras sp.;Maurotarion richardsoni
+Umbeloceras sp.;Aulacognathus bullatus
+Umbeloceras sp.;Distomodus sp.
+Umbeloceras sp.;Icriodella sp.
+Umbeloceras sp.;Pterospathodus sp.
+Umbeloceras sp.;Walliserodus curvatus
+Umbeloceras sp.;Dapsilodus obliquicostatus
+Umbeloceras sp.;Panderodus sp.
+Umbeloceras sp.;Oulodus sp.
+Umbeloceras sp.;Ozarkodina sp.
+Umbeloceras sp.;Decoriconus sp.
+Umbeloceras sp.;Pseudooneotodus beckmanni
+Phragmoceras sp.;Failleana wangi
+Phragmoceras sp.;Arctinurus sp.
+Phragmoceras sp.;Dalaspis sp.
+Phragmoceras sp.;Exallaspis sp.
+Phragmoceras sp.;Kettneraspis sp.
+Phragmoceras sp.;Stelckaspis sp.
+Phragmoceras sp.;Acernaspis sp.
+Phragmoceras sp.;Dalmanites caudatus jupiterensis
+Phragmoceras sp.;Bessazoon gibbae
+Phragmoceras sp.;Daytonia jollieti
+Phragmoceras sp.;Calymene sp.
+Phragmoceras sp.;Diacalymene sp.
+Phragmoceras sp.;Hadromeros sp.
+Phragmoceras sp.;Radiurus adraini
+Phragmoceras sp.;Distyrax maccormicki
+Phragmoceras sp.;Encrinurus sp.
+Phragmoceras sp.;Nucleurus anticostiensis
+Phragmoceras sp.;Decoroproetus sp.
+Phragmoceras sp.;Warburgella pratti
+Phragmoceras sp.;Harpidella sp.
+Phragmoceras sp.;Maurotarion richardsoni
+Phragmoceras sp.;Aulacognathus bullatus
+Phragmoceras sp.;Distomodus sp.
+Phragmoceras sp.;Icriodella sp.
+Phragmoceras sp.;Pterospathodus sp.
+Phragmoceras sp.;Walliserodus curvatus
+Phragmoceras sp.;Dapsilodus obliquicostatus
+Phragmoceras sp.;Panderodus sp.
+Phragmoceras sp.;Oulodus sp.
+Phragmoceras sp.;Ozarkodina sp.
+Phragmoceras sp.;Decoriconus sp.
+Phragmoceras sp.;Pseudooneotodus beckmanni
+Dawsonoceras hyatti;Failleana wangi
+Dawsonoceras hyatti;Arctinurus sp.
+Dawsonoceras hyatti;Dalaspis sp.
+Dawsonoceras hyatti;Exallaspis sp.
+Dawsonoceras hyatti;Kettneraspis sp.
+Dawsonoceras hyatti;Stelckaspis sp.
+Dawsonoceras hyatti;Acernaspis sp.
+Dawsonoceras hyatti;Dalmanites caudatus jupiterensis
+Dawsonoceras hyatti;Bessazoon gibbae
+Dawsonoceras hyatti;Daytonia jollieti
+Dawsonoceras hyatti;Calymene sp.
+Dawsonoceras hyatti;Diacalymene sp.
+Dawsonoceras hyatti;Hadromeros sp.
+Dawsonoceras hyatti;Radiurus adraini
+Dawsonoceras hyatti;Distyrax maccormicki
+Dawsonoceras hyatti;Encrinurus sp.
+Dawsonoceras hyatti;Nucleurus anticostiensis
+Dawsonoceras hyatti;Decoroproetus sp.
+Dawsonoceras hyatti;Warburgella pratti
+Dawsonoceras hyatti;Harpidella sp.
+Dawsonoceras hyatti;Maurotarion richardsoni
+Dawsonoceras hyatti;Aulacognathus bullatus
+Dawsonoceras hyatti;Distomodus sp.
+Dawsonoceras hyatti;Icriodella sp.
+Dawsonoceras hyatti;Pterospathodus sp.
+Dawsonoceras hyatti;Walliserodus curvatus
+Dawsonoceras hyatti;Dapsilodus obliquicostatus
+Dawsonoceras hyatti;Panderodus sp.
+Dawsonoceras hyatti;Oulodus sp.
+Dawsonoceras hyatti;Ozarkodina sp.
+Dawsonoceras hyatti;Decoriconus sp.
+Dawsonoceras hyatti;Pseudooneotodus beckmanni
+Kionoceras virgatum;Failleana wangi
+Kionoceras virgatum;Arctinurus sp.
+Kionoceras virgatum;Dalaspis sp.
+Kionoceras virgatum;Exallaspis sp.
+Kionoceras virgatum;Kettneraspis sp.
+Kionoceras virgatum;Stelckaspis sp.
+Kionoceras virgatum;Acernaspis sp.
+Kionoceras virgatum;Dalmanites caudatus jupiterensis
+Kionoceras virgatum;Bessazoon gibbae
+Kionoceras virgatum;Daytonia jollieti
+Kionoceras virgatum;Calymene sp.
+Kionoceras virgatum;Diacalymene sp.
+Kionoceras virgatum;Hadromeros sp.
+Kionoceras virgatum;Radiurus adraini
+Kionoceras virgatum;Distyrax maccormicki
+Kionoceras virgatum;Encrinurus sp.
+Kionoceras virgatum;Nucleurus anticostiensis
+Kionoceras virgatum;Decoroproetus sp.
+Kionoceras virgatum;Warburgella pratti
+Kionoceras virgatum;Harpidella sp.
+Kionoceras virgatum;Maurotarion richardsoni
+Kionoceras virgatum;Aulacognathus bullatus
+Kionoceras virgatum;Distomodus sp.
+Kionoceras virgatum;Icriodella sp.
+Kionoceras virgatum;Pterospathodus sp.
+Kionoceras virgatum;Walliserodus curvatus
+Kionoceras virgatum;Dapsilodus obliquicostatus
+Kionoceras virgatum;Panderodus sp.
+Kionoceras virgatum;Oulodus sp.
+Kionoceras virgatum;Ozarkodina sp.
+Kionoceras virgatum;Decoriconus sp.
+Kionoceras virgatum;Pseudooneotodus beckmanni
+Polygrammoceras sp.;Failleana wangi
+Polygrammoceras sp.;Arctinurus sp.
+Polygrammoceras sp.;Dalaspis sp.
+Polygrammoceras sp.;Exallaspis sp.
+Polygrammoceras sp.;Kettneraspis sp.
+Polygrammoceras sp.;Stelckaspis sp.
+Polygrammoceras sp.;Acernaspis sp.
+Polygrammoceras sp.;Dalmanites caudatus jupiterensis
+Polygrammoceras sp.;Bessazoon gibbae
+Polygrammoceras sp.;Daytonia jollieti
+Polygrammoceras sp.;Calymene sp.
+Polygrammoceras sp.;Diacalymene sp.
+Polygrammoceras sp.;Hadromeros sp.
+Polygrammoceras sp.;Radiurus adraini
+Polygrammoceras sp.;Distyrax maccormicki
+Polygrammoceras sp.;Encrinurus sp.
+Polygrammoceras sp.;Nucleurus anticostiensis
+Polygrammoceras sp.;Decoroproetus sp.
+Polygrammoceras sp.;Warburgella pratti
+Polygrammoceras sp.;Harpidella sp.
+Polygrammoceras sp.;Maurotarion richardsoni
+Polygrammoceras sp.;Aulacognathus bullatus
+Polygrammoceras sp.;Distomodus sp.
+Polygrammoceras sp.;Icriodella sp.
+Polygrammoceras sp.;Pterospathodus sp.
+Polygrammoceras sp.;Walliserodus curvatus
+Polygrammoceras sp.;Dapsilodus obliquicostatus
+Polygrammoceras sp.;Panderodus sp.
+Polygrammoceras sp.;Oulodus sp.
+Polygrammoceras sp.;Ozarkodina sp.
+Polygrammoceras sp.;Decoriconus sp.
+Polygrammoceras sp.;Pseudooneotodus beckmanni
+Donacoceras bellense;Failleana wangi
+Donacoceras bellense;Arctinurus sp.
+Donacoceras bellense;Dalaspis sp.
+Donacoceras bellense;Exallaspis sp.
+Donacoceras bellense;Kettneraspis sp.
+Donacoceras bellense;Stelckaspis sp.
+Donacoceras bellense;Acernaspis sp.
+Donacoceras bellense;Dalmanites caudatus jupiterensis
+Donacoceras bellense;Bessazoon gibbae
+Donacoceras bellense;Daytonia jollieti
+Donacoceras bellense;Calymene sp.
+Donacoceras bellense;Diacalymene sp.
+Donacoceras bellense;Hadromeros sp.
+Donacoceras bellense;Radiurus adraini
+Donacoceras bellense;Distyrax maccormicki
+Donacoceras bellense;Encrinurus sp.
+Donacoceras bellense;Nucleurus anticostiensis
+Donacoceras bellense;Decoroproetus sp.
+Donacoceras bellense;Warburgella pratti
+Donacoceras bellense;Harpidella sp.
+Donacoceras bellense;Maurotarion richardsoni
+Donacoceras bellense;Aulacognathus bullatus
+Donacoceras bellense;Distomodus sp.
+Donacoceras bellense;Icriodella sp.
+Donacoceras bellense;Pterospathodus sp.
+Donacoceras bellense;Walliserodus curvatus
+Donacoceras bellense;Dapsilodus obliquicostatus
+Donacoceras bellense;Panderodus sp.
+Donacoceras bellense;Oulodus sp.
+Donacoceras bellense;Ozarkodina sp.
+Donacoceras bellense;Decoriconus sp.
+Donacoceras bellense;Pseudooneotodus beckmanni
+Orthocycloceras sp.;Failleana wangi
+Orthocycloceras sp.;Arctinurus sp.
+Orthocycloceras sp.;Dalaspis sp.
+Orthocycloceras sp.;Exallaspis sp.
+Orthocycloceras sp.;Kettneraspis sp.
+Orthocycloceras sp.;Stelckaspis sp.
+Orthocycloceras sp.;Acernaspis sp.
+Orthocycloceras sp.;Dalmanites caudatus jupiterensis
+Orthocycloceras sp.;Bessazoon gibbae
+Orthocycloceras sp.;Daytonia jollieti
+Orthocycloceras sp.;Calymene sp.
+Orthocycloceras sp.;Diacalymene sp.
+Orthocycloceras sp.;Hadromeros sp.
+Orthocycloceras sp.;Radiurus adraini
+Orthocycloceras sp.;Distyrax maccormicki
+Orthocycloceras sp.;Encrinurus sp.
+Orthocycloceras sp.;Nucleurus anticostiensis
+Orthocycloceras sp.;Decoroproetus sp.
+Orthocycloceras sp.;Warburgella pratti
+Orthocycloceras sp.;Harpidella sp.
+Orthocycloceras sp.;Maurotarion richardsoni
+Orthocycloceras sp.;Aulacognathus bullatus
+Orthocycloceras sp.;Distomodus sp.
+Orthocycloceras sp.;Icriodella sp.
+Orthocycloceras sp.;Pterospathodus sp.
+Orthocycloceras sp.;Walliserodus curvatus
+Orthocycloceras sp.;Dapsilodus obliquicostatus
+Orthocycloceras sp.;Panderodus sp.
+Orthocycloceras sp.;Oulodus sp.
+Orthocycloceras sp.;Ozarkodina sp.
+Orthocycloceras sp.;Decoriconus sp.
+Orthocycloceras sp.;Pseudooneotodus beckmanni
+Amphicyrtoceras sp.;Failleana wangi
+Amphicyrtoceras sp.;Arctinurus sp.
+Amphicyrtoceras sp.;Dalaspis sp.
+Amphicyrtoceras sp.;Exallaspis sp.
+Amphicyrtoceras sp.;Kettneraspis sp.
+Amphicyrtoceras sp.;Stelckaspis sp.
+Amphicyrtoceras sp.;Acernaspis sp.
+Amphicyrtoceras sp.;Dalmanites caudatus jupiterensis
+Amphicyrtoceras sp.;Bessazoon gibbae
+Amphicyrtoceras sp.;Daytonia jollieti
+Amphicyrtoceras sp.;Calymene sp.
+Amphicyrtoceras sp.;Diacalymene sp.
+Amphicyrtoceras sp.;Hadromeros sp.
+Amphicyrtoceras sp.;Radiurus adraini
+Amphicyrtoceras sp.;Distyrax maccormicki
+Amphicyrtoceras sp.;Encrinurus sp.
+Amphicyrtoceras sp.;Nucleurus anticostiensis
+Amphicyrtoceras sp.;Decoroproetus sp.
+Amphicyrtoceras sp.;Warburgella pratti
+Amphicyrtoceras sp.;Harpidella sp.
+Amphicyrtoceras sp.;Maurotarion richardsoni
+Amphicyrtoceras sp.;Aulacognathus bullatus
+Amphicyrtoceras sp.;Distomodus sp.
+Amphicyrtoceras sp.;Icriodella sp.
+Amphicyrtoceras sp.;Pterospathodus sp.
+Amphicyrtoceras sp.;Walliserodus curvatus
+Amphicyrtoceras sp.;Dapsilodus obliquicostatus
+Amphicyrtoceras sp.;Panderodus sp.
+Amphicyrtoceras sp.;Oulodus sp.
+Amphicyrtoceras sp.;Ozarkodina sp.
+Amphicyrtoceras sp.;Decoriconus sp.
+Amphicyrtoceras sp.;Pseudooneotodus beckmanni
+Eotrimeroceras jupiterense;Failleana wangi
+Eotrimeroceras jupiterense;Arctinurus sp.
+Eotrimeroceras jupiterense;Dalaspis sp.
+Eotrimeroceras jupiterense;Exallaspis sp.
+Eotrimeroceras jupiterense;Kettneraspis sp.
+Eotrimeroceras jupiterense;Stelckaspis sp.
+Eotrimeroceras jupiterense;Acernaspis sp.
+Eotrimeroceras jupiterense;Dalmanites caudatus jupiterensis
+Eotrimeroceras jupiterense;Bessazoon gibbae
+Eotrimeroceras jupiterense;Daytonia jollieti
+Eotrimeroceras jupiterense;Calymene sp.
+Eotrimeroceras jupiterense;Diacalymene sp.
+Eotrimeroceras jupiterense;Hadromeros sp.
+Eotrimeroceras jupiterense;Radiurus adraini
+Eotrimeroceras jupiterense;Distyrax maccormicki
+Eotrimeroceras jupiterense;Encrinurus sp.
+Eotrimeroceras jupiterense;Nucleurus anticostiensis
+Eotrimeroceras jupiterense;Decoroproetus sp.
+Eotrimeroceras jupiterense;Warburgella pratti
+Eotrimeroceras jupiterense;Harpidella sp.
+Eotrimeroceras jupiterense;Maurotarion richardsoni
+Eotrimeroceras jupiterense;Aulacognathus bullatus
+Eotrimeroceras jupiterense;Distomodus sp.
+Eotrimeroceras jupiterense;Icriodella sp.
+Eotrimeroceras jupiterense;Pterospathodus sp.
+Eotrimeroceras jupiterense;Walliserodus curvatus
+Eotrimeroceras jupiterense;Dapsilodus obliquicostatus
+Eotrimeroceras jupiterense;Panderodus sp.
+Eotrimeroceras jupiterense;Oulodus sp.
+Eotrimeroceras jupiterense;Ozarkodina sp.
+Eotrimeroceras jupiterense;Decoriconus sp.
+Eotrimeroceras jupiterense;Pseudooneotodus beckmanni
+Eridites barnesi;Failleana wangi
+Eridites barnesi;Arctinurus sp.
+Eridites barnesi;Dalaspis sp.
+Eridites barnesi;Exallaspis sp.
+Eridites barnesi;Kettneraspis sp.
+Eridites barnesi;Stelckaspis sp.
+Eridites barnesi;Acernaspis sp.
+Eridites barnesi;Dalmanites caudatus jupiterensis
+Eridites barnesi;Bessazoon gibbae
+Eridites barnesi;Daytonia jollieti
+Eridites barnesi;Calymene sp.
+Eridites barnesi;Diacalymene sp.
+Eridites barnesi;Hadromeros sp.
+Eridites barnesi;Radiurus adraini
+Eridites barnesi;Distyrax maccormicki
+Eridites barnesi;Encrinurus sp.
+Eridites barnesi;Nucleurus anticostiensis
+Eridites barnesi;Decoroproetus sp.
+Eridites barnesi;Warburgella pratti
+Eridites barnesi;Harpidella sp.
+Eridites barnesi;Maurotarion richardsoni
+Eridites barnesi;Aulacognathus bullatus
+Eridites barnesi;Distomodus sp.
+Eridites barnesi;Icriodella sp.
+Eridites barnesi;Pterospathodus sp.
+Eridites barnesi;Walliserodus curvatus
+Eridites barnesi;Dapsilodus obliquicostatus
+Eridites barnesi;Panderodus sp.
+Eridites barnesi;Oulodus sp.
+Eridites barnesi;Ozarkodina sp.
+Eridites barnesi;Decoriconus sp.
+Eridites barnesi;Pseudooneotodus beckmanni
+Elrodooceras blakei;Modiolopsis miser
+Elrodooceras blakei;Mytilarca nitida
+Elrodooceras blakei;Pterinea sp.
+Elrodooceras blakei;Ctenodonta sp.
+Elrodooceras blakei;Conocardium elegantulum
+Armenoceras sp.;Modiolopsis miser
+Armenoceras sp.;Mytilarca nitida
+Armenoceras sp.;Pterinea sp.
+Armenoceras sp.;Ctenodonta sp.
+Armenoceras sp.;Conocardium elegantulum
+Huroniella timiskamingensis;Modiolopsis miser
+Huroniella timiskamingensis;Mytilarca nitida
+Huroniella timiskamingensis;Pterinea sp.
+Huroniella timiskamingensis;Ctenodonta sp.
+Huroniella timiskamingensis;Conocardium elegantulum
+Discosorus sp.;zooplankton
+Mandaloceras sp.;zooplankton
+Umbeloceras sp.;zooplankton
+Phragmoceras sp.;zooplankton
+Elrodooceras blakei;Coolinia sp.
+Elrodooceras blakei;Brachyprion sp.
+Elrodooceras blakei;Hyattidina junia
+Elrodooceras blakei;Eomegastrophia philomena
+Elrodooceras blakei;Clorinda tumidula
+Elrodooceras blakei;Gotatrypa sp.
+Elrodooceras blakei;Strophoprion geniculatum
+Elrodooceras blakei;Leptaena sp.
+Elrodooceras blakei;Katastrophomena radiireticulata
+Elrodooceras blakei;Visbyella concavoconvexa
+Elrodooceras blakei;Heterorthina cybele
+Elrodooceras blakei;Glyptorthis marilara
+Elrodooceras blakei;Jupiterella eumorpha
+Elrodooceras blakei;Dalejina junonis
+Elrodooceras blakei;Dicoelosia dauphinensis
+Elrodooceras blakei;Ehlersella davidsonii
+Elrodooceras blakei;Microcardinalia divaricata
+Elrodooceras blakei;Zygatrypa mica
+Elrodooceras blakei;Lissatrypa atheroidea
+Elrodooceras blakei;Levenea sp.
+Elrodooceras blakei;Parastrophinella sp.
+Elrodooceras blakei;Pentamerus sp.
+Elrodooceras blakei;Costistricklandia sp.
+Elrodooceras blakei;Stricklandia sp.
+Elrodooceras blakei;Linguopugnoides cybelense
+Elrodooceras blakei;Phoenicitoechia martinensis
+Elrodooceras blakei;Eocoelia sp.
+Elrodooceras blakei;Stegerhynchus sp.
+Elrodooceras blakei;Ancillotoechia eva
+Elrodooceras blakei;Hercotrema bulbicostatum
+Elrodooceras blakei;Leptolepyron argenteum
+Eridites barnesi;Cyclonema sp.
+Eridites barnesi;Holopea sp.
+Eridites barnesi;Hormotoma sp.
+Eridites barnesi;Phanerotrema communis
+Eridites barnesi;Salpingostoma sp.
+Eridites barnesi;Spirorapha sp.
+Elrodooceras blakei;Cyclonema sp.
+Elrodooceras blakei;Holopea sp.
+Elrodooceras blakei;Hormotoma sp.
+Elrodooceras blakei;Phanerotrema communis
+Elrodooceras blakei;Salpingostoma sp.
+Elrodooceras blakei;Spirorapha sp.
+Eridites barnesi;Aetocrinus gracilis
+Eridites barnesi;Chenocrinus canadaensis
+Eridites barnesi;Eomyelodactylus sp.
+Eridites barnesi;Fragucrinus bothros
+Eridites barnesi;Hormocrinus quebecensis
+Eridites barnesi;Kastorcrinus chattertoni
+Eridites barnesi;Ladacrinus asynaptos
+Eridites barnesi;Plicodendrocrinus sp.
+Eridites barnesi;Protaxocrinus sp.
+Eridites barnesi;Thalamocrinus daoustae
+Elrodooceras blakei;Discosorus sp.
+Eridites barnesi;Discosorus sp.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
