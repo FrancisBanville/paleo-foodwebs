@@ -14,7 +14,7 @@ library(grid)
 
 # Load data -----------------------------
 # Change working directory as needed
-setwd("c:/users/beasl/documents/paleo-foodwebs/code/permutation_analysis")
+# setwd("c:/users/beasl/documents/paleo-foodwebs/code/permutation_analysis")
 
 # Read in data as needed
 uncertain.data <- read.csv("uncertain.csv")
@@ -84,7 +84,7 @@ for(i in 1:length(unique(means$Metric))){
 dunne.plt <- wrap_plots(plotlist[1:17])+
   plot_layout(ncol = 5, guides = "collect")
 
-# ggsave(filename = "dunne_repro.png", plot = dunne.plt, 
+# ggsave(filename = "dunne_repro.png", plot = dunne.plt,
 #        width = 10, height = 8, units = "in", dpi = 600)
 
 # Clean full network result ----------------
@@ -210,43 +210,43 @@ fig.grid <- function(figlist){
 }
 
 fig.grid(Bas.figs)
-# ggsave(filename = "bas_dists.png", width = 8, height = 6,
+# ggsave(filename = "./dist_figs/bas_dists.png", width = 8, height = 6,
 #        units = "in")
 
 fig.grid(ChLen.figs)
-# ggsave(filename = "ChLen_dists.png", width = 8, height = 6,
+# ggsave(filename = "./dist_figs/ChLen_dists.png", width = 8, height = 6,
 #        units = "in")
 
 fig.grid(ChNum.figs)
-# ggsave(filename = "ChNum_dists.png", width = 8, height = 6,
+# ggsave(filename = "./dist_figs/ChNum_dists.png", width = 8, height = 6,
 #        units = "in")
 
 fig.grid(GenSD.figs)
-# ggsave(filename = "GenSD_dists.png", width = 8, height = 6,
+# ggsave(filename = "./dist_figs/GenSD_dists.png", width = 8, height = 6,
 #        units = "in")
 
 fig.grid(Herb.figs)
-# ggsave(filename = "Herb_dists.png", width = 8, height = 6,
+# ggsave(filename = "./dist_figs/Herb_dists.png", width = 8, height = 6,
 #        units = "in")
 
 fig.grid(Int.figs)
-# ggsave(filename = "Int_dists.png", width = 8, height = 6,
+# ggsave(filename = "./dist_figs/Int_dists.png", width = 8, height = 6,
 #        units = "in")
 
 fig.grid(Omn.figs)
-# ggsave(filename = "Omn_dists.png", width = 8, height = 6,
+# ggsave(filename = "./dist_figs/Omn_dists.png", width = 8, height = 6,
 #        units = "in")
 
 fig.grid(TL.figs)
-# ggsave(filename = "TL_dists.png", width = 8, height = 6,
+# ggsave(filename = "./dist_figs/TL_dists.png", width = 8, height = 6,
 #        units = "in")
 
 fig.grid(Top.figs)
-# ggsave(filename = "Top_dists.png", width = 8, height = 6,
+# ggsave(filename = "./dist_figs/Top_dists.png", width = 8, height = 6,
 #        units = "in")
 
 fig.grid(Clust.figs)
-# ggsave(filename = "Clust_dists.png", width = 8, height = 6,
+# ggsave(filename = "./dist_figs/Clust_dists.png", width = 8, height = 6,
 #        units = "in")
 
 # Manipulate trophic data frames ----------------
