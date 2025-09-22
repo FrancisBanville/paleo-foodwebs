@@ -42,9 +42,13 @@ cleanup <- function(frame, assemblages, percentages){
 
 # Run it:
 uncertain <- cleanup(frame = uncertain.data, assemblages=assemblage,
-                     percentages = perc)
+                     percentages = perc) %>%
+  # Include this line for Fezouata only:
+  filter(assemblage == "Fezouata")
+
 random <- cleanup(frame = random.data, assemblages = assemblage,
-                  percentages = perc)
+                  percentages = perc) %>%
+  filter(assemblage == "Fezouata")
 
 # Replicate Dunne figs -----------------------
 uncertain.means <- uncertain %>%
@@ -68,11 +72,12 @@ for(i in 1:length(unique(means$Metric))){
   
   plotlist[[i]] <- ggplot(data = means.sub, aes(x = perc, y = avg, 
                                                 fill = type,
-                          shape = assemblage, color = type))+
+                          #shape = assemblage, 
+                          color = type))+
     geom_point(size = 3, color = "black")+
     geom_point(aes(color = type),size = 2)+
     geom_line(color = "black")+
-    scale_shape_manual(values = 21:23, name = "Assemblage")+
+    # scale_shape_manual(values = 21:23, name = "Assemblage")+
     scale_fill_manual(values = c("black", "white"), name = "Type")+
     scale_color_manual(values = c("black", "white"), name = "Type")+
     labs(x = "Proportion Linkages Removed", 
@@ -92,7 +97,8 @@ real.data$site = c("Fezouata", "Burgess", "Chengjiang")
 
 real_data <- real.data %>%
   pivot_longer(cols = -c("site"), names_to = "metric") %>%
-  filter(!metric %in% c("Can", "Loop"))
+  filter(!metric %in% c("Can", "Loop")) %>%
+  filter(site=="Fezouata")
 
 # Make figures --------------------------
 figs <- function(frames, metric, site){
@@ -106,9 +112,10 @@ figs <- function(frames, metric, site){
         smol.frame$name <- paste(names(frames)[i], site[k],
                                      metric[j], sep = "_")
         smol.frame$fill_color <- 
-          case_when(site[k] == "Fezouata" ~ "orange2",
-                    site[k] == "Burgess" ~ "steelblue1",
-                    TRUE ~ "Palevioletred")
+          case_when(site[k] == "Fezouata" ~ "orange2"#,
+                    # site[k] == "Burgess" ~ "steelblue1",
+                    # TRUE ~ "Palevioletred"
+                    )
         framelist <- append(framelist, list(smol.frame))
       }
     }
@@ -193,19 +200,20 @@ Clust.figs <- figs(frames = list(uncertain = uncertain, random = random),
 
 # Make 'em pretty ---------------
 fig.grid <- function(figlist){
-  row_label_1 <- wrap_elements(panel = textGrob('Fezouata', rot=90))
-  row_label_2 <- wrap_elements(panel = textGrob('Burgess', rot=90))
-  row_label_3 <- wrap_elements(panel = textGrob('Chengiang', rot=90))
+  # row_label_1 <- wrap_elements(panel = textGrob('Fezouata', rot=90))
+  # row_label_2 <- wrap_elements(panel = textGrob('Burgess', rot=90))
+  # row_label_3 <- wrap_elements(panel = textGrob('Chengiang', rot=90))
   
   col_label_1 <- wrap_elements(panel = textGrob('Uncertain'))
   col_label_2 <- wrap_elements(panel = textGrob('Random'))
   
-  big_ass_plot <- 
-    ((plot_spacer() / row_label_1 / row_label_2 / row_label_3) |
-      (col_label_1 / figlist[[1]] / figlist[[2]] / figlist[[3]]) |
-      (col_label_2 / figlist[[4]] / figlist[[5]] / figlist[[6]]))+
-    plot_layout(widths = c(0.5,1,1))
-  
+  big_ass_plot <- (figlist[[1]] | figlist[[2]])&
+    plot_annotation(tag_levels = "a")
+    # ((plot_spacer() / row_label_1 / row_label_2 / row_label_3) |
+    #   (col_label_1 / figlist[[1]] / figlist[[2]] / figlist[[3]]) |
+    #   (col_label_2 / figlist[[4]] / figlist[[5]] / figlist[[6]]))+
+    # plot_layout(widths = c(0.5,1,1))
+    # 
   return(big_ass_plot)
 }
 
@@ -268,8 +276,11 @@ cleanup_roles <- function(frame){
   return(frame)
 }
 
-uncertain.roles <- cleanup_roles(frame = unc.roles.raw)
-random.roles <- cleanup_roles(frame = rand.roles.raw)
+uncertain.roles <- cleanup_roles(frame = unc.roles.raw) %>%
+  filter(assemblage=="Fezouata")
+
+random.roles <- cleanup_roles(frame = rand.roles.raw) %>%
+  filter(assemblage=="Fezouata")
 
 # Dunne fig trophic roles --------------
 replicate_dunne <- function(datas, role){
@@ -296,11 +307,12 @@ replicate_dunne <- function(datas, role){
     
     plotlist[[i]] <- ggplot(data = means.sub, 
                             aes(x = perc, y = avg, fill = type,
-                                shape = assemblage, color = type))+
+                                # shape = assemblage, 
+                                color = type))+
       geom_point(size = 3, color = "black")+
       geom_point(aes(color = type),size = 2)+
       geom_line(color = "black")+
-      scale_shape_manual(values = 21:23, name = "Assemblage")+
+      # scale_shape_manual(values = 21:23, name = "Assemblage")+
       scale_fill_manual(values = c("black", "white"), name = "Type")+
       scale_color_manual(values = c("black", "white"), name = "Type")+
       labs(x = "Proportion Linkages Removed", 
@@ -310,8 +322,8 @@ replicate_dunne <- function(datas, role){
             axis.title.x = element_blank())
   }
   
-  dunne.plt <- wrap_plots(plotlist[1:16])+
-    plot_layout(ncol = 4, guides = "collect")
+  dunne.plt <- wrap_plots(plotlist[1:17])+
+    plot_layout(ncol = 5, guides = "collect")
   
   return(dunne.plt)
 }
@@ -348,7 +360,7 @@ Bas.figs.roles <- figs(frames = list(uncertain = uncertain.basal,
                  metric = "Bas", site = unique(uncertain.basal$assemblage))
 
 fig.grid(Bas.figs.roles)
-# ggsave(filename = "bas_dists_basroles.png", width = 8, height = 6,
+# ggsave(filename = "./dist_figs_roles/bas_dists_basroles.png", width = 8, height = 6,
 #        units = "in", dpi = 600)
 
 Herb.figs.roles <- figs(frames = list(uncertain = uncertain.basal, 
@@ -357,7 +369,7 @@ Herb.figs.roles <- figs(frames = list(uncertain = uncertain.basal,
                        site = unique(uncertain.basal$assemblage))
 
 fig.grid(Herb.figs.roles)
-# ggsave(filename = "herb_dists_basroles.png", width = 8, height = 6,
+# ggsave(filename = "./dist_figs_roles/herb_dists_basroles.png", width = 8, height = 6,
 #        units = "in", dpi = 600)
 
 ChNum.figs.roles <- figs(frames = list(uncertain = uncertain.basal, 
@@ -366,7 +378,7 @@ ChNum.figs.roles <- figs(frames = list(uncertain = uncertain.basal,
                        site = unique(uncertain.basal$assemblage))
 
 fig.grid(ChNum.figs.roles)
-# ggsave(filename = "ChNum_dists_basroles.png", width = 8, height = 6,
+# ggsave(filename = "./dist_figs_roles/ChNum_dists_basroles.png", width = 8, height = 6,
 #        units = "in", dpi = 600)
 
 Omn.figs.roles <- figs(frames = list(uncertain = uncertain.basal, 
@@ -375,7 +387,7 @@ Omn.figs.roles <- figs(frames = list(uncertain = uncertain.basal,
                          site = unique(uncertain.basal$assemblage))
 
 fig.grid(Omn.figs.roles)
-# ggsave(filename = "Omn_dists_basroles.png", width = 8, height = 6,
+# ggsave(filename = "./dist_figs_roles/Omn_dists_basroles.png", width = 8, height = 6,
 #        units = "in", dpi = 600)
 
 # Distributions: Herbivores ----------------------
@@ -393,7 +405,7 @@ bas.figs.roles <- figs(frames = list(uncertain = uncertain.herb,
                        site = unique(uncertain.herb$assemblage))
 
 fig.grid(bas.figs.roles)
-# ggsave(filename = "bas_dists_herbroles.png", width = 8, height = 6,
+# ggsave(filename = "./dist_figs_roles/bas_dists_herbroles.png", width = 8, height = 6,
 #        units = "in", dpi = 600)
 
 herb.figs.roles <- figs(frames = list(uncertain = uncertain.herb, 
@@ -402,7 +414,7 @@ herb.figs.roles <- figs(frames = list(uncertain = uncertain.herb,
                        site = unique(uncertain.herb$assemblage))
 
 fig.grid(herb.figs.roles)
-# ggsave(filename = "herb_dists_herbroles.png", width = 8, height = 6,
+# ggsave(filename = "./dist_figs_roles/herb_dists_herbroles.png", width = 8, height = 6,
 #        units = "in", dpi = 600)
 
 ChNum.figs.roles <- figs(frames = list(uncertain = uncertain.herb, 
@@ -411,7 +423,7 @@ ChNum.figs.roles <- figs(frames = list(uncertain = uncertain.herb,
                        site = unique(uncertain.herb$assemblage))
 
 fig.grid(ChNum.figs.roles)
-# ggsave(filename = "ChNum_dists_herbroles.png", width = 8,
+# ggsave(filename = "./dist_figs_roles/ChNum_dists_herbroles.png", width = 8,
 #        height = 6, units = "in", dpi = 600)
 
 Int.figs.roles <- figs(frames = list(uncertain = uncertain.herb, 
@@ -420,7 +432,7 @@ Int.figs.roles <- figs(frames = list(uncertain = uncertain.herb,
                        site = unique(uncertain.herb$assemblage))
 
 fig.grid(Int.figs.roles)
-# ggsave(filename = "int_dists_herbroles.png", width = 8, height = 6,
+# ggsave(filename = "./dist_figs_roles/int_dists_herbroles.png", width = 8, height = 6,
 #        units = "in", dpi = 600)
 
 # Distributions: Omnivores -----------------------
@@ -438,7 +450,7 @@ herb.figs.roles <- figs(frames = list(uncertain = uncertain.omn,
                         site = unique(uncertain.omn$assemblage))
 
 fig.grid(herb.figs.roles)
-# ggsave(filename = "herb_dists_omnroles.png", width = 8, height = 6,
+# ggsave(filename = "./dist_figs_roles/herb_dists_omnroles.png", width = 8, height = 6,
 #        units = "in", dpi = 600)
 
 omn.figs.roles <- figs(frames = list(uncertain = uncertain.omn, 
@@ -447,5 +459,5 @@ omn.figs.roles <- figs(frames = list(uncertain = uncertain.omn,
                         site = unique(uncertain.omn$assemblage))
 
 fig.grid(omn.figs.roles)
-# ggsave(filename = "omn_dists_omnroles.png", width = 8, height = 6,
+# ggsave(filename = "./dist_figs_roles/omn_dists_omnroles.png", width = 8, height = 6,
 #        units = "in", dpi = 600)
