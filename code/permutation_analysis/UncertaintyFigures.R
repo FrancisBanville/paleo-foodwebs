@@ -14,14 +14,14 @@ library(grid)
 
 # Load data -----------------------------
 # Change working directory as needed
-# setwd("c:/users/beasl/documents/paleo-foodwebs/code/permutation_analysis")
+setwd("c:/users/beasl/documents/paleo-foodwebs/code/permutation_analysis")
 
 # Read in data as needed
 uncertain.data <- read.csv("uncertain.csv")
 random.data <- read.csv("random.csv")
 real.data <- read.csv("real.csv")
-unc.roles.raw <- read.csv("uncertain_roles.csv")
-rand.roles.raw <- read.csv("random_roles.csv")
+unc.roles.raw <- read.csv("uncertain_fez_roles.csv")
+rand.roles.raw <- read.csv("random_fez_roles.csv")
 
 # Function to manipulate data frames ----------------
 # Write it:
@@ -257,6 +257,14 @@ fig.grid(Clust.figs)
 # ggsave(filename = "./dist_figs/Clust_dists.png", width = 8, height = 6,
 #        units = "in")
 
+fig.grid(LinkSD.figs)
+# ggsave(filename = "./dist_figs/LinkSD_dists.png", width = 8, height = 6,
+#        units = "in")
+
+fig.grid(VulSD.figs)
+# ggsave(filename = "./dist_figs/VulSD_dists.png", width = 8, height = 6,
+#        units = "in")
+
 # Manipulate trophic data frames ----------------
 cleanup_roles <- function(frame){
   frame$rep <- rep(1:100, 27)
@@ -390,6 +398,24 @@ fig.grid(Omn.figs.roles)
 # ggsave(filename = "./dist_figs_roles/Omn_dists_basroles.png", width = 8, height = 6,
 #        units = "in", dpi = 600)
 
+ChLen.figs.roles <- figs(frames = list(uncertain = uncertain.basal, 
+                                     random = random.basal), 
+                       metric = "ChLen", 
+                       site = unique(uncertain.basal$assemblage))
+
+fig.grid(ChLen.figs.roles)
+# ggsave(filename = "./dist_figs_roles/ChLen_dists_basroles.png", width = 8, height = 6,
+#        units = "in", dpi = 600)
+
+VulSD.figs.roles <- figs(frames = list(uncertain = uncertain.basal, 
+                                     random = random.basal), 
+                       metric = "VulSD", 
+                       site = unique(uncertain.basal$assemblage))
+
+fig.grid(VulSD.figs.roles)
+# ggsave(filename = "./dist_figs_roles/VulSD_dists_basroles.png", width = 8, height = 6,
+#        units = "in", dpi = 600)
+
 # Distributions: Herbivores ----------------------
 # Filter herbivore removals
 uncertain.herb <- uncertain.roles %>%
@@ -435,6 +461,15 @@ fig.grid(Int.figs.roles)
 # ggsave(filename = "./dist_figs_roles/int_dists_herbroles.png", width = 8, height = 6,
 #        units = "in", dpi = 600)
 
+VulSD.figs.roles <- figs(frames = list(uncertain = uncertain.herb, 
+                                     random = random.herb), 
+                       metric = "VulSD", 
+                       site = unique(uncertain.herb$assemblage))
+
+fig.grid(VulSD.figs.roles)
+# ggsave(filename = "./dist_figs_roles/VulSD_dists_herbroles.png", width = 8, height = 6,
+#        units = "in", dpi = 600)
+
 # Distributions: Omnivores -----------------------
 # Filter omnivore removals
 uncertain.omn <- uncertain.roles %>%
@@ -460,4 +495,13 @@ omn.figs.roles <- figs(frames = list(uncertain = uncertain.omn,
 
 fig.grid(omn.figs.roles)
 # ggsave(filename = "./dist_figs_roles/omn_dists_omnroles.png", width = 8, height = 6,
+#        units = "in", dpi = 600)
+
+VulSD.figs.roles <- figs(frames = list(uncertain = uncertain.omn, 
+                                     random = random.omn), 
+                       metric = "VulSD", 
+                       site = unique(uncertain.omn$assemblage))
+
+fig.grid(VulSD.figs.roles)
+# ggsave(filename = "./dist_figs_roles/VulSD_dists_omnroles.png", width = 8, height = 6,
 #        units = "in", dpi = 600)
