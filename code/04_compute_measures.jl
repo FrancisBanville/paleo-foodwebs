@@ -4,47 +4,21 @@
 N_fezouata = load(joinpath("data", "clean", "network_Fezouata.jld2"))["N"]
 N_fezouata_trophicsp = load(joinpath("data", "clean", "network_Fezouata_trophicsp.jld2"))["N"]
 
-N_burgess = load(joinpath("data", "clean", "network_burgess.jld2"))["N"]
-N_burgess_trophicsp = load(joinpath("data", "clean", "network_burgess_trophicsp.jld2"))["N"]
-
-N_chengjiang = load(joinpath("data", "clean", "network_chengjiang.jld2"))["N"]
-N_chengjiang_trophicsp = load(joinpath("data", "clean", "network_chengjiang_trophicsp.jld2"))["N"]
 
 # load predicted networks 
 Ns_fezouata_sim = load(joinpath("data", "sim", "networks_fezouata_sim.jld2"))["Ns"]
 Ns_fezouata_trophicsp_sim = load(joinpath("data", "sim", "networks_fezouata_trophicsp_sim.jld2"))["Ns"]
 
-Ns_burgess_sim = load(joinpath("data", "sim", "networks_burgess_sim.jld2"))["Ns"]
-Ns_burgess_trophicsp_sim = load(joinpath("data", "sim", "networks_burgess_trophicsp_sim.jld2"))["Ns"]
-
-Ns_chengjiang_sim = load(joinpath("data", "sim", "networks_chengjiang_sim.jld2"))["Ns"]
-Ns_chengjiang_trophicsp_sim = load(joinpath("data", "sim", "networks_chengjiang_trophicsp_sim.jld2"))["Ns"]
 
 # group networks to facilitate calculations
 Ns = vcat(N_fezouata, 
         N_fezouata_trophicsp, 
-        N_burgess, 
-        N_burgess_trophicsp,
-        N_chengjiang,
-        N_chengjiang_trophicsp,
         Ns_fezouata_sim.Ns_niche,
         Ns_fezouata_sim.Ns_cascade,
         Ns_fezouata_sim.Ns_nested_hierarchy,
         Ns_fezouata_trophicsp_sim.Ns_niche,
         Ns_fezouata_trophicsp_sim.Ns_cascade,
-        Ns_fezouata_trophicsp_sim.Ns_nested_hierarchy,
-        Ns_burgess_sim.Ns_niche,
-        Ns_burgess_sim.Ns_cascade,
-        Ns_burgess_sim.Ns_nested_hierarchy,
-        Ns_burgess_trophicsp_sim.Ns_niche,
-        Ns_burgess_trophicsp_sim.Ns_cascade,
-        Ns_burgess_trophicsp_sim.Ns_nested_hierarchy,
-        Ns_chengjiang_sim.Ns_niche,
-        Ns_chengjiang_sim.Ns_cascade,
-        Ns_chengjiang_sim.Ns_nested_hierarchy,
-        Ns_chengjiang_trophicsp_sim.Ns_niche,
-        Ns_chengjiang_trophicsp_sim.Ns_cascade,
-        Ns_chengjiang_trophicsp_sim.Ns_nested_hierarchy)
+        Ns_fezouata_trophicsp_sim.Ns_nested_hierarchy)
 
 # simplify networks by removing isolated species
 Ns = simplify.(Ns)
@@ -55,34 +29,14 @@ n = length(Ns_fezouata_sim.Ns_niche)
 
 networks = vcat("fezouata",
                 "fezouata trophic species",
-                "burgess",
-                "burgess trophic species",
-                "chengjiang",
-                "chengjiang trophic species",
                 fill("fezouata", 3 * n), 
-                fill("fezouata trophic species", 3 * n), 
-                fill("burgess", 3 * n),
-                fill("burgess trophic species", 3 * n),
-                fill("chengjiang", 3 * n), 
-                fill("chengjiang trophic species", 3 * n))
+                fill("fezouata trophic species", 3 * n))
 
 
-types = vcat(fill("empirical", 6), 
+types = vcat(fill("empirical", 2), 
                 fill("niche model", n), 
                 fill("cascade model", n), 
                 fill("nested hierarchy model", n), 
-                fill("niche model", n), 
-                fill("cascade model", n), 
-                fill("nested hierarchy model", n), 
-                fill("niche model", n), 
-                fill("cascade model", n), 
-                fill("nested hierarchy model", n), 
-                fill("niche model", n), 
-                fill("cascade model", n), 
-                fill("nested hierarchy model", n),
-                fill("niche model", n), 
-                fill("cascade model", n), 
-                fill("nested hierarchy model", n),
                 fill("niche model", n), 
                 fill("cascade model", n), 
                 fill("nested hierarchy model", n))
@@ -117,7 +71,6 @@ insertcols!(measures, :Bas => Bas)
 
 Int = 1 .- Top .- Bas
 insertcols!(measures, :Int => Int)
-
 
 
 # calculate the proportion of species that are cannibals, herbivores (feeding only on basal species), omnivores (consuming two or more species with different trophic levels), and found in loops (food chains that contain the same species twice, apart from cannibalism)
@@ -287,10 +240,10 @@ measures_errors = DataFrame()
 for N in unique(measures.network) 
     
     # get empirical measures of network N
-    measures_emp = measures[measures.network .== N .&& measures.type .== "empirical", 3:end]
+    measures_emp = measures[measures.network .== N .&& measures.type .== "empirical", 1:end]
 
     # get niche model predictions for network N
-    measures_niche = measures[measures.network .== N .&& measures.type .== "niche model", 3:end]
+    measures_niche = measures[measures.network .== N .&& measures.type .== "niche model", 1:end]
 
     # calculate predictive errors for network N
     measures_errors_N = (measures_niche .- measures_emp) ./ measures_emp
@@ -308,52 +261,3 @@ measures_errors[isnan.(measures_errors.Loop),:Loop] .= Inf
 
 # export table
 CSV.write(joinpath("results", "measures_errors.csv"), measures_errors)
-
-
-## calculate model errors like Dunne et al. (2008)
-
-# create dataset for model errors
-measures_errors_Dunne = measures[1:length(unique(measures.network)), Not(:type)]
-measures_errors_Dunne[:,2:end] .= 0.0
-
-# calculate model errors for all networks and measures 
-for (i, N) in enumerate(unique(measures.network))
-    
-        for m in 3:(size(measures,2))
-        
-            # get empirical measure of network N and measure m
-            measure_emp = measures[measures.network .== N .&& measures.type .== "empirical", m][1]
-    
-            # get niche model predictions for network N and measure m
-            measures_niche = measures[measures.network .== N .&& measures.type .== "niche model", m]
-    
-            # calculate the median prediction value 
-            measure_niche_median = median(measures_niche)
-            
-            # calculate the upper and lower bounds of the 95% quantile interval
-            measure_niche_upper = quantile(measures_niche, 0.975)
-            measure_niche_lower = quantile(measures_niche, 0.025)
-            
-            # calculate model error for network N and measure m
-            if measure_emp > measure_niche_median
-                measure_error = (measure_niche_median - measure_emp) / (measure_niche_median - measure_niche_upper)
-            else 
-                measure_error = (measure_niche_median - measure_emp) / (measure_niche_median - measure_niche_lower)
-            end
-            # add measure to dataframe
-            measures_errors_Dunne[i, m-1] = measure_error
-        end
-    end
-    
-# export to csv file 
-CSV.write(joinpath("results", "measures_errors_Dunne.csv"), measures_errors_Dunne)
-    
-# format as Markdown table
-using Latexify
-table = latexify(measures_errors_Dunne, env=:mdtable, fmt="%.3f", latex=false, escape_underscores=true)
-    
-# export to Markdown file
-table_path = joinpath("results", "measures_errors_Dunne.md")
-open(table_path, "w") do io
-        print(io, table)
-end
