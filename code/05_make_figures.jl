@@ -168,19 +168,6 @@ plot_density_all("fezouata trophic species")
 savefig(joinpath("figures", "eco_models", "fezouata_trophicsp_density_measures.png"))
 
 
-plot_density_all("burgess")
-savefig(joinpath("figures", "eco_models", "burgess_density_measures.png"))
-
-plot_density_all("burgess trophic species")
-savefig(joinpath("figures", "eco_models", "burgess_trophicsp_density_measures.png"))
-
-
-plot_density_all("chengjiang")
-savefig(joinpath("figures", "eco_models", "chengjiang_density_measures.png"))
-
-plot_density_all("chengjiang trophic species")
-savefig(joinpath("figures", "eco_models", "chengjiang_trophicsp_density_measures.png"))
-
 
 
 
@@ -306,18 +293,13 @@ end
 
 
 # density plots of model errors for species networks
-sp_networks = ["fezouata", "burgess", "chengjiang"]
+sp_networks = ["fezouata"]
 
 plot_density_errors_all(sp_networks)
 savefig(joinpath("figures", "niche_errors", "species_networks_errors.png"))
 
 # density plots of model errors for trophic species networks
-trophicsp_networks = ["fezouata trophic species", "burgess trophic species", "chengjiang trophic species"]
+trophicsp_networks = ["fezouata trophic species"]
 
 plot_density_errors_all(trophicsp_networks)
 savefig(joinpath("figures", "niche_errors", "trophic_species_networks_errors.png"))
-
-
-
-
-
