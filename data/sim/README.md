@@ -1,8 +1,9 @@
-# This folder will contain the simulated networks for the Fezouata Shale.  
+# sim folder
 
-# It will include the networks of species (networks_fezouata_sim.jld2) and the networks of trophic species (networks_fezouata_trophicsp_sim.jld2).
+This folder will contain the simulated networks for the Fezouata Shale.  
 
-# It does not currently contain the simulated networks produced when the analysis was run for this study as those files are too
-# big to be stored here, but they can be provided upon demand.
+It will include the networks of species (networks_fezouata_sim.jld2) and the networks of trophic species (networks_fezouata_trophicsp_sim.jld2).
 
-# These files are also easy to recreate by running the code which automatically generates them.
+It does not currently contain the simulated networks produced when the analysis was run for this study as those files are too big to be stored here, but they can be provided upon demand.
+
+These files are also easy to recreate by running the code which automatically generates them.
