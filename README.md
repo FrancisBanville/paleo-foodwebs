@@ -1,6 +1,6 @@
 # Paleo Food Webs 
 
-This repo contains the code to clean and analyze paleo food webs in Morocco. 
+This repo contains the code to clean and analyze paleo food webs in Morocco from the Fezouata Shale. 
 
 ## Get started
 
@@ -24,4 +24,8 @@ Scripts that execute specific tasks are in the code folder.
 `04_compute_measures.jl` calculates selected measures of network structure for both predicted and empirical networks (saved in the results folder).
 
 `05_make_figures.jl` produces figures comparing the structure of empirical and predicted networks (saved in the figures folder).
+
+Scripts to execute the uncertainty analysis and the figures it produces are in the permutation_analysis folder.
+
+
 
