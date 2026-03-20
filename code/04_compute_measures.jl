@@ -147,6 +147,7 @@ insertcols!(measures, :ChNum => ChNum)
 
 
 # calculate the mean trophic level of all species 
+# trophic level of individual species is calculated with function trophic_level which is calculated based ont the formula from Pauly, D.; Palomares, M.L. (2005). "Fishing down marine food webs: It is far more pervasive than we thought". Bulletin of Marine Science. 76 (2): 197–211. 
 @info "Calculating measure 11/17 (TL)"
 
 TL = [mean(values(trophic_level(Ns[i]))) for i in 1:length(Ns)]
