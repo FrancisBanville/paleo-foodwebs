@@ -147,7 +147,11 @@ insertcols!(measures, :ChNum => ChNum)
 
 
 # calculate the mean trophic level of all species 
-# trophic level of individual species is calculated with function trophic_level which is calculated after Pauly & Christensen (1995) and where it is assumed that each prey occupies an equal proportion of a consumer’s diet.
+# Trophic level of individual species is calculated with function trophic_level which is calculated with the formula
+# TLᵢ = 1 + ∑ⱼ(TLⱼ×DCᵢⱼ)/∑ⱼ(DCᵢⱼ), wherein TLᵢ is the trophic level of species i, and DCᵢⱼ is the proportion of species j in 
+# the diet of species i. (Poisot T, Bélisle Z, Hoebeke L, Stock M, Szefer P. EcologicalNetworks.jl: analysing ecological 
+# networks of species interactions. Ecography. 2019;42(11):1850-1861. doi:https://doi.org/10.1111/ecog.04310)
+# In the present case, it is assumed that each prey occupies an equal proportion of a consumer’s diet.
 
 TL = [mean(values(trophic_level(Ns[i]))) for i in 1:length(Ns)]
 insertcols!(measures, :TL => TL)
