@@ -17,6 +17,7 @@ using InvertedIndices
 using JLD2
 
 # Doing statistics and models
+using Distributions
 using LinearAlgebra 
 using ProgressMeter
 using Random
@@ -43,3 +44,5 @@ include(joinpath("code", "02_convert_trophic_species.jl"))
 include(joinpath("code", "03_simulate_networks.jl"))
 include(joinpath("code", "04_compute_measures.jl"))
 include(joinpath("code", "05_make_figures.jl"))
+include(joinpath("code", "06_create_uncertain_networks.jl"))
+include(joinpath("code", "07_make_uncertainty_figures.R"))

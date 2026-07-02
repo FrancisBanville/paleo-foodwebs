@@ -13,15 +13,13 @@ library(patchwork)
 library(grid)
 
 # Load data -----------------------------
-# Change working directory as needed
-setwd("c:/users/beasl/documents/paleo-foodwebs/code/permutation_analysis")
 
 # Read in data as needed
-uncertain.data <- read.csv("uncertain.csv")
-random.data <- read.csv("random.csv")
-real.data <- read.csv("real.csv")
-unc.roles.raw <- read.csv("uncertain_fez_roles.csv")
-rand.roles.raw <- read.csv("random_fez_roles.csv")
+uncertain.data <- read.csv("results/uncertainty_analysis/dunne_method/uncertain.csv")
+random.data <- read.csv("results/uncertainty_analysis/dunne_method/random.csv")
+real.data <- read.csv("results/uncertainty_analysis/dunne_method/real.csv")
+unc.roles.raw <- read.csv("results/uncertainty_analysis/removal_by_trophic_levels/uncertain_fez_roles.csv")
+rand.roles.raw <- read.csv("results/uncertainty_analysis/removal_by_trophic_levels/random_fez_roles.csv")
 
 # Function to manipulate data frames ----------------
 # Write it:
@@ -89,7 +87,7 @@ for(i in 1:length(unique(means$Metric))){
 dunne.plt <- wrap_plots(plotlist[1:17])+
   plot_layout(ncol = 5, guides = "collect")
 
-# ggsave(filename = "dunne_repro.png", plot = dunne.plt,
+# ggsave(filename = "figures/uncertainty_analysis/uncertainty/dunne_repro.png", plot = dunne.plt,
 #        width = 10, height = 8, units = "in", dpi = 600)
 
 # Clean full network result ----------------
@@ -218,51 +216,51 @@ fig.grid <- function(figlist){
 }
 
 fig.grid(Bas.figs)
-# ggsave(filename = "./dist_figs/bas_dists.png", width = 8, height = 6,
+# ggsave(filename = "figures/uncertainty_analysis/dist_figs/bas_dists.png", width = 8, height = 6,
 #        units = "in")
 
 fig.grid(ChLen.figs)
-# ggsave(filename = "./dist_figs/ChLen_dists.png", width = 8, height = 6,
+# ggsave(filename = "figures/uncertainty_analysis/dist_figs/ChLen_dists.png", width = 8, height = 6,
 #        units = "in")
 
 fig.grid(ChNum.figs)
-# ggsave(filename = "./dist_figs/ChNum_dists.png", width = 8, height = 6,
+# ggsave(filename = "figures/uncertainty_analysis/dist_figs/ChNum_dists.png", width = 8, height = 6,
 #        units = "in")
 
 fig.grid(GenSD.figs)
-# ggsave(filename = "./dist_figs/GenSD_dists.png", width = 8, height = 6,
+# ggsave(filename = "figures/uncertainty_analysis/dist_figs/GenSD_dists.png", width = 8, height = 6,
 #        units = "in")
 
 fig.grid(Herb.figs)
-# ggsave(filename = "./dist_figs/Herb_dists.png", width = 8, height = 6,
+# ggsave(filename = "figures/uncertainty_analysis/dist_figs/Herb_dists.png", width = 8, height = 6,
 #        units = "in")
 
 fig.grid(Int.figs)
-# ggsave(filename = "./dist_figs/Int_dists.png", width = 8, height = 6,
+# ggsave(filename = "figures/uncertainty_analysis/dist_figs/Int_dists.png", width = 8, height = 6,
 #        units = "in")
 
 fig.grid(Omn.figs)
-# ggsave(filename = "./dist_figs/Omn_dists.png", width = 8, height = 6,
+# ggsave(filename = "figures/uncertainty_analysis/dist_figs/Omn_dists.png", width = 8, height = 6,
 #        units = "in")
 
 fig.grid(TL.figs)
-# ggsave(filename = "./dist_figs/TL_dists.png", width = 8, height = 6,
+# ggsave(filename = "figures/uncertainty_analysis/dist_figs/TL_dists.png", width = 8, height = 6,
 #        units = "in")
 
 fig.grid(Top.figs)
-# ggsave(filename = "./dist_figs/Top_dists.png", width = 8, height = 6,
+# ggsave(filename = "figures/uncertainty_analysis/dist_figs/Top_dists.png", width = 8, height = 6,
 #        units = "in")
 
 fig.grid(Clust.figs)
-# ggsave(filename = "./dist_figs/Clust_dists.png", width = 8, height = 6,
+# ggsave(filename = "figures/uncertainty_analysis/dist_figs/Clust_dists.png", width = 8, height = 6,
 #        units = "in")
 
 fig.grid(LinkSD.figs)
-# ggsave(filename = "./dist_figs/LinkSD_dists.png", width = 8, height = 6,
+# ggsave(filename = "figures/uncertainty_analysis/dist_figs/LinkSD_dists.png", width = 8, height = 6,
 #        units = "in")
 
 fig.grid(VulSD.figs)
-# ggsave(filename = "./dist_figs/VulSD_dists.png", width = 8, height = 6,
+# ggsave(filename = "figures/uncertainty_analysis/dist_figs/VulSD_dists.png", width = 8, height = 6,
 #        units = "in")
 
 # Manipulate trophic data frames ----------------
@@ -339,19 +337,19 @@ replicate_dunne <- function(datas, role){
 basal.dunne <- replicate_dunne(datas = list(uncertain.roles, 
                                             random.roles),
                 role = "Basal")
-# ggsave(filename = "dunne_basal.jpeg", plot = basal.dunne, width = 10,
+# ggsave(filename = "figures/uncertainty_analysis/uncertainty/dunne_basal.jpeg", plot = basal.dunne, width = 10,
 #        height = 8, units = "in", dpi = 600)
 
 herb.dunne <- replicate_dunne(datas = list(uncertain.roles, 
                                             random.roles),
                                role = "Herb")
-# ggsave(filename = "dunne_herb.jpeg", plot = herb.dunne, width = 10,
+# ggsave(filename = "figures/uncertainty_analysis/uncertainty/dunne_herb.jpeg", plot = herb.dunne, width = 10,
 #        height = 8, units = "in", dpi = 600)
 
 omn.dunne <- replicate_dunne(datas = list(uncertain.roles, 
                                            random.roles),
                               role = "Omn")
-# ggsave(filename = "dunne_omn.jpeg", plot = omn.dunne, width = 10,
+# ggsave(filename = "figures/uncertainty_analysis/uncertainty/dunne_omn.jpeg", plot = omn.dunne, width = 10,
 #        height = 8, units = "in", dpi = 600)
 
 # Distributions: basal ------------------
@@ -368,7 +366,7 @@ Bas.figs.roles <- figs(frames = list(uncertain = uncertain.basal,
                  metric = "Bas", site = unique(uncertain.basal$assemblage))
 
 fig.grid(Bas.figs.roles)
-# ggsave(filename = "./dist_figs_roles/bas_dists_basroles.png", width = 8, height = 6,
+# ggsave(filename = "figures/uncertainty_analysis/dist_figs_roles/bas_dists_basroles.png", width = 8, height = 6,
 #        units = "in", dpi = 600)
 
 Herb.figs.roles <- figs(frames = list(uncertain = uncertain.basal, 
@@ -377,7 +375,7 @@ Herb.figs.roles <- figs(frames = list(uncertain = uncertain.basal,
                        site = unique(uncertain.basal$assemblage))
 
 fig.grid(Herb.figs.roles)
-# ggsave(filename = "./dist_figs_roles/herb_dists_basroles.png", width = 8, height = 6,
+# ggsave(filename = "figures/uncertainty_analysis/dist_figs_roles/herb_dists_basroles.png", width = 8, height = 6,
 #        units = "in", dpi = 600)
 
 ChNum.figs.roles <- figs(frames = list(uncertain = uncertain.basal, 
@@ -386,7 +384,7 @@ ChNum.figs.roles <- figs(frames = list(uncertain = uncertain.basal,
                        site = unique(uncertain.basal$assemblage))
 
 fig.grid(ChNum.figs.roles)
-# ggsave(filename = "./dist_figs_roles/ChNum_dists_basroles.png", width = 8, height = 6,
+# ggsave(filename = "figures/uncertainty_analysis/dist_figs_roles/ChNum_dists_basroles.png", width = 8, height = 6,
 #        units = "in", dpi = 600)
 
 Omn.figs.roles <- figs(frames = list(uncertain = uncertain.basal, 
@@ -395,7 +393,7 @@ Omn.figs.roles <- figs(frames = list(uncertain = uncertain.basal,
                          site = unique(uncertain.basal$assemblage))
 
 fig.grid(Omn.figs.roles)
-# ggsave(filename = "./dist_figs_roles/Omn_dists_basroles.png", width = 8, height = 6,
+# ggsave(filename = "figures/uncertainty_analysis/dist_figs_roles/Omn_dists_basroles.png", width = 8, height = 6,
 #        units = "in", dpi = 600)
 
 ChLen.figs.roles <- figs(frames = list(uncertain = uncertain.basal, 
@@ -404,7 +402,7 @@ ChLen.figs.roles <- figs(frames = list(uncertain = uncertain.basal,
                        site = unique(uncertain.basal$assemblage))
 
 fig.grid(ChLen.figs.roles)
-# ggsave(filename = "./dist_figs_roles/ChLen_dists_basroles.png", width = 8, height = 6,
+# ggsave(filename = "figures/uncertainty_analysis/dist_figs_roles/ChLen_dists_basroles.png", width = 8, height = 6,
 #        units = "in", dpi = 600)
 
 VulSD.figs.roles <- figs(frames = list(uncertain = uncertain.basal, 
@@ -413,7 +411,7 @@ VulSD.figs.roles <- figs(frames = list(uncertain = uncertain.basal,
                        site = unique(uncertain.basal$assemblage))
 
 fig.grid(VulSD.figs.roles)
-# ggsave(filename = "./dist_figs_roles/VulSD_dists_basroles.png", width = 8, height = 6,
+# ggsave(filename = "figures/uncertainty_analysis/dist_figs_roles/VulSD_dists_basroles.png", width = 8, height = 6,
 #        units = "in", dpi = 600)
 
 # Distributions: Herbivores ----------------------
@@ -431,7 +429,7 @@ bas.figs.roles <- figs(frames = list(uncertain = uncertain.herb,
                        site = unique(uncertain.herb$assemblage))
 
 fig.grid(bas.figs.roles)
-# ggsave(filename = "./dist_figs_roles/bas_dists_herbroles.png", width = 8, height = 6,
+# ggsave(filename = "figures/uncertainty_analysis/dist_figs_roles/bas_dists_herbroles.png", width = 8, height = 6,
 #        units = "in", dpi = 600)
 
 herb.figs.roles <- figs(frames = list(uncertain = uncertain.herb, 
@@ -440,7 +438,7 @@ herb.figs.roles <- figs(frames = list(uncertain = uncertain.herb,
                        site = unique(uncertain.herb$assemblage))
 
 fig.grid(herb.figs.roles)
-# ggsave(filename = "./dist_figs_roles/herb_dists_herbroles.png", width = 8, height = 6,
+# ggsave(filename = "figures/uncertainty_analysis/dist_figs_roles/herb_dists_herbroles.png", width = 8, height = 6,
 #        units = "in", dpi = 600)
 
 ChNum.figs.roles <- figs(frames = list(uncertain = uncertain.herb, 
@@ -449,7 +447,7 @@ ChNum.figs.roles <- figs(frames = list(uncertain = uncertain.herb,
                        site = unique(uncertain.herb$assemblage))
 
 fig.grid(ChNum.figs.roles)
-# ggsave(filename = "./dist_figs_roles/ChNum_dists_herbroles.png", width = 8,
+# ggsave(filename = "figures/uncertainty_analysis/dist_figs_roles/ChNum_dists_herbroles.png", width = 8,
 #        height = 6, units = "in", dpi = 600)
 
 Int.figs.roles <- figs(frames = list(uncertain = uncertain.herb, 
@@ -458,7 +456,7 @@ Int.figs.roles <- figs(frames = list(uncertain = uncertain.herb,
                        site = unique(uncertain.herb$assemblage))
 
 fig.grid(Int.figs.roles)
-# ggsave(filename = "./dist_figs_roles/int_dists_herbroles.png", width = 8, height = 6,
+# ggsave(filename = "figures/uncertainty_analysis/dist_figs_roles/int_dists_herbroles.png", width = 8, height = 6,
 #        units = "in", dpi = 600)
 
 VulSD.figs.roles <- figs(frames = list(uncertain = uncertain.herb, 
@@ -467,7 +465,7 @@ VulSD.figs.roles <- figs(frames = list(uncertain = uncertain.herb,
                        site = unique(uncertain.herb$assemblage))
 
 fig.grid(VulSD.figs.roles)
-# ggsave(filename = "./dist_figs_roles/VulSD_dists_herbroles.png", width = 8, height = 6,
+# ggsave(filename = "figures/uncertainty_analysis/dist_figs_roles/VulSD_dists_herbroles.png", width = 8, height = 6,
 #        units = "in", dpi = 600)
 
 # Distributions: Omnivores -----------------------
@@ -485,7 +483,7 @@ herb.figs.roles <- figs(frames = list(uncertain = uncertain.omn,
                         site = unique(uncertain.omn$assemblage))
 
 fig.grid(herb.figs.roles)
-# ggsave(filename = "./dist_figs_roles/herb_dists_omnroles.png", width = 8, height = 6,
+# ggsave(filename = "figures/uncertainty_analysis/dist_figs_roles/herb_dists_omnroles.png", width = 8, height = 6,
 #        units = "in", dpi = 600)
 
 omn.figs.roles <- figs(frames = list(uncertain = uncertain.omn, 
@@ -494,7 +492,7 @@ omn.figs.roles <- figs(frames = list(uncertain = uncertain.omn,
                         site = unique(uncertain.omn$assemblage))
 
 fig.grid(omn.figs.roles)
-# ggsave(filename = "./dist_figs_roles/omn_dists_omnroles.png", width = 8, height = 6,
+# ggsave(filename = "figures/uncertainty_analysis/dist_figs_roles/omn_dists_omnroles.png", width = 8, height = 6,
 #        units = "in", dpi = 600)
 
 VulSD.figs.roles <- figs(frames = list(uncertain = uncertain.omn, 
@@ -503,5 +501,5 @@ VulSD.figs.roles <- figs(frames = list(uncertain = uncertain.omn,
                        site = unique(uncertain.omn$assemblage))
 
 fig.grid(VulSD.figs.roles)
-# ggsave(filename = "./dist_figs_roles/VulSD_dists_omnroles.png", width = 8, height = 6,
+# ggsave(filename = "figures/uncertainty_analysis/dist_figs_roles/VulSD_dists_omnroles.png", width = 8, height = 6,
 #        units = "in", dpi = 600)

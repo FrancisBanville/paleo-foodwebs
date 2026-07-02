@@ -231,7 +231,7 @@ measures[isnan.(measures.ChSD),:ChSD] .= 0
 measures[measures.ChNum .== -Inf, :ChNum] .= 0
 
 # export table
-CSV.write(joinpath("results", "measures.csv"), measures)
+CSV.write(joinpath("results", "ecological_models", "measures.csv"), measures)
 
 
 
@@ -264,4 +264,4 @@ measures_errors[isnan.(measures_errors.Can),:Can] .= Inf
 measures_errors[isnan.(measures_errors.Loop),:Loop] .= Inf
 
 # export table
-CSV.write(joinpath("results", "measures_errors.csv"), measures_errors)
+CSV.write(joinpath("results", "ecological_models", "measures_errors.csv"), measures_errors)
