@@ -33,6 +33,8 @@ Scripts that execute specific tasks are in the code folder.
 
 `07_make_uncertainty_figures.R` produces figures comparing the structure of networks with different levels of interaction uncertainty (saved in the `figures/uncertainty_analysis` folder).
 
+Scripts `01` to `05` generate the analysis of ecological models. Scripts `06` and `07` produce the uncertainty analysis.
+
 Home-made functions calculating measures of network structure are in the `code/functions` folder.
 
 ## Installation and execution
