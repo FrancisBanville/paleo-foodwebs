@@ -1,4 +1,4 @@
-## Make figures showing the distribution of measures
+## Make figures showing the distribution of measures and model errors
 
 # plot attributes
 theme(:mute)
@@ -11,7 +11,6 @@ measures = DataFrame(CSV.File(joinpath("results", "ecological_models", "measures
 
 # read dataset of measures errors
 measures_errors = DataFrame(CSV.File(joinpath("results", "ecological_models", "measures_errors.csv")))
-
 
 # function for density plots 
 
