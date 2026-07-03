@@ -1,9 +1,9 @@
-#### Clean datasets of ecological interactions 
+#### Clean the dataset of ecological interactions (Fezouata shale network) and convert it to unipartite network
 
-### read raw datasets
+### read raw dataset
 fezouata_df = DataFrame(CSV.File(joinpath("data", "raw", "interactions_Fezouata.csv")))
 
-### clean datasets 
+### clean dataset
 
 function clean_data(df::DataFrame)
     
@@ -13,10 +13,13 @@ function clean_data(df::DataFrame)
     # remove empty rows since they do not represent interactions
     dropmissing!(df)
 
+    # remove certainty level column (not needed for now)
+    df = df[:,1:2]
+
     if eltype(df[:,1]) !== Int64
         
         # convert uppercase letters to lowercase
-        df = lowercase.(df)
+        df .= lowercase.(df)
 
         # remove symbols that artificially creates new species when inconsistent 
         df = replace.(df, "?" => "")
@@ -36,12 +39,11 @@ end
 fezouata_df_clean = clean_data(fezouata_df)
 
 
-### convert datasets to networks
+### convert dataset to unipartite network
 
 function make_network(df::DataFrame)
 
     # make list of all unique species
-    # note: there are still inconsistencies in species names that need to be tackled
     sp = unique(vcat(df.pred, df.prey))
 
     # count number of species 
@@ -68,7 +70,7 @@ function make_network(df::DataFrame)
     return(N)
 end
 
-# create and save networks with species names 
+# create and save network with species names 
 
 N_fezouata = make_network(fezouata_df_clean)
 
