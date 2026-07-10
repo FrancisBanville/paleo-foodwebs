@@ -1,4 +1,4 @@
-## Make figures showing the distribution of measures
+## Make figures showing the distribution of measures and model errors
 
 # plot attributes
 theme(:mute)
@@ -7,11 +7,10 @@ Plots.scalefontsizes(1.3)
 fonts=font("Times",8)
 
 # read dataset of network measures
-measures = DataFrame(CSV.File(joinpath("results", "measures.csv")))
+measures = DataFrame(CSV.File(joinpath("results", "ecological_models", "measures.csv")))
 
 # read dataset of measures errors
-measures_errors = DataFrame(CSV.File(joinpath("results", "measures_errors.csv")))
-
+measures_errors = DataFrame(CSV.File(joinpath("results", "ecological_models", "measures_errors.csv")))
 
 # function for density plots 
 
@@ -162,10 +161,10 @@ function plot_density_all(network::String)
 end
 
 plot_density_all("fezouata")
-savefig(joinpath("figures", "eco_models", "fezouata_density_measures.png"))
+savefig(joinpath("figures", "ecological_models", "eco_models", "fezouata_density_measures.png"))
 
 plot_density_all("fezouata trophic species")
-savefig(joinpath("figures", "eco_models", "fezouata_trophicsp_density_measures.png"))
+savefig(joinpath("figures", "ecological_models", "eco_models", "fezouata_trophicsp_density_measures.png"))
 
 
 
@@ -296,10 +295,10 @@ end
 sp_networks = ["fezouata"]
 
 plot_density_errors_all(sp_networks)
-savefig(joinpath("figures", "niche_errors", "species_networks_errors.png"))
+savefig(joinpath("figures", "ecological_models", "niche_errors", "species_networks_errors.png"))
 
 # density plots of model errors for trophic species networks
 trophicsp_networks = ["fezouata trophic species"]
 
 plot_density_errors_all(trophicsp_networks)
-savefig(joinpath("figures", "niche_errors", "trophic_species_networks_errors.png"))
+savefig(joinpath("figures", "ecological_models", "niche_errors", "trophic_species_networks_errors.png"))

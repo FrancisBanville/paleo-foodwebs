@@ -1,8 +1,8 @@
-## Simulate networks with the same number of species and interactions
+## Simulate networks with the same number of species and interactions using three ecological models
 
 # load clean networks
-N_fezouata = load(joinpath("data", "clean", "network_Fezouata.jld2"))["N"]
-N_fezouata_trophicsp = load(joinpath("data", "clean", "network_Fezouata_trophicsp.jld2"))["N"]
+N_fezouata = load(joinpath("data", "clean", "network_Fezouata.jld2"))["N"] # nodes = species (original taxa)
+N_fezouata_trophicsp = load(joinpath("data", "clean", "network_Fezouata_trophicsp.jld2"))["N"] # nodes = trophic species
 
 
 # simulate networks using the niche, cascade, and nested-hierarchy models for each empirical network
@@ -10,7 +10,7 @@ N_fezouata_trophicsp = load(joinpath("data", "clean", "network_Fezouata_trophics
 
 Random.seed!(1234)
 
-function simulate_networks(N::UnipartiteNetwork; n=100) 
+function simulate_networks(N::UnipartiteNetwork; n=1000) 
     
     # calculate number of species and interactions 
     S = richness(N)

@@ -1,11 +1,11 @@
-## Compute measures of empirical and predicted networks
+## Compute selected measures of network structure for the empirical and predicted (simulated) networks
 
 # load empirical networks
 N_fezouata = load(joinpath("data", "clean", "network_Fezouata.jld2"))["N"]
 N_fezouata_trophicsp = load(joinpath("data", "clean", "network_Fezouata_trophicsp.jld2"))["N"]
 
 
-# load predicted networks 
+# load predicted (simulated) networks 
 Ns_fezouata_sim = load(joinpath("data", "sim", "networks_fezouata_sim.jld2"))["Ns"]
 Ns_fezouata_trophicsp_sim = load(joinpath("data", "sim", "networks_fezouata_trophicsp_sim.jld2"))["Ns"]
 
@@ -152,6 +152,7 @@ insertcols!(measures, :ChNum => ChNum)
 # the diet of species i. (Poisot T, Bélisle Z, Hoebeke L, Stock M, Szefer P. EcologicalNetworks.jl: analysing ecological 
 # networks of species interactions. Ecography. 2019;42(11):1850-1861. doi:https://doi.org/10.1111/ecog.04310)
 # In the present case, it is assumed that each prey occupies an equal proportion of a consumer’s diet.
+@info "Calculating measure 11/17 (TL)"
 
 TL = [mean(values(trophic_level(Ns[i]))) for i in 1:length(Ns)]
 insertcols!(measures, :TL => TL)
@@ -226,14 +227,13 @@ insertcols!(measures, :Clust => Clust)
 # remove NaNs and missing values
 measures[isnan.(measures.ChLen),:ChLen] .= 0
 measures[isnan.(measures.ChSD),:ChSD] .= 0
+measures[ismissing.(measures.ChNum),:ChNum] .= 0
 
 # remove infinite values that were obtained after taking the log of 0 
 measures[measures.ChNum .== -Inf, :ChNum] .= 0
 
 # export table
-CSV.write(joinpath("results", "measures.csv"), measures)
-
-
+CSV.write(joinpath("results", "ecological_models", "measures.csv"), measures)
 
 ## Calculate model error 
 
@@ -242,12 +242,12 @@ measures_errors = DataFrame()
     
 # calculate predictive errors of niche model for all networks and measures 
 for N in unique(measures.network) 
-    
+
     # get empirical measures of network N
-    measures_emp = measures[measures.network .== N .&& measures.type .== "empirical", 1:end]
+    measures_emp = measures[measures.network .== N .&& measures.type .== "empirical", 3:end]
 
     # get niche model predictions for network N
-    measures_niche = measures[measures.network .== N .&& measures.type .== "niche model", 1:end]
+    measures_niche = measures[measures.network .== N .&& measures.type .== "niche model", 3:end]
 
     # calculate predictive errors for network N
     measures_errors_N = (measures_niche .- measures_emp) ./ measures_emp
@@ -264,4 +264,4 @@ measures_errors[isnan.(measures_errors.Can),:Can] .= Inf
 measures_errors[isnan.(measures_errors.Loop),:Loop] .= Inf
 
 # export table
-CSV.write(joinpath("results", "measures_errors.csv"), measures_errors)
+CSV.write(joinpath("results", "ecological_models", "measures_errors.csv"), measures_errors)
